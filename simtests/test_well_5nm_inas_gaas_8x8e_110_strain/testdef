@@ -1,0 +1,21 @@
+{
+  file = bandstructure_kp8x8e_010.dat,
+  tag  = "strained kp 8x8e inas gaas 5nm quantum well bandstructure transversal 010",
+  col  = 0:1:3:5,
+  rel  = 0.0001,
+  abs  = 0.001
+}
+{
+  file = bandstructure_kp8x8e_011.dat,
+  tag  = "strained kp 8x8e inas gaas 5nm quantum well bandstructure transversal 011",
+  col  = 0:1:3:5,
+  rel  = 0.0001,
+  abs  = 0.001
+}
+{
+  file = element_strain.dat,
+  tag  = "1D zincblende quantum well strains",
+  col  = 0:1:2:3:4:5:6,
+  rel  = 1.0e-10,
+  abs  = 1.0e-10
+}

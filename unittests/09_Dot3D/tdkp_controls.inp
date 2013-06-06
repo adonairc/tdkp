@@ -1,0 +1,12 @@
+
+# tdkpconfdef: controls.cnf
+
+output_level                         = 6
+output_eigensolver_statistics        = 1
+
+assembly_build_nonsymmetric_matrices = 1
+assembly_ignore_first_order          = 0
+assembly_ignore_first_order_diagonal = 0
+assembly_check_matrix_for_symmetry   = 1
+assembly_save_matrices_to_file       = 0
+

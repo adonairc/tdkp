@@ -1,0 +1,131 @@
+->  ------------------------------------------------------
+->  tow.tcl 
+->  started at 11/25/08 15:21:38
+->  ------------------------------------------------------
+-> DFISEGridReader: reading geometry from file InGaN.grd
+-> InputParser:
+     dimension:          1
+     vertices:           385
+     elements:           384
+     regions:            3
+     polynomial degree:  1
+   
+-> InputParser: creating vertex nodes
+-> InputParser: creating elements
+-> InputParser: building boundary vertex, edges and faces list
+-> InputParser: structure has 0 edges and 0 faces.
+-> InputParser: collecting boundary objects
+-> InputParser: creating element boundaries
+-> InputParser: setting element boundaries to elements
+-> InputParser: creating additional nodes
+-> InputParser: setting region to elements
+-> InputParser: final grid has
+     nodes:            385
+     edges:            0
+     faces:            0
+-> InputParser: preparing geometry
+-> Geometry: preparing elements for calculation
+-> PropertyContainer: reading property container configuration from file 
+   /media/usbstick/iis/src/release/amd64/debug/tdkp/conf/material_wurtzite.cnf
+-> PropertyContainer: reading property container configuration from file 
+   /media/usbstick/iis/src/release/amd64/debug/tdkp/conf/material_wurtzite.cnf
+-> Geometry: rescaling node coordinates with a factor of 0.6
+-> Geometry: preparing elements for calculation
+-> no PMLs have be defined therefore disabling PML calculation
+-> TCLgrid: using InGaN0.1 as quantized material 
+-> TCLgrid: quantized volume 3.0
+-> Geometry: setting new boundary conditions
+-> Geometry: preparing elements for calculation
+-> FEMSolverLE: linewise parallel building of nonsymmetric matrix structure with 
+   2 active threads where the average processor takes care of 192 matrix lines.
+-> CSRMatrix: building matrix (N = 384) with 1150 nonzeros. fill in is 0.779894%, 
+   memory usage is 0M.
+-> CSRMatrix: finished creating matrix structure
+-> FEMSolverLE: writing matrix structure to cache
+-> IntrinsicStrainWurzite: the system is strained (or unstrained) into the following directions:
+   direction 0: free
+   direction 1: strained
+   direction 2: strained
+   IntrinsicStrainWurzite: the axes are mapped to the following directions:
+    axis 0 <-  z-axis (c-axis)
+    axis 1 <-  x-axis (a/m plane)
+    axis 2 <-  y-axis (a/m plane)
+   
+-> IntrinsicStrainWurzite: reference lattice constants are:
+    x = 5.185, y = 3.189, z = 3.189
+-> IntrinsicStrainWurzite: the intrinsic strain in material GaN is:
+   (RMatrix 3 x 3)
+            0          0          0 
+            0          0          0 
+            0          0          0 
+   
+-> IntrinsicStrainWurzite: the intrinsic strain in material InGaN0.1 is:
+   (RMatrix 3 x 3)
+            0          0          0 
+            0 -0.0111634          0 
+            0          0 -0.0111634 
+   
+-> IntrinsicStrainWurtzite: used elastic coefficents are:
+   Material       C11       C12       C13       C33       CXYXY     CXZXZ(C44)
+   GaN            390       145       106       398       122.5     105       
+   InGaN0.1       373.3     142       104.6     380.6     115.65    99.3      
+-> StrainField: writing binary strain data to file ./strain.bin
+-> Geometry: setting new boundary conditions
+-> Geometry: preparing elements for calculation
+-> Geometry: preparing boundary integrals
+[0;0;1m** warning **[0;0;0m you are using wurtzite with effective mass. please 
+   check that the wurtzite strain axes give the correct axis permutation for the 
+   considered system.
+-> KPBase1D2D: the resulting rotation matrix is given by (RMatrix 3 x 3)
+            0          0          1 
+     0.707107  -0.707107          0 
+     0.707107   0.707107          0 
+   
+-> calculating polarization charge. using rotation matrix
+    (RMatrix 3 x 3)
+            0          0          1 
+     0.707107  -0.707107          0 
+     0.707107   0.707107          0 
+   for a back- and forth transformation. spontaneous polarizations
+   and piezo tensors are given by:
+   GaN     : <-0.21221, 0, 0>
+   0        0        0        0        -2.0846  0        
+   0        0        0        0        0        -2.0846  
+   -2.1096  -2.1096  4.1631   0        0        0        
+   InGaN0.1: <-0.19642, 0, 0>
+   0        0        0        0        -2.016   0        
+   0        0        0        0        0        -2.016   
+   -2.1558  -2.1558  4.2554   0        0        0        
+   
+-> InputParser: writing node data to file ./pol_surface_charges.bin
+-> InputParser: writing data to output stream
+-> InputParser: writing element data to file ./pol_volume_charges.bin
+-> InputParser: writing data to output stream
+-> TCLpiezo: PoissonEquation uses Dirichlet boundary conditions everywhere
+-> Geometry: setting new boundary conditions
+-> Geometry: preparing elements for calculation
+-> Geometry: preparing boundary integrals
+-> FEMSolverLE: linewise parallel building of nonsymmetric matrix structure with 
+   2 active threads where the average processor takes care of 191 matrix lines.
+-> CSRMatrix: building matrix (N = 383) with 1147 nonzeros. fill in is 0.781926%, 
+   memory usage is 0M.
+-> CSRMatrix: finished creating matrix structure
+-> FEMSolverLE: writing matrix structure to cache
+-> PoissonEquation: i will use the following permittivities:
+          GaN - eps_xx: 9.93333, eps_yy: 9.93333, eps_zz: 9.93333
+     InGaN0.1 - eps_xx: 10.2933, eps_yy: 10.2933, eps_zz: 10.2933
+-> PoissonEquation: charge sources are defined on:
+-> PoissonEquation: netto charge in geometry is 4.88498e-15
+-> InputParser: writing node data to file ./potential.dat.gz
+-> InputParser: writing node data to file ./piezo_potential_element.bin
+-> InputParser: writing data to output stream
+-> tdkp timing statistics
+     overall:                        0.093007 s
+     building of FE grid:            0.001801 s
+     matrix graph building:          0.003273 s
+     matrix assembly:                0.003242 s
+     linear equation solving:        0.004354 s
+     result postprocessing:           1.5e-05 s
+     rhs assembly:                   0.000169 s
+    peak memory usage: virtual = 120 MB,  resident = 9 MB
+   

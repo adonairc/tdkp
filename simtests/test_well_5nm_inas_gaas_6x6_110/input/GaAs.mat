@@ -1,0 +1,30 @@
+# tdkpconfdef: material_zincblende.cnf
+#
+# material paramaters for GaAs used by stier et al.  
+# in phys rev b. vol 59, nr 8, p 5688 (1999)
+#
+# the parameters should be at 0K (the bandgap is)
+#
+# there is actually no specific reason to use
+# these parameters - historically i just used them 
+# to be able to compare the results against their 
+# finite difference calculations
+#
+
+electron_effective_mass =  0.0667
+
+conduction_band_edge    =  1.343
+valence_band_edge       = -0.176
+
+luttinger_parameter_1   =  6.85
+luttinger_parameter_2   =  2.10
+luttinger_parameter_3   =  2.90
+
+
+# optical matrix element which is stable for InAs
+# must be equal in both materials
+optical_matrix_element  =  19.0
+bandgap                 =  1.519
+spin_orbit_splitting    =  0.34
+
+

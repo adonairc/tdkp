@@ -1,0 +1,88 @@
+->  ------------------------------------------------------
+    
+->  started at 12/04/08 19:52:40
+->  ------------------------------------------------------
+-> reading material parameters for GaAs from file ./GaAs.mat
+-> PropertyContainer: reading data from file ./GaAs.mat
+-> PropertyContainer: reading property container configuration from file 
+   /media/usbstick/iis/src/release/amd64/debug/tdkp/conf/material_zincblende.cnf
+-> TCLbands: cb transverse effective mass = 0.067
+-> TCLbands: vb transverse effective mass = 0.52
+-> calculating momentum matrix elements:
+   num cb bands:		1
+   cb basis size:     1
+   num vb bands:      1
+   vb basis size:     1
+   momentum operator is independent of k
+   num k points:      1
+-> calculating matrix element p0 at kk = 0
+-> calculating matrix element p1 at kk = 0
+-> calculating matrix element p2 at kk = 0
+-> TCLfermi: reading densities from file chowdens.dat
+-> TCLfermi: writing fermi levels to file
+-> CLC: creating dense radial domain with 226 points within [0, 0.9]
+-> CLC: creating dense radial domain with 181 points within [0, 0.9]
+-> CLCSHF 1D-Radial evaluates optics for:
+     1 cb (sub)bands and 1 vb (sub)bands,
+     omega range: 1.3 -> 1.8 [eV],
+     fermi levels of 1.53043 (cb) and 0.0189855 (vb) at  300 Kelvin.
+     Homogeneous broadening is 1.00271e+13,
+     host optical refractive index is 3.6,
+     static dielectric screening constants is 12,
+     quantized volume is 1,
+     k-space dimension = 3
+-> CLC: using pade approximation for lambda_k
+-> CLC: interpolating bands and precomputing fermi stats
+-> CLCScreening: calculating lindhard screening
+-> CLC: screening exchange shifts (at k = 0) are: 
+->   cb 0 = - 0.00716361 [eV], last = - 0.00244007 [eV]
+->   vb 0 = - 0.00487003 [eV], last = - 0.00236164 [eV]
+-> CLC: coulomb hole self-energies are:
+-> CLC: valence band 0 = -0.0356534 [eV]
+-> evaluating transition for cc = 0, vv = 0 for 300 omega points.
+   eta time = 0 [s], of total = 0 [s]
+-> CLCSHF 1D-Radial evaluates optics for:
+     1 cb (sub)bands and 1 vb (sub)bands,
+     omega range: 1.3 -> 1.8 [eV],
+     fermi levels of 1.55542 (cb) and 0.00990331 (vb) at  300 Kelvin.
+     Homogeneous broadening is 1.00271e+13,
+     host optical refractive index is 3.6,
+     static dielectric screening constants is 12,
+     quantized volume is 1,
+     k-space dimension = 3
+-> CLC: using pade approximation for lambda_k
+-> CLC: interpolating bands and precomputing fermi stats
+-> CLCScreening: calculating lindhard screening
+-> CLC: screening exchange shifts (at k = 0) are: 
+->   cb 0 = - 0.00799096 [eV], last = - 0.00310992 [eV]
+->   vb 0 = - 0.00583375 [eV], last = - 0.00298724 [eV]
+-> CLC: coulomb hole self-energies are:
+-> CLC: valence band 0 = -0.0381393 [eV]
+-> evaluating transition for cc = 0, vv = 0 for 300 omega points.
+   eta time = 0 [s], of total = 0 [s]
+-> CLCSHF 1D-Radial evaluates optics for:
+     1 cb (sub)bands and 1 vb (sub)bands,
+     omega range: 1.3 -> 1.8 [eV],
+     fermi levels of 1.57808 (cb) and 0.00243492 (vb) at  300 Kelvin.
+     Homogeneous broadening is 1.00271e+13,
+     host optical refractive index is 3.6,
+     static dielectric screening constants is 12,
+     quantized volume is 1,
+     k-space dimension = 3
+-> CLC: using pade approximation for lambda_k
+-> CLC: interpolating bands and precomputing fermi stats
+-> CLCScreening: calculating lindhard screening
+-> CLC: screening exchange shifts (at k = 0) are: 
+->   cb 0 = - 0.0087371 [eV], last = - 0.00373549 [eV]
+->   vb 0 = - 0.00670916 [eV], last = - 0.00357713 [eV]
+-> CLC: coulomb hole self-energies are:
+-> CLC: valence band 0 = -0.0399665 [eV]
+-> evaluating transition for cc = 0, vv = 0 for 300 omega points.
+   eta time = 0 [s], of total = 0 [s]
+-> tdkp timing statistics
+     overall:                          67.263058 s
+     matrix element calculation:        0.009575 s
+     shf radial evaluation:            67.205366 s
+     shf coulomb vb-cb matrix:         14.543426 s
+    peak memory usage: virtual = 122 MB,  resident = 10 MB
+   

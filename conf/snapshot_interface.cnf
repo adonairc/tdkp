@@ -1,0 +1,16 @@
+###############################################
+# snapshot_interface.cnf                      #
+#                                             #
+# field definitions for snapshot files        #
+# generated using Interface::snapshot         #
+# this snapshots are generated for testing    #
+# purposes.                                   #
+###############################################
+
+minimal_cb_edge;optional;-1000;1000;-10;10;
+minimal_vb_edge;optional;-1000;1000;-10;10;
+maximal_cb_edge;optional;-1000;1000;-10;10;
+maximal_vb_edge;optional;-1000;1000;-10;10;
+band_barriers_set;optional;0;1;0;1;
+stop_at_max_edge;optional;0;1;0;1;
+gridfile;optional;-200;200;-200;200;

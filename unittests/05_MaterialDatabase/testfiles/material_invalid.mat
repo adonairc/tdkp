@@ -1,0 +1,10 @@
+# tdkpconfdef: valid.cnf
+#
+# dummy material database definition
+# that misses mandatory wurstsalat and therefore is invalid 
+
+
+krautsalat = 1.5
+
+
+

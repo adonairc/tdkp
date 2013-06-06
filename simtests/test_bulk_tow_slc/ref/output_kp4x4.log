@@ -1,0 +1,137 @@
+->  ------------------------------------------------------
+->  tow.tcl 
+->  started at 06/12/08 10:19:12
+->  ------------------------------------------------------
+-> reading property container configuration from file 
+   /media/usbstick/iis/src/release/amd64/debug/tdkp/conf/material_zincblende.cnf
+-> kp4x4 matrix for material  uses following parameters:
+   lut1         = 6.98
+   lut2         = 2.06
+   lut3         = 2.93
+   vb_edge      = 0
+   anisotropy   = -4.93
+   energy shift = 0
+-> DeCross: all bands are spin degenerate
+-> calculating momentum matrix elements:
+   num cb bands:		1
+   cb basis size:     1
+   num vb bands:      4
+   vb basis size:     4
+   momentum operator is independent of k
+   num k points:      32
+-> calculating matrix element p0 at kk = 0
+-> calculating matrix element p0 at kk = 1
+-> calculating matrix element p0 at kk = 2
+-> calculating matrix element p0 at kk = 3
+-> calculating matrix element p0 at kk = 4
+-> calculating matrix element p0 at kk = 5
+-> calculating matrix element p0 at kk = 6
+-> calculating matrix element p0 at kk = 7
+-> calculating matrix element p0 at kk = 8
+-> calculating matrix element p0 at kk = 9
+-> calculating matrix element p0 at kk = 10
+-> calculating matrix element p0 at kk = 11
+-> calculating matrix element p0 at kk = 12
+-> calculating matrix element p0 at kk = 13
+-> calculating matrix element p0 at kk = 14
+-> calculating matrix element p0 at kk = 15
+-> calculating matrix element p0 at kk = 16
+-> calculating matrix element p0 at kk = 17
+-> calculating matrix element p0 at kk = 18
+-> calculating matrix element p0 at kk = 19
+-> calculating matrix element p0 at kk = 20
+-> calculating matrix element p0 at kk = 21
+-> calculating matrix element p0 at kk = 22
+-> calculating matrix element p0 at kk = 23
+-> calculating matrix element p0 at kk = 24
+-> calculating matrix element p0 at kk = 25
+-> calculating matrix element p0 at kk = 26
+-> calculating matrix element p0 at kk = 27
+-> calculating matrix element p0 at kk = 28
+-> calculating matrix element p0 at kk = 29
+-> calculating matrix element p0 at kk = 30
+-> calculating matrix element p0 at kk = 31
+-> calculating matrix element p1 at kk = 0
+-> calculating matrix element p1 at kk = 1
+-> calculating matrix element p1 at kk = 2
+-> calculating matrix element p1 at kk = 3
+-> calculating matrix element p1 at kk = 4
+-> calculating matrix element p1 at kk = 5
+-> calculating matrix element p1 at kk = 6
+-> calculating matrix element p1 at kk = 7
+-> calculating matrix element p1 at kk = 8
+-> calculating matrix element p1 at kk = 9
+-> calculating matrix element p1 at kk = 10
+-> calculating matrix element p1 at kk = 11
+-> calculating matrix element p1 at kk = 12
+-> calculating matrix element p1 at kk = 13
+-> calculating matrix element p1 at kk = 14
+-> calculating matrix element p1 at kk = 15
+-> calculating matrix element p1 at kk = 16
+-> calculating matrix element p1 at kk = 17
+-> calculating matrix element p1 at kk = 18
+-> calculating matrix element p1 at kk = 19
+-> calculating matrix element p1 at kk = 20
+-> calculating matrix element p1 at kk = 21
+-> calculating matrix element p1 at kk = 22
+-> calculating matrix element p1 at kk = 23
+-> calculating matrix element p1 at kk = 24
+-> calculating matrix element p1 at kk = 25
+-> calculating matrix element p1 at kk = 26
+-> calculating matrix element p1 at kk = 27
+-> calculating matrix element p1 at kk = 28
+-> calculating matrix element p1 at kk = 29
+-> calculating matrix element p1 at kk = 30
+-> calculating matrix element p1 at kk = 31
+-> calculating matrix element p2 at kk = 0
+-> calculating matrix element p2 at kk = 1
+-> calculating matrix element p2 at kk = 2
+-> calculating matrix element p2 at kk = 3
+-> calculating matrix element p2 at kk = 4
+-> calculating matrix element p2 at kk = 5
+-> calculating matrix element p2 at kk = 6
+-> calculating matrix element p2 at kk = 7
+-> calculating matrix element p2 at kk = 8
+-> calculating matrix element p2 at kk = 9
+-> calculating matrix element p2 at kk = 10
+-> calculating matrix element p2 at kk = 11
+-> calculating matrix element p2 at kk = 12
+-> calculating matrix element p2 at kk = 13
+-> calculating matrix element p2 at kk = 14
+-> calculating matrix element p2 at kk = 15
+-> calculating matrix element p2 at kk = 16
+-> calculating matrix element p2 at kk = 17
+-> calculating matrix element p2 at kk = 18
+-> calculating matrix element p2 at kk = 19
+-> calculating matrix element p2 at kk = 20
+-> calculating matrix element p2 at kk = 21
+-> calculating matrix element p2 at kk = 22
+-> calculating matrix element p2 at kk = 23
+-> calculating matrix element p2 at kk = 24
+-> calculating matrix element p2 at kk = 25
+-> calculating matrix element p2 at kk = 26
+-> calculating matrix element p2 at kk = 27
+-> calculating matrix element p2 at kk = 28
+-> calculating matrix element p2 at kk = 29
+-> calculating matrix element p2 at kk = 30
+-> calculating matrix element p2 at kk = 31
+-> reading densities from file densities.dat
+-> SLC: creating dense radial domain with 375 points within [0, 1.5]
+-> interpolating bands and matrix elements on new dense grid using second order 
+   splines
+-> SLC: creating dense radial domain with 600 points within [0, 1.5]
+-> interpolating bands and matrix elements on new dense grid using second order 
+   splines
+-> SLC: evaluating spontaneous emission and absorption for 1 cb bands and 4 vb 
+   bands for photons within omega range of 1.22257 -> 1.92257 [eV] and fermi levels 
+   of 1.59888 (cb) and -0.00975417 (vb) at a temperature of 300 Kelvin.
+-> spontaneous emission B coefficent = 1.70921e-10 (cm^3/s)
+-> peak values for gain:
+     px = 0.00144007 at 1.92257 eV
+     py = 0.00144007 at 1.92257 eV
+     pz = 0.000950742 at 1.92257 eV
+-> peak values for spont emission:
+     px = 4.12436e+07 at 1.5292 eV
+     py = 4.12436e+07 at 1.5292 eV
+     pz = 1.74914e+07 at 1.47576 eV
+     avg = 3.23249e+07 at 1.51519 eV

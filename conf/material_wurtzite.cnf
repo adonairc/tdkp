@@ -1,0 +1,92 @@
+#
+# property container for wurtzite material
+#
+# for the parameter definitions see
+# [1] chuang, prb 54 (1996) 2491
+# and for possible values see
+# [2] I. Vurgaftman / J.R. Meyer, J. Appl. Phys., Vol. 94, (2003) 3675
+#
+# the warning/error bounds are just estimates
+#
+#
+
+# hole effective masses
+hole_effective_mass_A1;mandatory;-20;0;-10;-2;
+hole_effective_mass_A2;mandatory;-10;0;-2;0;
+hole_effective_mass_A3;mandatory;0.0;20;2.0;10;
+hole_effective_mass_A4;mandatory;-10;0;-8;-0.5;
+hole_effective_mass_A5;mandatory;-20;0;-8;-0.5;
+hole_effective_mass_A6;mandatory;-20;0;-10;-0.5;
+hole_effective_mass_A5_minus;optional;-40;40;-20;20;
+hole_effective_mass_A6_minus;optional;-40;40;-20;20;
+# see ren et. a. appl. phys. lett. 74 (1999), 1119
+# the unit is in eV/nm
+hole_spin_orbit_A7;optional;0;1000;0;200;
+
+conduction_band_edge;optional;-1.0e10;1.0e10;-1000;1000;
+valence_band_edge;optional;-1.0e10;1.0e10;-1000;1000;
+spin_orbit_split_delta_1;mandatory;-10;10;-1;1;
+spin_orbit_split_delta_2;mandatory;0;10;0;1;
+spin_orbit_split_delta_3;mandatory;0;10;0;1;
+
+strain_potential_D1;optional;-100;100;-25;0;
+strain_potential_D2;optional;-100;100;1;9;
+strain_potential_D3;optional;-100;100;5;10;
+strain_potential_D4;optional;-100;100;-6;-2;
+strain_potential_D5;optional;-100;100;-6;-2;
+strain_potential_D6;optional;-100;100;-6;-2;
+
+# the conduction band strain potential proportional to ezz strain
+# you can calculate the potential from the hydrostatic bandgap potential
+# a1 by: (a1 + (D1 + D3)) = ac_cc
+strain_potential_ac_cc;optional;-40;40;-15;15;
+# for the exx/eyy component, you have a2: (a2 + (D2 + D4)) = ac_aa
+strain_potential_ac_aa;optional;-40;40;-15;15;
+
+# effmass vb strain potential (not really used, but possible)
+strain_potential_av_cc;optional;-40;40;-15;15;
+strain_potential_av_aa;optional;-40;40;-15;15;
+
+
+# don't care about units. strain is unitless.
+elastic_constant_C11;optional;1e-50;1e50;1e-49;1e49;
+elastic_constant_C12;optional;1e-50;1e50;1e-49;1e49;
+elastic_constant_C13;optional;1e-50;1e50;1e-49;1e49;
+elastic_constant_C33;optional;1e-50;1e50;1e-49;1e49;
+elastic_constant_C44;optional;1e-50;1e50;1e-49;1e49;
+
+# nanometers please (but actually its also unitless)
+lattice_constant_a;optional;0.1;100;2.0;10;
+lattice_constant_c;optional;0.1;100;2.0;10;
+
+# optical momentum matrix element for wurtzite 8x8 model
+# see chuang prb 54 (1996) 2491, eq. (18)
+# attention, this one here differs from the zinc blende
+# input. its the expression in formula (18)
+# if you don't set it in your material file, its calculated with (18)
+# again: THIS IS P = sqrt(hbar^2/(2m0) * Ep) AND NOT Ep
+optical_momentum_matrix_element_P1;optional;-10;100;0;10;
+optical_momentum_matrix_element_P2;optional;-10;100;0;10;
+
+# the electron effective mass is different along the [0001] axis
+# then in a-plane. so c_plane is m_z and a_plane is m_tr
+electron_effective_mass_c_plane;optional;0.01;10;0.02;1;
+electron_effective_mass_a_plane;optional;0.01;10;0.02;1;
+
+# if we do effective mass, we use this parameters
+electron_effective_mass;optional;0.01;10;0.02;1;
+electron_effective_mass_transverse;optional;0.01;10;0.02;1;
+
+# piezo coefficents in electron charge / nm^2
+piezo_coefficient_e31;optional;-50;50;-50;50;
+piezo_coefficient_e33;optional;-50;50;-50;50;
+piezo_coefficient_e15;optional;-50;50;-50;50;
+
+# spontaenous polarization in electron charge / nm^2
+spontaneous_polarization_Psp_zz;optional;-10;10;-6;6;
+
+# temporary added "global permittivity"
+electrostatic_permittivity;optional;0.5;1e10;1;1e2;
+electrostatic_permittivity_xx;optional;0.5;1e10;1;1e2;
+electrostatic_permittivity_yy;optional;0.5;1e10;1;1e2;
+electrostatic_permittivity_zz;optional;0.5;1e10;1;1e2;

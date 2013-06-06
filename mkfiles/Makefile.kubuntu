@@ -1,0 +1,90 @@
+
+include ./Make.inc
+
+#all: test
+
+all: bin/Version.h libtdkp.so tdkpshell atze
+
+depend: bin/Version.h
+	rm -vf dependencies
+	./make_depend.sh dependencies tdkp/common tdkp/geometry tdkp/interface tdkp/io tdkp/kpmatrices tdkp/main tdkp/povray tdkp/solvers tdkp/utilities tdkp/probdefs tdkp/coulomb tdkp/clc 
+
+test:
+	(cd unittests; pwd; make)
+
+clean:
+	rm -f bin/*.o bin/*.cpp bin/*.h test.bin rm utilities/* 
+
+#atze: utilities/atze_server utilities/atze_testing_client utilities/atze_mpi_server utilities/atze_remote_gevp
+atze: utilities/atze_remote_gevp
+
+dox:
+	doxygen doc/tdkpdoxyfile
+
+utilities: bin/write_mat_to_matlab_readable
+
+include ./dependencies
+
+libtdkp.a: bin/ModifiedLapackRoutines.o $(OBJS)
+	ar r libtdkp.a $(OBJS) bin/ModifiedLapackRoutines.o
+	
+libtdkp.so: bin/ModifiedLapackRoutines.o $(OBJS)
+	$(CXX) -shared -Wl,-soname,libtdkp.so -o libtdkp.so $(OBJS) bin/ModifiedLapackRoutines.o $(CXX_LIBS)
+
+tdkpshell: libtdkp.so bin/tdkpshell.o bin/tdkpshell_wrap.o
+	$(CXX) $(CXX_FLAGS) $(CXX_INC) $(CXX_TCL_INC) -o tdkpshell.bin bin/tdkpshell.o bin/tdkpshell_wrap.o \
+	-L. -ltdkp $(TCL_LIB) $(CXX_LIBS)
+
+#pytdkp: libtdkp.so bin/pytdkp_wrap.o
+#	$(CXX) -shared bin/pytdkp_wrap.o -L. -ltdkp -o _pytdkp.so
+
+# don't use shared lib
+tdkpshell2: $(OBJS) bin/tdkpshell.o bin/tdkpshell_wrap.o
+	$(CXX) $(CXX_FLAGS) $(CXX_INC)	-o tdkpshell.bin bin/tdkpshell.o bin/tdkpshell_wrap.o $(OBJS) $(TCL_LIB) $(CXX_LIBS)
+	
+bin/ModifiedLapackRoutines.o: tdkp/solvers/ModifiedLapackRoutines.f
+	$(F77) -c $(F77_FLAGS) -o $@ $<
+	
+bin/tdkpshell.o: tdkp/tcl/tdkpshell.cpp $(HEADERS)
+	$(CXX) -c $(CXX_FLAGS) $(CXX_INC) $(TCL_INC) -o $@ $<
+
+bin/tdkpshell_wrap.cpp: tdkp/tcl/tdkpshell.i $(HEADERS)
+	$(SWIG) -Wall -c++ -tcl $(CXX_INC) $(TCL_INC) -o $@ $<
+
+bin/tdkpshell_wrap.o: bin/tdkpshell_wrap.cpp 
+	$(CXX) -c $(CXX_FLAGS) $(CXX_INC) $(TCL_INC)  -o $@ $<
+
+# <ss> never used --> deactivated
+#bin/pytdkp_wrap.cpp: tdkp/python/pytdkp.i $(HEADERS)
+#	$(SWIG) -Wall -c++ -python $(CXX_INC) -o $@ $<	
+#
+#bin/pytdkp_wrap.o: bin/pytdkp_wrap.cpp 
+#	$(CXX) -c $(CXX_FLAGS) $(CXX_INC) $(CXX_INC_PYTHON) -o $@ $<
+#
+#utilities/atze_server: tdkp/atze/atze_server.cc 
+#	$(CXX) $(CXX_FLAGS) -o $@ $^ $(CXX_INC) $(ATZE_SERIAL_INC) $(ATZE_SERIAL_LIBS) $(CXX_LIBS)
+#
+#utilities/atze_testing_client: tdkp/atze/atze_testing_client.cc
+#	$(CXX) $(CXX_FLAGS) -o $@ $^ $(CXX_INC)
+#
+#bin/atze_mpi_server.o: tdkp/atze/atze_server.cc
+#	$(MPICC) -DMPICH_IGNORE_CXX_SEEK -DEPETRA_MPI -DHAVE_MPI $(CXX_FLAGS) -o $@ -c $^ $(ATZE_MPI_INC)
+#
+#utilities/atze_mpi_server: bin/atze_mpi_server.o
+#	$(MPICC) -o $@ $^ $(ATZE_MPI_LIBS) $(CXX_LIBS)
+	
+utilities/atze_remote_gevp: tdkp/atze/atze_remote_gevp.cpp tdkp/utilities/SocketIO.h libtdkp.so
+	$(CXX) $(CXX_FLAGS) -o $@ $^ $(CXX_INC) -L. -ltdkp $(CXX_LIBS)
+
+bin/Version.h:
+	rm -f bin/Version.h
+	touch bin/Version.h
+#	echo "#define TDKP_REVISION "`cd /home/veprek/src/master/tdkp;svn info | grep Revision | sed -e 's/Revision://'` >> bin/Version.h
+	echo "#define TDKP_REVISION \"0.0\"" >> bin/Version.h
+	echo "#define MACHINE \"`hostname`\"" >> bin/Version.h
+
+bin/write_mat_to_matlab_readable: tdkp/utilities/write_mat_to_matlab_readable.cc 
+	$(CXX) $(CXX_FLAGS) -o $@ $^ $(CXX_INC) -ltdkp $(CXX_LIBS)
+
+
+

@@ -1,0 +1,35 @@
+{
+  file = cb_disp.dat,
+  tag  = "effmass 5nm dot cb bandstructure",
+  col  = 0,
+  rel  = 0.0001,
+  abs  = 0.001
+}
+{
+  file = vb_disp.dat,
+  tag  = "kp 4x4 5nm dot vb bandstructure",
+  col  = 0,
+  rel  = 0.0001,
+  abs  = 0.001
+}
+{
+  file = transitions.dat,
+  tag  = "kp 4x4 5nm dot transition matrix elements between bound states",
+  col  = 0:1:2:3:4:5:6:7,
+  rel  = 0.0001,
+  abs  = 0.001
+}
+{
+  file = optics_n0.003_p0.003.dat,
+  tag  = "kp 4x4 5nm dot gain for px, py and pz",
+  col  = 0:1:2:3,
+  rel  = 0.03,
+  abs  = 0.001
+}
+{
+  file = optics_n0.003_p0.003.dat,
+  tag  = "kp 4x4 5nm dot spont. emission for px, py and pz",
+  col  = 0:4:5:6,
+  rel  = 0.03,
+  abs  = 1
+}

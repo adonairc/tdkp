@@ -1,0 +1,207 @@
+####################################################
+# system specific configurations                   #
+####################################################
+
+# ------------------------------------
+# user directories 
+# ------------------------------------
+BASE_PATH    = /home/steiger/src
+SVNSRCPATH   = $(HOME)/src/tdkp
+
+
+# ---------------------------------------------------
+# compilers and flags
+# ---------------------------------------------------
+CXX          = g++
+F77          = gfortran
+SWIG         = swig
+MPICXX       = mpicxx
+
+CXX_DEFINES  = 
+CXX_LIBS     =
+CXX_INC      =
+
+# Fortran and optimization-independent C++ flags
+CXX_WARNINGS = -Wall -fno-strict-aliasing -fopenmp
+F77_FLAGS    = -O3 -mtune=opteron 
+
+# fpic will be added in Makefile if LINK_SHARED=1
+LINK_SHARED  = 1
+
+# if USE_DEBUG=1, CXX_DEBUG flags will be used; otherwise CXX_RELEASE
+USE_DEBUG    = 1
+CXX_DEBUG    = -O1
+CXX_RELEASE  = -O3 -msse3 -mtune=opteron 
+
+# if USE_REMOTE=0, the atze remote solver functionality is disabled
+USE_REMOTE = 0
+
+
+#============================================================#
+#        the following sets up CXX_INC and CXX_LIBS          #
+#   optionally, CXX_LIBS_SHARED and CXX_LIBS_STATIC can be   #
+#  distinguished, which will be added to CXX_LIBS according  #
+#    to the LINK_SHARED flag. Adding is done in Makefile     #
+#============================================================#
+
+####################################################
+# external solver choices                          #                                                  
+####################################################
+# UMFPACK / PARDISO4.0 are mandatory for tdkp.
+# the only case when you might want to disable their use
+# is in case that you use tdkp for ANGEL (and pml) where you 
+# don't need the real value solvers
+
+# -------------------------------------------------
+# ACML / LAPACK CHOICE
+# -------------------------------------------------
+LINALG_INC  =
+LINALG_LIB  = -llapack -lblas
+
+# -------------------------------------------------
+# UMFPACK
+# Kubuntu package libsuitesparse-dev
+# -------------------------------------------------
+UMFPACK_INC = -I/usr/include/suitesparse
+UMFPACK_LIB = -lumfpack
+UMFPACK_DEF = -DLINSOLV_INCLUDE_UMFPACK
+
+# -------------------------------------------------
+# PARDISO 
+# -------------------------------------------------
+PARDISO_INC = 
+PARDISO_LIB = 
+PARDISO_DEF = 
+
+# -------------------------------------------------
+# SuperLU
+# -------------------------------------------------
+SUPERLU_INC = 
+SUPERLU_LIB = 
+SUPERLU_DEF = 
+
+# -------------------------------------------------
+# Aztec
+# -------------------------------------------------
+AZTEC00_INC = 
+AZTEC00_LIB = 
+AZTEC00_DEF = 
+
+ATZE_MPI_INC     = 
+ATZE_MPI_LIBS 	 = 
+ATZE_SERIAL_INC  = 
+ATZE_SERIAL_LIBS = 
+
+# -------------------------------------------------
+# petsc (needs MPI)
+# -------------------------------------------------
+USE_MPI     = 0
+PETSC_DIR   = 
+PETSC_ARCH  = 
+#PETSC_DEF  = -DLINSOLV_INCLUDE_PETSC 
+#PETSC_INC  = -I../petsc/include 
+#PETSC_LIB  = -lpetsc -lpetscksp -lpetscmat -lpetscvec -lpetsccontrib -lpetscdm 
+
+
+# -------------------------------------------------
+# ARPACK is actually mandatory (except for ANGEL)
+# -------------------------------------------------
+ARPACK_INC  = 
+ARPACK_LIB  = -larpack
+ARPACK_DEF  = -DEIGNSOLV_INCLUDE_ARPACK
+
+
+# -------------------------------------------------
+# JDQZ
+# -------------------------------------------------
+# jacobi davidson for PMLs (alternative is lapack, but uses full matrices!)
+JDQZ_LIB    = -Wl,-rpath,$(BASE_PATH)/jdqz/jdlib -L$(BASE_PATH)/jdqz/jdlib -ljdqz
+JDQZ_DEF    = -DEIGNSOLV_INCLUDE_JDQZ
+
+
+# -------------------------------------------------
+# METIS 
+# -------------------------------------------------
+METIS_INC   = 
+METIS_LIB   = 
+
+# -------------------------------------------------
+# ILS
+# -------------------------------------------------
+ILS_INC     = 
+ILS_LIB     = 
+ILS_DEF     = 
+
+
+####################################################
+# other libs                                       #                                                  
+####################################################
+
+# -------------------------------------------------
+# BOOST
+# -------------------------------------------------
+BOOST_INC   = 
+BOOST_LIB   = # no lib necessary, only template stuff is used
+
+# -------------------------------------------------
+# Flens (used for InterfaceNEGF)
+# -------------------------------------------------
+FLENS_INC   = 
+FLENS_LIB   = # no lib necessary, only template stuff is used
+
+# -------------------------------------------------
+# sebise (deprecated)
+# -------------------------------------------------
+DFISE_INC   = -I$(BASE_PATH)/sebise/sebise
+DFISE_LIB   = -Wl,-rpath,$(BASE_PATH)/sebise/lib -L$(BASE_PATH)/sebise/lib -lsebise
+
+# -------------------------------------------------
+# MEDMEM 
+# -------------------------------------------------
+MEDMEM_INC  = -I$(BASE_PATH)/medmem/include -I$(BASE_PATH)/medmem/include/salome
+MEDMEM_DEF  = -DPCLINUX 
+MED_PATH    = $(BASE_PATH)/medmem/lib
+MEDMEM_LIB  = -Wl,-rpath,$(MED_PATH)/salome -L$(MED_PATH)/salome -lmedmem -linterpkernel -lMEDWrapperBase -Wl,-rpath,$(MED_PATH) -L$(MED_PATH) -lmed -lmed_V2_1 -lmedimportcxx -lhdf5 -lboost_thread
+# MEDMEM_LIB_STATIC = $(MED_PATH)/salome/libmedmem.a $(MED_PATH)/salome/libinterpkernel.a $(MED_PATH)/salome/libMEDWrapperBase.a $(MED_PATH)/libmed.a $(MED_PATH)/salome/libmed_V2_1.a $(MED_PATH)/libmedimportcxx.a /usr/lib/libhdf5.a /usr/lib/libboost_thread.a
+
+# -------------------------------------------------
+# tcl
+# -------------------------------------------------
+TCL_INC     = -I/usr/include/tcl8.5
+TCL_LIB     = -ltcl8.5
+
+ZLIB_INC    = 
+ZLIB_LIB    = -lz
+
+JAC_DAV_DEF = -DEIGNSOLV_INCLUDE_JACOBI_DAVIDSON
+
+# GCC include is used in make_depend.sh
+GCC_INC     = 
+GCC_LIB_PATH= -Wl,-rpath,/usr/lib/gcc/x86_64-linux-gnu/4.4.3 -L/usr/lib/gcc/x86_64-linux-gnu/4.4.3
+
+####################################################
+# exclude unwanted solvers in the next section
+####################################################
+
+# -DNOREMOTESOLVER to exclude RemoteGEVPSolver functionality
+# -DNOMETIS disables compilation of GraphReordering class
+# -DNOUNDERSCORE switches to fortran routine names w/o trailing underscores
+# -DNOACML disables ACML functionality
+# -DNO_FLENS decauples from FLENS and disables InterfaceNEGFWell
+
+#EIGSOLVERS = $(ARPACK_DEF) $(JAC_DAV_DEF) $(JDQZ_DEF)
+EIGSOLVERS  = $(ARPACK_DEF) $(JDQZ_DEF)
+
+LINSOLVERS  = $(UMFPACK_DEF) $(ILS_DEF) $(PARDISO_DEF) 
+# not defined: $(SUPERLU_DEF) $(AZTEC00_DEF)
+
+DEFINES     = -DNDEBUG -DNOREMOTESOLVER -DNOMETIS -DNOACML -DNO_FLENS $(MEDMEM_DEF) $(LINSOLVERS) $(EIGSOLVERS)
+
+CXX_INC     = $(DEFINES) $(UMFPACK_INC) $(ILS_INC) $(PARDISO_INC) $(METIS_INC) $(DFISE_INC) $(MEDMEM_INC)  $(ZLIB_INC) $(BOOST_INC) $(TCL_INC) $(FLENS_INC) $(LINALG_INC) -I.
+# not included: $(SUPERLU_INC) $(AZTEC00_INC)
+
+CXX_LOCAL_LIBS = $(TCL_LIB) $(UMFPACK_LIB) $(ILS_LIB) $(PARDISO_LIB) $(METIS_LIB) $(DFISE_LIB) $(MEDMEM_LIB) $(ZLIB_LIB) $(ARPACK_LIB) $(JDQZ_LIB) $(LINALG_LIB)
+# not linked: $(SUPERLU_LIB) $(AZTEC00_LIB)
+
+CXX_LIBS 	= -nodefaultlibs $(CXX_LOCAL_LIBS) $(GCC_LIB_PATH) -lgomp -lgfortran -lstdc++ -lm -lc 
+

@@ -1,0 +1,263 @@
+->  ------------------------------------------------------
+->  tow.tcl 
+->  started at 07/17/08 10:19:30
+->  ------------------------------------------------------
+-> DFISEGridReader: reading geometry from file dot_1483_verts.grd
+-> InputParser:
+     dimension:          3
+     vertices:           1483
+     elements:           9242
+     regions:            2
+     polynomial degree:  2
+   
+-> InputParser: creating vertex nodes
+-> InputParser: creating elements
+-> InputParser: building boundary vertex, edges and faces list
+-> InputParser: structure has 10730 edges and 18490 faces.
+-> InputParser: collecting boundary objects
+-> InputParser: building vertex to face mapping
+-> InputParser: determing edge location
+-> InputParser: creating element boundaries
+-> InputParser: setting element boundaries to elements
+-> InputParser: creating additional nodes
+-> InputParser: setting region to elements
+-> InputParser: final grid has
+     nodes:            12213
+     edges:            10730
+     faces:            18490
+-> InputParser: preparing geometry
+-> preparing elements for calculation
+-> reading property container configuration from file 
+   /media/usbstick/iis/src/release/amd64/debug/tdkp/conf/material_zincblende.cnf
+-> reading property container configuration from file 
+   /media/usbstick/iis/src/release/amd64/debug/tdkp/conf/material_zincblende.cnf
+-> quantized volume 125.0
+-> using the following axes of quantization:
+   quantized 1 (x) -> <1, 0, 0>
+   quantized 2 (y) -> <0, 1, 0>
+   quantized 3 (z) -> <0, 0, 1>
+-> the resulting rotation matrix is given by (RMatrix 3 x 3)
+            1          0          0 
+            0          1          0 
+            0          0          1 
+   
+-> kp4x4 matrix for material GaAs uses following parameters:
+   lut1         = 6.98
+   lut2         = 2.06
+   lut3         = 2.93
+   vb_edge      = -0.191624
+   anisotropy   = -4.93
+   energy shift = 0
+-> rotating kp matrix using the given rotation matrix:
+   (RMatrix 3 x 3)
+            1          0          0 
+            0          1          0 
+            0          0          1 
+   
+   
+-> kp4x4 matrix for material InAs uses following parameters:
+   lut1         = 20
+   lut2         = 8.5
+   lut3         = 9.2
+   vb_edge      = -0
+   anisotropy   = -23.6
+   energy shift = 0
+-> rotating kp matrix using the given rotation matrix:
+   (RMatrix 3 x 3)
+            1          0          0 
+            0          1          0 
+            0          0          1 
+   
+   
+-> lowest cb edge = 0.355168, highest vb edge = 0
+-> unbound cb edge = 1.23095, unbound vb edge = -0.191624
+-> writing data to output stream
+-> setting new boundary conditions
+-> preparing elements for calculation
+-> using the following axes of quantization:
+   quantized 1 (x) -> <1, 0, 0>
+   quantized 2 (y) -> <0, 1, 0>
+   quantized 3 (z) -> <0, 0, 1>
+-> the resulting rotation matrix is given by (RMatrix 3 x 3)
+            1          0          0 
+            0          1          0 
+            0          0          1 
+   
+-> reading data from file 
+   /media/usbstick/iis/src/release/amd64/debug/tdkp/conf/eigensolver.inp
+-> reading property container configuration from file 
+   /media/usbstick/iis/src/release/amd64/debug/tdkp/conf/eigensolver.cnf
+-> Pardiso: setting num threads to 2
+-> rhs matrix is treated as having diagonal blocks with equal entries
+-> linewise parallel building of symmetric matrix structure with 2 active threads 
+   where the average processor takes care of 3569 matrix lines.
+-> building matrix structure with 182565 nonzero elements, matrix size: 12187, 
+   therefore having a fill in of 0.12292%
+-> finished creating matrix structure
+-> building matrix structure with 182565 nonzero elements, matrix size: 12187, 
+   therefore having a fill in of 0.12292%
+-> finished creating matrix structure
+-> writing matrix structure to cache not supported for current matrix type
+-> linewise parallel assembly of matrix with 2 active threads where the average 
+   processor takes care of 3569 matrix lines.
+-> search eigenvalues
+-> Pardiso: starting with matrix factorization
+-> Pardiso: mapping to fortran indices
+-> Pardiso: starting factorization
+-> pardiso finished factoring matrix
+-> z1 (znaupd_)       = 1.24751
+   z2 (adaptive_omp)  = 0.000671864
+   z3 (Bx -> d/ido 1) = 0.0200763
+   z4 (solve eq)      = 13.011
+   z5 (Bx -> d/ido 2) = 7.36664
+   z6 (progr.meter)   = 0.142153
+   total zi           = 21.788
+   
+-> the eigensolver found 12 of 12 eigenvalues
+-> testing if dot products of eigenvectors are M orthogonal
+-> added solution 0 with ev: (0.886358,-8.11465e-18)
+-> added solution 1 with ev: (1.31538,2.14233e-17)
+-> added solution 2 with ev: (1.31711,-5.47327e-17)
+-> added solution 3 with ev: (1.31869,8.1781e-17)
+-> added solution 4 with ev: (1.32893,1.17338e-17)
+-> added solution 5 with ev: (1.41005,-4.47892e-17)
+-> added solution 6 with ev: (1.41652,-5.09182e-18)
+-> added solution 7 with ev: (1.42067,-2.88547e-17)
+-> added solution 8 with ev: (1.45736,7.80687e-17)
+-> added solution 9 with ev: (1.45938,3.94534e-17)
+-> added solution 10 with ev: (1.46556,1.22737e-17)
+-> added solution 11 with ev: (1.48384,-7.01243e-17)
+-> will expect states to be around 0 [eV]
+-> kp4x4 matrix for material GaAs uses following parameters:
+   lut1         = 6.98
+   lut2         = 2.06
+   lut3         = 2.93
+   vb_edge      = -0.191624
+   anisotropy   = -4.93
+   energy shift = -0
+-> rotating kp matrix using the given rotation matrix:
+   (RMatrix 3 x 3)
+            1          0          0 
+            0          1          0 
+            0          0          1 
+   
+   
+-> kp4x4 matrix for material InAs uses following parameters:
+   lut1         = 20
+   lut2         = 8.5
+   lut3         = 9.2
+   vb_edge      = -0
+   anisotropy   = -23.6
+   energy shift = -0
+-> rotating kp matrix using the given rotation matrix:
+   (RMatrix 3 x 3)
+            1          0          0 
+            0          1          0 
+            0          0          1 
+   
+   
+-> Pardiso: setting num threads to 2
+-> rhs matrix is treated as having diagonal blocks with equal entries
+-> linewise parallel building of symmetric matrix structure with 2 active threads 
+   where the average processor takes care of 14276 matrix lines.
+-> building matrix structure with 2494975 nonzero elements, matrix size: 48748, 
+   therefore having a fill in of 0.104991%
+-> finished creating matrix structure
+-> building matrix structure with 182565 nonzero elements, matrix size: 12187, 
+   therefore having a fill in of 0.12292%
+-> finished creating matrix structure
+-> writing matrix structure to cache
+-> linewise parallel assembly of matrix with 2 active threads where the average 
+   processor takes care of 3569 matrix lines.
+-> search eigenvalues
+-> Pardiso: starting with matrix factorization
+-> Pardiso: mapping to fortran indices
+-> Pardiso: starting factorization
+-> pardiso finished factoring matrix
+-> z1 (znaupd_)       = 11.5265
+   z2 (adaptive_omp)  = 0.00115037
+   z3 (Bx -> d/ido 1) = 0.0853155
+   z4 (solve eq)      = 239.332
+   z5 (Bx -> d/ido 2) = 54.7506
+   z6 (progr.meter)   = 0.148516
+   total zi           = 305.844
+   
+-> the eigensolver found 16 of 16 eigenvalues
+-> testing if dot products of eigenvectors are M orthogonal
+-> will expect states to be around 0 [eV]
+-> added solution 0 with ev: (-0.109002,-8.36804e-18)
+-> added solution 1 with ev: (-0.109002,2.11056e-17)
+-> added solution 2 with ev: (-0.109488,7.40577e-17)
+-> added solution 3 with ev: (-0.109488,-9.48361e-17)
+-> added solution 4 with ev: (-0.133521,4.82761e-17)
+-> added solution 5 with ev: (-0.133521,-2.27618e-17)
+-> added solution 6 with ev: (-0.134842,0)
+-> added solution 7 with ev: (-0.134842,4.14856e-17)
+-> added solution 8 with ev: (-0.19765,1.49117e-17)
+-> added solution 9 with ev: (-0.19765,1.16319e-16)
+-> added solution 10 with ev: (-0.199979,-2.10731e-17)
+-> added solution 11 with ev: (-0.199979,7.27083e-17)
+-> added solution 12 with ev: (-0.20064,1.51015e-18)
+-> added solution 13 with ev: (-0.20064,-3.91068e-18)
+-> added solution 14 with ev: (-0.202684,-2.73654e-17)
+-> added solution 15 with ev: (-0.202684,-6.72734e-17)
+-> cb: 1 bound state, vb: 8 bound state
+-> setting new boundary conditions
+-> preparing elements for calculation
+-> checking geometry
+-> there are 0 nodes at boundary and 12213 nodes inside
+-> geometry looks good
+-> building matrix structure with 2831400 nonzero elements, matrix size: 97704, 
+   therefore having a fill in of 0.0296604%
+-> finished creating matrix structure
+-> writing matrix structure to cache
+-> calculating momentum matrix elements:
+   num cb bands:		1
+   cb basis size:     1
+   num vb bands:      8
+   vb basis size:     4
+   momentum operator is independent of k
+   num k points:      1
+-> calculating matrix element p0 at kk = 0
+-> calculating matrix element p1 at kk = 0
+-> calculating matrix element p2 at kk = 0
+-> reading densities from file densities.dat
+-> SLC: creating dense radial domain with 0 points within [0, 0]
+-> SLC: creating dense radial domain with 0 points within [0, 0]
+-> SLC: evaluating spontaneous emission and absorption for 1 cb bands and 8 vb 
+   bands for photons within omega range of 0.79536 -> 1.49536 [eV] and fermi levels 
+   of 0.81635 (cb) and -0.0117863 (vb) at a temperature of 300 Kelvin.
+-> spontaneous emission B coefficent = 3.58199e-11 (cm^3/s)
+-> peak values for gain:
+     px = 0.0428093 at 0.99561 eV
+     py = 0.0431102 at 0.99561 eV
+     pz = 0.0429593 at 0.99561 eV
+-> peak values for spont emission:
+     px = 3.42304e+06 at 0.99561 eV
+     py = 3.48675e+06 at 0.99561 eV
+     pz = 3.44815e+06 at 0.99561 eV
+     avg = 3.45265e+06 at 0.99561 eV
+-> SLC: evaluating spontaneous emission and absorption for 1 cb bands and 8 vb 
+   bands for photons within omega range of 0.79536 -> 1.49536 [eV] and fermi levels 
+   of 0.848451 (cb) and -0.041187 (vb) at a temperature of 300 Kelvin.
+-> spontaneous emission B coefficent = 3.55357e-11 (cm^3/s)
+-> peak values for gain:
+     px = 0.0348876 at 0.99561 eV
+     py = 0.0351088 at 0.99561 eV
+     pz = 0.0350019 at 0.99561 eV
+-> peak values for spont emission:
+     px = 3.05694e+07 at 0.99561 eV
+     py = 3.11225e+07 at 0.99561 eV
+     pz = 3.07883e+07 at 0.99561 eV
+     avg = 3.08267e+07 at 0.99561 eV
+-> tdkp timing statistics
+     overall:                          830.32048 s
+     building of FE grid:               0.992934 s
+     matrix graph building:            21.463296 s
+     matrix assembly:                  45.466807 s
+     searching eigenvalues:            560.13967 s
+     matrix factorization:             161.97856 s
+     result postprocessing:             2.209288 s
+     matrix element calculation:       20.819518 s
+    peak memory usage: virtual = 1022 MB,  resident = 912 MB
+   

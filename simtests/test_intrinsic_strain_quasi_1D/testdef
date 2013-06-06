@@ -1,0 +1,8 @@
+{
+  file = strain_ascii.dat,
+  tag  = "quasi 1D nitide quantum well strain including dirichlet bc in ux",
+  col  = 0:1:2:3:4:5:6,
+  rel  = 1.0e-10,
+  abs  = 1.0e-10
+}
+

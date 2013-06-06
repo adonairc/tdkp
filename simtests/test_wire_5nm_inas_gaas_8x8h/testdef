@@ -1,0 +1,24 @@
+{
+  file = bandstructure_kp8x8h.dat,
+  tag  = "kp 8x8 hole inas gaas 5nm quantum wire",
+  col  = 0:1:3:5:7,
+  rel  = 0.0001,
+  abs  = 0.001
+}
+{
+  file = dos001.dat,
+  tag  = "Density of States of 1D electron gas rows 16:28",
+  col  = 0:1,
+  rows = 16:28,
+  rel  = 0.0001,
+  abs  = 0.001
+}
+{
+  file = dos001.dat,
+  tag  = "Density of States of 1D electron gas rows 30:90",
+  col  = 0:1,
+  rows = 30:90,
+  rel  = 0.0001,
+  abs  = 0.001
+}
+

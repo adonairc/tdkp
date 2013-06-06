@@ -1,0 +1,148 @@
+####################################################
+# system specific configurations                   #
+####################################################
+SVNSRCPATH   = /home/vepi/src/master/tdkp
+CXX          = g++
+F77          = gfortran
+SWIG         = swig
+MPICXX       = mpicxx
+
+USE_DEBUG    = 0
+LINK_SHARED  = 1
+F77_FLAGS    = -O3 -mtune=core2
+CXX_WARNINGS = -Wall
+CXX_DEBUG    = -g -DDEBUG -fopenmp
+CXX_RELEASE  = -DNDEBUG -fopenmp -O3 -mtune=core2
+
+####################################################
+# NOTE: PLEASE USE ABSOLUTE PATHS (as unittests    #
+# won't compile because they are located in        #
+# another directory                                #
+####################################################
+
+####################################################
+# general choices                                  #
+####################################################
+
+CXX_LIBS        = -L/home/vepi/local/lib -lgfortran -lz -lm -lc -lgomp -lboost_iostreams
+CXX_INC         = -I/home/vepi/local/include -I. 
+CXX_DEFINES     = 
+CXX_LIBS_STATIC =
+CXX_LIBS_SHARED = 
+
+####################################################
+# solver choices                                   #                                                  
+####################################################
+# UMFPACK / PARDISO4.0 are mandatory for tdkp.
+# the only case when you might want to disable their use
+# is in case that you use tdkp for ANGEL (and pml) where you 
+# don't need the real value solvers
+# -------------------------------------------------
+# UMFPACK 
+# -------------------------------------------------
+CXX_INC  += -I/usr/include/suitesparse
+CXX_LIBS_STATIC += /usr/lib/libumfpack.a /usr/lib/libamd.a
+CXX_LIBS_SHARED += -lumfpack -lamd 
+CXX_DEFINES += -DLINSOLV_INCLUDE_UMFPACK
+
+# -------------------------------------------------
+# PARDISO 
+# -------------------------------------------------
+CXX_DEFINES += -DLINSOLV_INCLUDE_PARDISO
+#CXX_LIBS += -lpardiso400_GNU430_AMD_IA64
+CXX_LIBS += -lpardiso412-GNU430-X86-64
+
+# -------------------------------------------------
+# petsc (needs MPI)
+# -------------------------------------------------
+USE_MPI=0
+#CXX_DEFINES += -DLINSOLV_INCLUDE_PETSC 
+#CXX_INC += -I../petsc/include 
+#CXX_LIBS_SHARED += -lpetsc -lpetscksp -lpetscmat -lpetscvec -lpetsccontrib -lpetscdm 
+#PETSC_DIR = /usr/almagell/opto6/veprek/src/release/amd64/opt/petsc-2.3.3-p15
+#PETSC_ARCH = linux-gnu-c-debug
+
+# -------------------------------------------------
+# ARPACK is actually mandatory (except for ANGEL)
+# -------------------------------------------------
+CXX_DEFINES += -DEIGNSOLV_INCLUDE_ARPACK
+CXX_LIBS_SHARED += -larpack 
+CXX_LIBS_STATIC += /usr/lib/libarpack.a
+
+# -------------------------------------------------
+# JDQZ
+# -------------------------------------------------
+# jacobi davidson for PMLs (alternative is lapack, but uses full matrices!)
+CXX_DEFINES += -DEIGNSOLV_INCLUDE_JDQZ
+CXX_LIBS_SHARED += -lmetis -ljdqz 
+CXX_LIBS_STATIC += /home/vepi/local/lib/libjdqz.a
+
+# -------------------------------------------------
+# METIS 
+# -------------------------------------------------
+#CXX_DEFINES += -DNOMETIS
+CXX_INC += -I../metis-4.0/Lib
+CXX_LIBS_SHARED += -lmetis
+CXX_LIBS_STATIC += /home/vepi/local/lib/libmetis.a
+
+####################################################
+# other libs                                       #                                                  
+####################################################
+
+# -------------------------------------------------
+# BOOST
+# -------------------------------------------------
+CXX_INC += -I/usr/include/boost 
+
+# -------------------------------------------------
+# Flens (used for InterfaceNEGF)
+# -------------------------------------------------
+#CXX_INC += -DNO_FLENS
+#CXX_INC += -I/home/vepi/local/lib
+#CXX_LIBS_SHARED += -L/home/vepi/local/lib -lflens -lcblas
+#CXX_LIBS_STATIC += -L/home/vepi/local/lib -lflens -lcblas
+
+# -------------------------------------------------
+# sebise (deprecated)
+# -------------------------------------------------
+#CXX_INC  += -I../sebise/sebise -DDATA_FORMAT_SEBISE
+#CXX_LIBS_SHARED += -lsebise
+#CXX_LIBS_STATIC += /home/vepi/local/lib/libsebise.a
+
+# -------------------------------------------------
+# MEDMEM 
+# -------------------------------------------------
+CXX_DEFINES += -DPCLINUX -DDATA_FORMAT_MED
+CXX_INC  += -I/home/vepi/local/include/salome
+MED_PATH = /home/vepi/local/lib
+CXX_LIBS_SHARED += -L$(MED_PATH)/salome -lmedmem -linterpkernel -lMEDWrapperBase -lmed -lmed_V2_1 -lmedimportcxx -lhdf5 -lboost_thread
+CXX_LIBS_STATIC += $(MED_PATH)/salome/libmedmem.a \
+	$(MED_PATH)/salome/libinterpkernel.a \
+	$(MED_PATH)/salome/libMEDWrapperBase.a \
+	$(MED_PATH)/libmed.a \
+	$(MED_PATH)/salome/libmed_V2_1.a \
+	$(MED_PATH)/libmedimportcxx.a \
+	/usr/lib/libhdf5.a \
+	/usr/lib/libboost_thread.a
+
+# -------------------------------------------------
+# tcl
+# -------------------------------------------------
+CXX_INC  += -I/usr/include/tcl8.4
+CXX_LIBS_SHARED +=  -ltcl8.4
+CXX_LIBS_STATIC += /usr/lib/libtcl8.4.a -ldl
+
+# -------------------------------------------------
+# ACML / LAPACK CHOICE
+# -------------------------------------------------
+#CXX_DEFINES += -DNOACML
+CXX_INC += -I../acml/include 
+CXX_LIBS_SHARED += -lacml_mp -lacml_mv
+CXX_LIBS_STATIC += /home/vepi/local/lib/libacml.a /home/vepi/local/lib/libacml_mv.a  
+
+####################################################
+# finally, add the defines to CXX_INC              #
+####################################################
+CXX_INC += $(CXX_DEFINES)
+
+

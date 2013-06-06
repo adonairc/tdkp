@@ -1,0 +1,6 @@
+#
+# test defintion file for wurstsalat ...
+# invalid, wurstsalat is 5.0, should therefore fail
+#
+wurstsalat  = 5.000001
+bohnensalat = 1.5e0

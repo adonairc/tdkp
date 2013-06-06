@@ -1,0 +1,46 @@
+.\" Process this file with
+.\" groff -man -Tascii foo.1
+.\"
+.TH ATZE_REMOTE_GEVP 1 "JUNE 2009" Linux "User Manuals"
+.SH NAME
+atze_remote_gevp \- remote eigensolver client
+.SH SYNOPSIS
+.B atze_remote_gevp
+.I hostname port
+.SH DESCRIPTION
+.B atze_remote_gevp
+is called internally by tdkp to solve in parallel the generalized
+eigenvalue problem (gevp) resulting from the finite element
+discretization of the k.p Schroedinger equation. The
+eigenvalue problem is solved using ARPACK. As ARPACK uses static
+variables, it can not be run in parallel. Therefore the solving is
+outsourced to
+.B atze_remote_gevp
+and
+which connects back to tdkp via sockets to receive the matrix
+and return the corresponding eigenvalues. As the communication
+is done using TCP sockets, it can also be executed on different
+hosts at the same time. In essence, you won't need to call this
+program by yourself, it's simply a part of the tdkp package.
+.SH FILES
+.I /usr/share/tdkp/conf/controls.cnf
+.RS
+The system wide control file. Sets numerical limits and affects
+solving behaviour.
+.RE
+.I TDKP_CONF_PATH/controls.conf
+.RS
+User control file, located within the users local tdkp directory.
+Sets numerical limits and affects solving behaviour.
+.SH ENVIRONMENT
+.IP OMP_NUM_THREADS
+Number of OpenMP threads used.
+.IP TDKP_CONF_PATH
+Path to the users local tdkp directory
+.SH BUGS
+The command name should have been chosen more carefully
+to reflect its purpose.
+.SH AUTHOR
+Ratko G. Veprek <ratko.veprek@gmail.com>
+.SH "SEE ALSO"
+.BR tdkp (1)

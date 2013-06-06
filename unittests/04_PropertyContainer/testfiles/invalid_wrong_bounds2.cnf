@@ -1,0 +1,4 @@
+# warn_max < warn_min
+wurstsalat; mandatory; 0.0; 5.0;  0.1; -4.5;
+bohnensalat; optional; 0.0; 10.0; 1.0; 2.0;
+krautsalat; optional; 1.0; 1111.123; 20.0; 1000; 34.0;

@@ -1,0 +1,30 @@
+# tdkpconfdef: material_zincblende.cnf
+#
+# InAs material material parameters 
+#
+# the values were taken from Table K.2
+# in Chuang 'Physics of Optoelectronic 
+# devices', p. 709, John Wiley & Sons 1995  
+#
+# the material parameters should be at 0K
+#
+
+conduction_band_edge    = 0.42
+valence_band_edge       = 0.0
+
+electron_effective_mass = 0.02226
+electron_effective_mass_transverse = 0.02226
+
+#luttinger_parameter_1   =  6.85
+#luttinger_parameter_2   =  2.10
+#luttinger_parameter_3   =  2.90
+
+luttinger_parameter_1   = 20.4
+luttinger_parameter_2   = 8.3
+luttinger_parameter_3   = 9.1
+
+
+optical_matrix_element  = 20.0
+bandgap                 = 0.42
+spin_orbit_splitting    = 0.38
+

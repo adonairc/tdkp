@@ -1,0 +1,24 @@
+set(0) {
+	iterative( bicgstab, tolrel=1e-8, tolunprec=1e-4, tolabs=0, maxit=200 );
+	preconditioning( ilut(0.01,-1), left );
+	ordering( symmetric=nd, nonsymmetric=mpsilst );
+	options( compact=yes, verbose=1 );
+};
+
+set(1) {
+   iterative( gmresdr(25,10), tolrel=1.0e-14, tolunprec=1.0e-14, tolabs=0, maxit=200 );
+   deflation( off );
+   preconditioning( ilut(0.001,-1), adaptive( lower=(1.0,0.316), upper=(2.0,0.1), mintol=1e-7 ) );
+   // or just skip the adaptive(...) part!
+   ordering( symmetric=nd, nonsymmetric=mpsilst );
+   options( compact=yes, verbose=0 );
+};
+
+set(2) {
+   iterative( bicgstab, tolrel=1e-12, tolunprec=0, maxit=200, smoother=1, smooth_min_n=10, mintolrel=1e-8, stagnation=10,1e-2 );
+   deflation( on );
+   preconditioning( ilut(0.001,-1), adaptive( lower=(1.0,0.316), upper=(2.0,0.1), mintol=1e-6 ) );
+   ordering( symmetric=nd, nonsymmetric=mpsilst );
+   options( compact=yes, verbose=1 );                                          
+};
+

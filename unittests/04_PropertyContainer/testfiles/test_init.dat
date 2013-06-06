@@ -1,0 +1,11 @@
+# tdkpconfdef: 04_PropertyContainer/testfiles/valid.cnf 
+#
+# test defintion file for wurstsalat ...
+# valid, no errors, no warnings
+#
+
+wurstsalat  = 2.0
+
+# some empty lines in between
+
+bohnensalat = 1.5e0

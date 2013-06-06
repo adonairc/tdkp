@@ -1,0 +1,35 @@
+{
+  file = coulomb.dat,
+  tag  = "clc 2.7 nm InGaN coulomb form factors",
+  col  = 0:1:2:4:6,
+  rel  = 1.0e-2,
+  abs  = 1.0e-5
+}
+{
+  file = clc_optics_n0.04_p0.04.dat,
+  tag  = "clc 2.7 nm InGaN well absorption",
+  col  = 0:2,
+  rel  = 5.0e-2,
+  abs  = 1.0e-5
+}
+{
+  file = clc_optics_n0.005_p0.005.dat,
+  tag  = "clc 2.7 nm InGaN well luminescence",
+  col  = 5,
+  rel  = 1.0e-2,
+  abs  = 1.0e4
+}
+{
+  file = screening0.dat,
+  tag  = "clc 2.7 nm InGaN well screening",
+  col  = 0:1,
+  rel  = 1.0e-2,
+  abs  = 1.0e-2
+}
+{
+  file = exchange_energy_1.dat,
+  tag  = "clc 2.7 nm InGaN well exchange energy",
+  col  = 0:1,
+  rel  = 1.0e-2,
+  abs  = 1.0e-3
+}

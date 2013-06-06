@@ -1,0 +1,86 @@
+#
+# property container for gas material
+#
+
+# assume gas is almost vacuum
+electrostatic_permittivity;optional;0.01;20;0.01;20;1.0;
+# assume almost no elastic response!
+elastic_constant_C11;optional;1e-50;1e50;1e-49;1e49;0.00001;
+elastic_constant_C12;optional;1e-50;1e50;1e-49;1e49;0.00001;
+elastic_constant_C13;optional;1e-50;1e50;1e-49;1e49;0.00001;
+elastic_constant_C33;optional;1e-50;1e50;1e-49;1e49;0.00001;
+elastic_constant_C44;optional;1e-50;1e50;1e-49;1e49;0.00001;
+elastic_constant_C66;optional;1e-50;1e50;1e-49;1e49;0.00001;
+
+# piezo coefficents in electron charge / nm^2
+piezo_coefficient_e31;optional;-50;50;-50;50;0.0;
+piezo_coefficient_e33;optional;-50;50;-50;50;0.0;
+piezo_coefficient_e15;optional;-50;50;-50;50;0.0;
+
+# all parameters as dummy values ...
+
+electron_effective_mass;optional;-100; 12.0; 0.001; 0.99;0.1;
+electron_effective_mass_transverse;optional;-100; 12.0; 0.001; 0.99;0.1;
+
+conduction_band_edge;optional;-200;200.0;-20;20.0;10.0;
+valence_band_edge;optional;-200;200;-20;20;-10.0;
+
+luttinger_parameter_1;optional;0.00001;30;2.0;25;3.0;
+luttinger_parameter_2;optional;0.000000;15;0.001;10;1.0;
+luttinger_parameter_3;optional;0.0;2000;1;12;1.0;
+foremans_kane_parameter_N_minus;optional;-100;100;-50;50;
+hole_effective_mass;optional;1.0e-10;30;0.005;10;0.2;
+hole_effective_mass_transverse;optional;1.0e-10;30;0.005;10;0.2;
+
+bandgap;optional;0.1;40;0.3;30;20.0;
+optical_matrix_element;optional;0.0;50.0;0.0;35;0.0
+spin_orbit_splitting;optional;0.0;4.0;0.00;0.6;0.0
+
+strain_potential_ac;optional;-100.0;100.0;-20.0;0.0;0.0;
+strain_potential_av;optional;-100.0;100.0;0.0;6.0;0.0;
+strain_potential_b;optional;-100.0;100.0;-10.0;0.0;0.0;
+strain_potential_d;optional;-100.0;100.0;-10.0;0.0;0.0;
+lattice_constant;optional;0.1;100;2.0;10;3.0;
+
+###################################################
+# wurtzite materials                              #
+###################################################
+hole_effective_mass_A1;optional;-20;0;-10;-2;-3;
+hole_effective_mass_A2;optional;-10;0;-2;0;-1;
+hole_effective_mass_A3;optional;0.0;20;2.0;10;2;
+hole_effective_mass_A4;optional;-10;0;-8;-0.5;-2;
+hole_effective_mass_A5;optional;-20;0;-8;-0.5;-2;
+hole_effective_mass_A6;optional;-20;0;-10;-0.5;-2;
+hole_effective_mass_A5_minus;optional;-40;40;-20;20;0.0;
+hole_effective_mass_A6_minus;optional;-40;40;-20;20;0.0;
+hole_spin_orbit_A7;optional;0;1000;0;200;0.0;
+
+spin_orbit_split_delta_1;optional;-10;10;-1;1;0.0;
+spin_orbit_split_delta_2;optional;0;10;0;1;0.0;
+spin_orbit_split_delta_3;optional;0;10;0;1;0.0;
+
+strain_potential_D1;optional;-100;100;-25;0;0.0;
+strain_potential_D2;optional;-100;100;0;9;0.0;
+strain_potential_D3;optional;-100;100;0;10;0.0;
+strain_potential_D4;optional;-100;100;-6;0;0.0;
+strain_potential_D5;optional;-100;100;-6;0.0;0.0;
+strain_potential_D6;optional;-100;100;-6;0.0;0.0;
+
+strain_potential_ac_cc;optional;-40;40;-15;15;0.0;
+strain_potential_ac_aa;optional;-40;40;-15;15;0.0;
+
+strain_potential_av_cc;optional;-40;40;-15;15;0.0;
+strain_potential_av_aa;optional;-40;40;-15;15;0.0;
+
+
+lattice_constant_a;optional;0.1;100;2.0;10;0.0;
+lattice_constant_c;optional;0.1;100;2.0;10;0.0;
+
+optical_momentum_matrix_element_P1;optional;-10;100;0;10;0.0;
+optical_momentum_matrix_element_P2;optional;-10;100;0;10;0.0;
+
+electron_effective_mass_c_plane;optional;0.01;10;0.02;1;0.01;
+electron_effective_mass_a_plane;optional;0.01;10;0.02;1;0.01;
+
+spontaneous_polarization_Psp_zz;optional;-10;10;-6;6;0.0;
+

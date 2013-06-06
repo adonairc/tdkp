@@ -1,0 +1,22 @@
+# tdkpconfdef: material_zincblende.cnf
+#
+# sebis parameter
+#
+
+electron_effective_mass =  0.06715
+
+conduction_band_edge    = -4.11826
+valence_band_edge       = -5.54076
+
+luttinger_parameter_1   =  6.85
+luttinger_parameter_2   =  2.10
+luttinger_parameter_3   =  2.90
+
+
+# optical matrix element which is stable for InAs
+# must be equal in both materials
+optical_matrix_element  =  18.0
+bandgap                 =  1.4225
+spin_orbit_splitting    =  0.33
+
+

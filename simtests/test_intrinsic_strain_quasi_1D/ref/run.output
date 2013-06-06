@@ -1,0 +1,421 @@
+-> you started tow.tcl 
+-> TCLtow: copying output to file ./output.log
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+  tdkp - a multidimensional finite element kp solver 
+
+  (c) 2006-2009 ratko veprek, computational optoelectronics
+                integrated systems laboratory, eth zuerich
+
+  you are using tdkp revision 195, compiled 
+  on ubuntubook at Mar  3 2012, 21:39:11
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+->  ------------------------------------------------------
+    
+->  started at 03/04/12 12:03:39
+->  ------------------------------------------------------
+-> TCLplot: the following data will, if available, be plotted: bandedges_binary 
+   optical_ascii bands_ascii strain_ascii
+-> Stage is 0 reading: DIMENSION 2
+-> Stage is 1 reading: REGION barrier1 GaN
+-> Found region 'barrier1' consisting of 'GaN'
+-> Stage is 1 reading: REGION well_piprek_3 InGaN0.2
+-> Found region 'well_piprek_3' consisting of 'InGaN0.2'
+-> Stage is 1 reading: REGION barrier2 GaN
+-> Found region 'barrier2' consisting of 'GaN'
+-> Stage is 1 reading: REGION well_piprek_4 InGaN0.2
+-> Found region 'well_piprek_4' consisting of 'InGaN0.2'
+-> Stage is 1 reading: REGION pdoping GaN
+-> Found region 'pdoping' consisting of 'GaN'
+-> Stage is 1 reading: REGION barrier3 GaN
+-> Found region 'barrier3' consisting of 'GaN'
+-> Stage is 1 reading: REGION well_piprek_5 InGaN0.2
+-> Found region 'well_piprek_5' consisting of 'InGaN0.2'
+-> Stage is 1 reading: REGION barrier4 GaN
+-> Found region 'barrier4' consisting of 'GaN'
+-> Stage is 1 reading: REGION barrier5 GaN
+-> Found region 'barrier5' consisting of 'GaN'
+-> Stage is 1 reading: REGION barrier6 GaN
+-> Found region 'barrier6' consisting of 'GaN'
+-> Stage is 1 reading: REGION stopper AlGaN0.13
+-> Found region 'stopper' consisting of 'AlGaN0.13'
+-> Stage is 1 reading: REGION well_piprek_1 InGaN0.2
+-> Found region 'well_piprek_1' consisting of 'InGaN0.2'
+-> Stage is 1 reading: REGION ndoping GaN
+-> Found region 'ndoping' consisting of 'GaN'
+-> Stage is 1 reading: REGION well_piprek_2 InGaN0.2
+-> Found region 'well_piprek_2' consisting of 'InGaN0.2'
+-> Stage is 1 reading: VERTICES 1512
+-> Grid has 1512 vertices
+-> Grid has 755 elements
+-> Found 755 elements
+-> InputParser:
+     dimension:          2
+     vertices:           1512
+     elements:           755
+     regions:            14
+     polynomial degree:  1
+   
+-> InputParser: creating vertex nodes
+-> InputParser: creating elements
+-> InputParser: building boundary vertex, edges and faces list
+-> InputParser: structure has 2266 edges and 0 faces.
+-> InputParser: collecting boundary objects
+-> InputParser: creating element boundaries
+-> InputParser: setting element boundaries to elements
+-> InputParser: creating additional nodes
+-> InputParser: setting region to elements
+-> InputParser: final grid has
+     nodes:            1512
+     edges:            2266
+     faces:            0
+-> InputParser: preparing geometry
+-> Geometry: preparing elements for calculation
+WARNING VBO IS BULLSHIT!!!!
+I REPEAT: WARNING VBO IS BULLSHIT!!!!
+-> PropertyContainer: reading property container configuration from file 
+   /home/vepi/src/release/amd64/debug/tdkp/conf/material_wurtzite.cnf
+-> Material GaN
+-> conduction_band_edge                  3.33455
+   elastic_constant_C11                  390
+   elastic_constant_C12                  145
+   elastic_constant_C13                  106
+   elastic_constant_C33                  398
+   elastic_constant_C44                  105
+   electron_effective_mass               0.2
+   electron_effective_mass_a_plane       0.21
+   electron_effective_mass_c_plane       0.2
+   electron_effective_mass_transverse    0.21
+   electrostatic_permittivity            9.93333
+   electrostatic_permittivity_xx         9.6
+   electrostatic_permittivity_yy         9.6
+   electrostatic_permittivity_zz         10.6
+   hole_effective_mass_A1                -7.21
+   hole_effective_mass_A2                -0.44
+   hole_effective_mass_A3                6.68
+   hole_effective_mass_A4                -3.46
+   hole_effective_mass_A5                -3.4
+   hole_effective_mass_A6                -4.9
+   hole_spin_orbit_A7                    0.00937
+   lattice_constant_a                    3.189
+   lattice_constant_c                    5.185
+   piezo_coefficient_e15                 -1.04232
+   piezo_coefficient_e31                 -2.1096
+   piezo_coefficient_e33                 4.16305
+   spin_orbit_split_delta_1              0.01
+   spin_orbit_split_delta_2              0.006
+   spin_orbit_split_delta_3              0.006
+   spontaneous_polarization_Psp_zz       -0.21221
+   strain_potential_D1                   -3.6
+   strain_potential_D2                   1.7
+   strain_potential_D3                   5.2
+   strain_potential_D4                   -2.7
+   strain_potential_D5                   -2.8
+   strain_potential_D6                   -4.3
+   strain_potential_ac_aa                -10.9
+   strain_potential_ac_cc                -5.5
+   strain_potential_av_aa                -1
+   strain_potential_av_cc                1.6
+   valence_band_edge                     -0.102333
+   
+-> PropertyContainer: reading property container configuration from file 
+   /home/vepi/src/release/amd64/debug/tdkp/conf/material_wurtzite.cnf
+-> Material InGaN0.2
+-> conduction_band_edge                  2.64709
+   elastic_constant_C11                  356.6
+   elastic_constant_C12                  139
+   elastic_constant_C13                  103.2
+   elastic_constant_C33                  363.2
+   elastic_constant_C44                  93.6
+   electron_effective_mass               0.174
+   electron_effective_mass_a_plane       0.182
+   electron_effective_mass_c_plane       0.174
+   electron_effective_mass_transverse    0.182
+   electrostatic_permittivity            10.6533
+   electrostatic_permittivity_xx         10.3
+   electrostatic_permittivity_yy         10.3
+   electrostatic_permittivity_zz         11.36
+   hole_effective_mass_A1                -7.41
+   hole_effective_mass_A2                -0.488
+   hole_effective_mass_A3                6.858
+   hole_effective_mass_A4                -3.814
+   hole_effective_mass_A5                -3.742
+   hole_effective_mass_A6                -5.112
+   hole_spin_orbit_A7                    0.007496
+   lattice_constant_a                    3.2602
+   lattice_constant_c                    5.2886
+   piezo_coefficient_e15                 -0.973659
+   piezo_coefficient_e31                 -2.20198
+   piezo_coefficient_e33                 4.34778
+   spin_orbit_split_delta_1              0.0128
+   spin_orbit_split_delta_2              0.00514
+   spin_orbit_split_delta_3              0.00514
+   spontaneous_polarization_Psp_zz       -0.185246
+   strain_potential_D1                   -3.6
+   strain_potential_D2                   1.7
+   strain_potential_D3                   5.2
+   strain_potential_D4                   -2.7
+   strain_potential_D5                   -2.8
+   strain_potential_D6                   -4.3
+   strain_potential_ac_aa                -9.76
+   strain_potential_ac_cc                -4.92
+   strain_potential_av_aa                -1
+   strain_potential_av_cc                1.6
+   valence_band_edge                     -0
+   
+-> PropertyContainer: reading property container configuration from file 
+   /home/vepi/src/release/amd64/debug/tdkp/conf/material_wurtzite.cnf
+-> Material AlGaN0.13
+-> conduction_band_edge                  3.48617
+   elastic_constant_C11                  390.78
+   elastic_constant_C12                  143.96
+   elastic_constant_C13                  106.26
+   elastic_constant_C33                  394.75
+   elastic_constant_C44                  106.43
+   electron_effective_mass               0.213
+   electron_effective_mass_a_plane       0.2243
+   electron_effective_mass_c_plane       0.213
+   electron_effective_mass_transverse    0.2243
+   electrostatic_permittivity            9.747
+   electrostatic_permittivity_xx         9.431
+   electrostatic_permittivity_yy         9.431
+   electrostatic_permittivity_zz         10.379
+   hole_effective_mass_A1                -6.7745
+   hole_effective_mass_A2                -0.4153
+   hole_effective_mass_A3                6.277
+   hole_effective_mass_A4                -3.1818
+   hole_effective_mass_A5                -3.1491
+   hole_effective_mass_A6                -4.4762
+   hole_spin_orbit_A7                    0.0081519
+   lattice_constant_a                    3.17899
+   lattice_constant_c                    5.15861
+   piezo_coefficient_e15                 -1.1916
+   piezo_coefficient_e31                 -2.26782
+   piezo_coefficient_e33                 4.84298
+   spin_orbit_split_delta_1              -0.02081
+   spin_orbit_split_delta_2              0.00678
+   spin_orbit_split_delta_3              0.00678
+   spontaneous_polarization_Psp_zz       -0.231529
+   strain_potential_D1                   -3.509
+   strain_potential_D2                   2.116
+   strain_potential_D3                   5.746
+   strain_potential_D4                   -2.869
+   strain_potential_D5                   -2.865
+   strain_potential_D6                   -4.092
+   strain_potential_ac_aa                -10.9
+   strain_potential_ac_cc                -4.382
+   strain_potential_av_aa                -0.753
+   strain_potential_av_cc                2.237
+   valence_band_edge                     -0.125653
+   
+-> Geometry: rescaling node coordinates with a factor of 1000
+-> Geometry: preparing elements for calculation
+-> no PMLs have be defined therefore disabling PML calculation
+-> TCLgrid: using InGaN0.2 as quantized material 
+[0;0;1m** warning **[0;0;0m Geometry: volume of quantized region is 0!
+[0;0;1m** warning **[0;0;0m TCLgrid: quantized volume is ZERO! means: i could 
+   not determine the quantized volume correctly. please write the names of the 
+   quantized regions into the file.
+-> Geometry: setting new boundary conditions
+-> Geometry: preparing elements for calculation
+-> Geometry: preparing elements for calculation
+
+
+************************************************************************** 
+CONTAINS Runtime Modules of  Parallel Sparse Linear Solver PARDISO V 4.1.2 
+Copyright University of Basel,  2000-2011. All Rights Reserved.            
+
+WARNING:  YOU ARE USING A TRIAL AND  EVALUATION LICENSE FOR  PARDISO. THIS
+LICENSE PERMITS THE USE OF PARDISO ONLY FOR EVALUATING OR BENCHMARKING THE
+SOFTWARE  OR  FOR  SHORT-TERM  PURELY  ACADEMIC  RESEARCH  AND  EVALUATION
+PURPOSES.  IF YOU ARE USING THE SOFTWARE FOR ANY OTHER PURPOSE, YOU MAY BE
+IN AN UNLAWFUL VIOLATION OF THE TERMS OF THIS LICENSE, AND YOU MUST OBTAIN
+A VALID LICENSE.  UNIVERSITY OF BASEL DISCLAIMS ALL WARRANTIES WITH REGARD
+TO THIS SOFTWARE,  INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY AND
+FITNESS.  IN NO EVENT SHALL  UNIVERSITY OF BASEL OR ANY OF ITS ENTITIES BE
+LIABLE  FOR  ANY SPECIAL, INDIRECT OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
+WHATSOEVER  RESULTING  FROM  LOSS OF USE,  DATA OR  PROFITS, WHETHER IN AN
+ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF OR
+IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
+
+       Please visit http://www.pardiso-project.org for more details.      
+************************************************************************** 
+
+
+-> Pardiso: setting num threads to 2
+-> FEMSolverLE: linewise parallel building of symmetric matrix structure with 2 
+   active threads where the average processor takes care of 882 matrix lines.
+   FEMSolverLE: building symmetric matrix structure 755
+                                                                         [                                                              ]   0%   [                                                              ]   0%   [                                                              ]   0%   [                                                              ]   1%   [x                                                             ]   1%   [x                                                             ]   2%   [x                                                             ]   2%   [x                                                             ]   3%   [xx                                                            ]   3%   [xx                                                            ]   4%   [xxx                                                           ]   4%   [xxx                                                           ]   5%   [xxx                                                           ]   5%   [xxx                                                           ]   6%   [xxxx                                                          ]   6%   [xxxx                                                          ]   7%   [xxxx                                                          ]   7%   [xxxxx                                                         ]   8%   [xxxxx                                                         ]   8%   [xxxxx                                                         ]   9%   [xxxxxx                                                        ]   9%   [xxxxxx                                                        ]  10%   [xxxxxx                                                        ]  10%   [xxxxxx                                                        ]  11%   [xxxxxxx                                                       ]  11%   [xxxxxxx                                                       ]  12%   [xxxxxxxx                                                      ]  12%   [xxxxxxxx                                                      ]  13%   [xxxxxxxx                                                      ]  13%   [xxxxxxxx                                                      ]  14%   [xxxxxxxxx                                                     ]  14%   [xxxxxxxxx                                                     ]  15%   [xxxxxxxxx                                                     ]  15%   [xxxxxxxxx                                                     ]  16%   [xxxxxxxxxx                                                    ]  16%   [xxxxxxxxxx                                                    ]  17%   [xxxxxxxxxxx                                                   ]  17%   [xxxxxxxxxxx                                                   ]  18%   [xxxxxxxxxxx                                                   ]  18%   [xxxxxxxxxxx                                                   ]  19%   [xxxxxxxxxxxx                                                  ]  20%   [xxxxxxxxxxxx                                                  ]  20%   [xxxxxxxxxxxxx                                                 ]  21%   [xxxxxxxxxxxxx                                                 ]  21%   [xxxxxxxxxxxxx                                                 ]  22%   [xxxxxxxxxxxxxx                                                ]  22%   [xxxxxxxxxxxxxx                                                ]  23%   [xxxxxxxxxxxxxx                                                ]  23%   [xxxxxxxxxxxxxx                                                ]  24%   [xxxxxxxxxxxxxxx                                               ]  24%   [xxxxxxxxxxxxxxx                                               ]  25%   [xxxxxxxxxxxxxxxx                                              ]  25%   [xxxxxxxxxxxxxxxx                                              ]  26%   [xxxxxxxxxxxxxxxx                                              ]  26%   [xxxxxxxxxxxxxxxx                                              ]  27%   [xxxxxxxxxxxxxxxxx                                             ]  27%   [xxxxxxxxxxxxxxxxx                                             ]  28%   [xxxxxxxxxxxxxxxxx                                             ]  28%   [xxxxxxxxxxxxxxxxx                                             ]  29%   [xxxxxxxxxxxxxxxxxx                                            ]  29%   [xxxxxxxxxxxxxxxxxx                                            ]  30%   [xxxxxxxxxxxxxxxxxxx                                           ]  30%   [xxxxxxxxxxxxxxxxxxx                                           ]  31%   [xxxxxxxxxxxxxxxxxxx                                           ]  31%   [xxxxxxxxxxxxxxxxxxx                                           ]  32%   [xxxxxxxxxxxxxxxxxxxx                                          ]  32%   [xxxxxxxxxxxxxxxxxxxx                                          ]  33%   [xxxxxxxxxxxxxxxxxxxxx                                         ]  33%   [xxxxxxxxxxxxxxxxxxxxx                                         ]  34%   [xxxxxxxxxxxxxxxxxxxxx                                         ]  34%   [xxxxxxxxxxxxxxxxxxxxx                                         ]  35%   [xxxxxxxxxxxxxxxxxxxxxx                                        ]  35%   [xxxxxxxxxxxxxxxxxxxxxx                                        ]  36%   [xxxxxxxxxxxxxxxxxxxxxx                                        ]  36%   [xxxxxxxxxxxxxxxxxxxxxx                                        ]  37%   [xxxxxxxxxxxxxxxxxxxxxxx                                       ]  37%   [xxxxxxxxxxxxxxxxxxxxxxx                                       ]  38%   [xxxxxxxxxxxxxxxxxxxxxxxx                                      ]  38%   [xxxxxxxxxxxxxxxxxxxxxxxx                                      ]  39%   [xxxxxxxxxxxxxxxxxxxxxxxx                                      ]  40%   [xxxxxxxxxxxxxxxxxxxxxxxxx                                     ]  40%   [xxxxxxxxxxxxxxxxxxxxxxxxx                                     ]  41%   [xxxxxxxxxxxxxxxxxxxxxxxxxx                                    ]  41%   [xxxxxxxxxxxxxxxxxxxxxxxxxx                                    ]  42%   [xxxxxxxxxxxxxxxxxxxxxxxxxx                                    ]  42%   [xxxxxxxxxxxxxxxxxxxxxxxxxx                                    ]  43%   [xxxxxxxxxxxxxxxxxxxxxxxxxxx                                   ]  43%   [xxxxxxxxxxxxxxxxxxxxxxxxxxx                                   ]  44%   [xxxxxxxxxxxxxxxxxxxxxxxxxxx                                   ]  44%   [xxxxxxxxxxxxxxxxxxxxxxxxxxx                                   ]  45%   [xxxxxxxxxxxxxxxxxxxxxxxxxxxx                                  ]  45%   [xxxxxxxxxxxxxxxxxxxxxxxxxxxx                                  ]  46%   [xxxxxxxxxxxxxxxxxxxxxxxxxxxxx                                 ]  46%   [xxxxxxxxxxxxxxxxxxxxxxxxxxxxx                                 ]  47%   [xxxxxxxxxxxxxxxxxxxxxxxxxxxxx                                 ]  47%   [xxxxxxxxxxxxxxxxxxxxxxxxxxxxx                                 ]  48%   [xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx                                ]  48%   [xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx                                ]  49%   [xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx                                ]  49%   [xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx                               ]  50%   [xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx                               ]  50%   [xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx                               ]  51%   [xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx                              ]  51%   [xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx                              ]  52%   [xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx                              ]  52%   [xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx                              ]  53%   [xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx                             ]  53%   [xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx                             ]  54%   [xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx                            ]  54%   [xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx                            ]  55%   [xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx                            ]  55%   [xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx                            ]  56%   [xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx                           ]  56%   [xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx                           ]  57%   [xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx                           ]  57%   [xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx                           ]  58%   [xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx                          ]  58%   [xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx                          ]  59%   [xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx                         ]  60%   [xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx                         ]  60%   [xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx                         ]  61%   [xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx                        ]  61%   [xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx                        ]  62%   [xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx                       ]  62%   [xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx                       ]  63%   [xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx                       ]  63%   [xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx                       ]  64%   [xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx                      ]  64%   [xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx                      ]  65%   [xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx                      ]  65%   [xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx                      ]  66%   [xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx                     ]  66%   [xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx                     ]  67%   [xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx                    ]  67%   [xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx                    ]  68%   [xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx                    ]  68%   [xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx                    ]  69%   [xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx                   ]  69%   [xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx                   ]  70%   [xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx                  ]  70%   [xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx                  ]  71%   [xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx                  ]  71%   [xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx                  ]  72%   [xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx                 ]  72%   [xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx                 ]  73%   [xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx                 ]  73%   [xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx                 ]  74%   [xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx                ]  74%   [xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx                ]  75%   [xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx               ]  75%   [xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx               ]  76%   [xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx               ]  76%   [xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx               ]  77%   [xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx              ]  77%   [xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx              ]  78%   [xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx              ]  78%   [xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx             ]  79%   [xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx             ]  80%   [xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx            ]  80%   [xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx            ]  81%   [xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx            ]  81%   [xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx            ]  82%   [xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx           ]  82%   [xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx           ]  83%   [xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx          ]  83%   [xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx          ]  84%   [xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx          ]  84%   [xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx          ]  85%   [xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx         ]  85%   [xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx         ]  86%   [xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx         ]  86%   [xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx         ]  87%   [xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx        ]  87%   [xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx        ]  88%   [xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx       ]  88%   [xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx       ]  89%   [xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx       ]  89%   [xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx       ]  90%   [xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx      ]  90%   [xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx      ]  91%   [xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx      ]  91%   [xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx     ]  92%   [xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx     ]  92%   [xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx     ]  93%   [xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx    ]  93%   [xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx    ]  94%   [xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx    ]  94%   [xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx    ]  95%   [xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx   ]  95%   [xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx   ]  96%   [xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx  ]  96%   [xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx  ]  97%   [xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx  ]  97%   [xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx  ]  98%   [xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx ]  98%   [xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx ]  99%   [xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx] 100% ... done
+-> CSRMatrix: building matrix (N = 3020) with 19614 nonzeros. fill in is 
+   0.215056%, memory usage is 0M.
+-> CSRMatrix: finished creating matrix structure
+-> FEMSolverLE: writing matrix structure to cache
+-> IntrinsicStrainWurzite: the system is strained (or unstrained) into the following directions:
+   direction 0: strained
+   direction 1: free
+   direction 2: strained
+   IntrinsicStrainWurzite: the axes are mapped to the following directions:
+    axis 0 <-  x-axis (a/m plane)
+    axis 1 <-  z-axis (c-axis)
+    axis 2 <-  y-axis (a/m plane)
+   
+-> IntrinsicStrainWurzite: reference lattice constants are:
+    x = 3.189, y = 5.185, z = 3.189
+-> IntrinsicStrainWurzite: the intrinsic strain in material GaN is:
+   (RMatrix 3 x 3)
+            0          0          0 
+            0          0          0 
+            0          0          0 
+   
+-> IntrinsicStrainWurzite: the intrinsic strain in material InGaN0.2 is:
+   (RMatrix 3 x 3)
+   -0.0223267          0          0 
+            0          0          0 
+            0          0 -0.0223267 
+   
+-> IntrinsicStrainWurzite: the intrinsic strain in material AlGaN0.13 is:
+   (RMatrix 3 x 3)
+   0.00313892          0          0 
+            0          0          0 
+            0          0 0.00313892 
+   
+-> IntrinsicStrainWurtzite: used elastic coefficents are:
+   Material       C11       C12       C13       C33       CXYXY     CXZXZ(C44)
+   GaN            390       145       106       398       122.5     105       
+   InGaN0.2       356.6     139       103.2     363.2     108.8     93.6      
+   AlGaN0.13      390.78    143.96    106.26    394.75    123.41    106.43    
+   FEMSolverLE: assembling matrix and rhs 755
+                                                                         [                                                              ]   0%   [                                                              ]   0%   [                                                              ]   0%   [                                                              ]   1%   [x                                                             ]   1%   [x                                                             ]   2%   [x                                                             ]   2%   [x                                                             ]   3%   [xx                                                            ]   3%   [xx                                                            ]   4%   [xxx                                                           ]   4%   [xxx                                                           ]   5%   [xxx                                                           ]   5%   [xxx                                                           ]   6%   [xxxx                                                          ]   6%   [xxxx                                                          ]   7%   [xxxx                                                          ]   7%   [xxxxx                                                         ]   8%   [xxxxx                                                         ]   8%   [xxxxx                                                         ]   9%   [xxxxxx                                                        ]   9%   [xxxxxx                                                        ]  10%   [xxxxxx                                                        ]  10%   [xxxxxx                                                        ]  11%   [xxxxxxx                                                       ]  11%   [xxxxxxx                                                       ]  12%   [xxxxxxxx                                                      ]  12%   [xxxxxxxx                                                      ]  13%   [xxxxxxxx                                                      ]  13%   [xxxxxxxx                                                      ]  14%   [xxxxxxxxx                                                     ]  14%   [xxxxxxxxx                                                     ]  15%   [xxxxxxxxx                                                     ]  15%   [xxxxxxxxx                                                     ]  16%   [xxxxxxxxxx                                                    ]  16%   [xxxxxxxxxx                                                    ]  17%   [xxxxxxxxxxx                                                   ]  17%   [xxxxxxxxxxx                                                   ]  18%   [xxxxxxxxxxx                                                   ]  18%   [xxxxxxxxxxx                                                   ]  19%   [xxxxxxxxxxxx                                                  ]  20%   [xxxxxxxxxxxx                                                  ]  20%   [xxxxxxxxxxxxx                                                 ]  21%   [xxxxxxxxxxxxx                                                 ]  21%   [xxxxxxxxxxxxx                                                 ]  22%   [xxxxxxxxxxxxxx                                                ]  22%   [xxxxxxxxxxxxxx                                                ]  23%   [xxxxxxxxxxxxxx                                                ]  23%   [xxxxxxxxxxxxxx                                                ]  24%   [xxxxxxxxxxxxxxx                                               ]  24%   [xxxxxxxxxxxxxxx                                               ]  25%   [xxxxxxxxxxxxxxxx                                              ]  25%   [xxxxxxxxxxxxxxxx                                              ]  26%   [xxxxxxxxxxxxxxxx                                              ]  26%   [xxxxxxxxxxxxxxxx                                              ]  27%   [xxxxxxxxxxxxxxxxx                                             ]  27%   [xxxxxxxxxxxxxxxxx                                             ]  28%   [xxxxxxxxxxxxxxxxx                                             ]  28%   [xxxxxxxxxxxxxxxxx                                             ]  29%   [xxxxxxxxxxxxxxxxxx                                            ]  29%   [xxxxxxxxxxxxxxxxxx                                            ]  30%   [xxxxxxxxxxxxxxxxxxx                                           ]  30%   [xxxxxxxxxxxxxxxxxxx                                           ]  31%   [xxxxxxxxxxxxxxxxxxx                                           ]  31%   [xxxxxxxxxxxxxxxxxxx                                           ]  32%   [xxxxxxxxxxxxxxxxxxxx                                          ]  32%   [xxxxxxxxxxxxxxxxxxxx                                          ]  33%   [xxxxxxxxxxxxxxxxxxxxx                                         ]  33%   [xxxxxxxxxxxxxxxxxxxxx                                         ]  34%   [xxxxxxxxxxxxxxxxxxxxx                                         ]  34%   [xxxxxxxxxxxxxxxxxxxxx                                         ]  35%   [xxxxxxxxxxxxxxxxxxxxxx                                        ]  35%   [xxxxxxxxxxxxxxxxxxxxxx                                        ]  36%   [xxxxxxxxxxxxxxxxxxxxxx                                        ]  36%   [xxxxxxxxxxxxxxxxxxxxxx                                        ]  37%   [xxxxxxxxxxxxxxxxxxxxxxx                                       ]  37%   [xxxxxxxxxxxxxxxxxxxxxxx                                       ]  38%   [xxxxxxxxxxxxxxxxxxxxxxxx                                      ]  38%   [xxxxxxxxxxxxxxxxxxxxxxxx                                      ]  39%   [xxxxxxxxxxxxxxxxxxxxxxxx                                      ]  40%   [xxxxxxxxxxxxxxxxxxxxxxxxx                                     ]  40%   [xxxxxxxxxxxxxxxxxxxxxxxxx                                     ]  41%   [xxxxxxxxxxxxxxxxxxxxxxxxxx                                    ]  41%   [xxxxxxxxxxxxxxxxxxxxxxxxxx                                    ]  42%   [xxxxxxxxxxxxxxxxxxxxxxxxxx                                    ]  42%   [xxxxxxxxxxxxxxxxxxxxxxxxxx                                    ]  43%   [xxxxxxxxxxxxxxxxxxxxxxxxxxx                                   ]  43%   [xxxxxxxxxxxxxxxxxxxxxxxxxxx                                   ]  44%   [xxxxxxxxxxxxxxxxxxxxxxxxxxx                                   ]  44%   [xxxxxxxxxxxxxxxxxxxxxxxxxxx                                   ]  45%   [xxxxxxxxxxxxxxxxxxxxxxxxxxxx                                  ]  45%   [xxxxxxxxxxxxxxxxxxxxxxxxxxxx                                  ]  46%   [xxxxxxxxxxxxxxxxxxxxxxxxxxxxx                                 ]  46%   [xxxxxxxxxxxxxxxxxxxxxxxxxxxxx                                 ]  47%   [xxxxxxxxxxxxxxxxxxxxxxxxxxxxx                                 ]  47%   [xxxxxxxxxxxxxxxxxxxxxxxxxxxxx                                 ]  48%   [xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx                                ]  48%   [xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx                                ]  49%   [xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx                                ]  49%   [xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx                               ]  50%   [xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx                               ]  50%   [xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx                               ]  51%   [xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx                              ]  51%   [xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx                              ]  52%   [xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx                              ]  52%   [xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx                              ]  53%   [xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx                             ]  53%   [xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx                             ]  54%   [xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx                            ]  54%   [xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx                            ]  55%   [xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx                            ]  55%   [xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx                            ]  56%   [xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx                           ]  56%   [xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx                           ]  57%   [xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx                           ]  57%   [xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx                           ]  58%   [xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx                          ]  58%   [xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx                          ]  59%   [xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx                         ]  60%   [xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx                         ]  60%   [xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx                         ]  61%   [xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx                        ]  61%   [xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx                        ]  62%   [xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx                       ]  62%   [xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx                       ]  63%   [xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx                       ]  63%   [xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx                       ]  64%   [xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx                      ]  64%   [xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx                      ]  65%   [xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx                      ]  65%   [xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx                      ]  66%   [xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx                     ]  66%   [xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx                     ]  67%   [xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx                    ]  67%   [xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx                    ]  68%   [xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx                    ]  68%   [xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx                    ]  69%   [xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx                   ]  69%   [xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx                   ]  70%   [xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx                  ]  70%   [xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx                  ]  71%   [xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx                  ]  71%   [xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx                  ]  72%   [xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx                 ]  72%   [xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx                 ]  73%   [xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx                 ]  73%   [xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx                 ]  74%   [xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx                ]  74%   [xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx                ]  75%   [xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx               ]  75%   [xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx               ]  76%   [xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx               ]  76%   [xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx               ]  77%   [xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx              ]  77%   [xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx              ]  78%   [xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx              ]  78%   [xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx             ]  79%   [xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx             ]  80%   [xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx            ]  80%   [xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx            ]  81%   [xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx            ]  81%   [xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx            ]  82%   [xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx           ]  82%   [xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx           ]  83%   [xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx          ]  83%   [xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx          ]  84%   [xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx          ]  84%   [xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx          ]  85%   [xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx         ]  85%   [xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx         ]  86%   [xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx         ]  86%   [xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx         ]  87%   [xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx        ]  87%   [xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx        ]  88%   [xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx       ]  88%   [xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx       ]  89%   [xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx       ]  89%   [xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx       ]  90%   [xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx      ]  90%   [xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx      ]  91%   [xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx      ]  91%   [xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx     ]  92%   [xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx     ]  92%   [xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx     ]  93%   [xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx    ]  93%   [xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx    ]  94%   [xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx    ]  94%   [xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx    ]  95%   [xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx   ]  95%   [xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx   ]  96%   [xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx  ]  96%   [xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx  ]  97%   [xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx  ]  97%   [xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx  ]  98%   [xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx ]  98%   [xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx ]  99%   [xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx] 100% ... done
+-> FEMSolverLE: enforcing partial dirichlet boundary conditions
+-> FEMSolverLE: enforced 1510 dirichlet b.c. on dof level.
+-> Pardiso: starting with matrix factorization
+-> Pardiso: mapping to fortran indices
+-> Pardiso: starting factorization
+-> pardiso finished factoring matrix
+-> StrainField: writing binary strain data to file ./strain.bin
+-> Geometry: setting new boundary conditions
+-> Geometry: preparing elements for calculation
+[0;0;1m** warning **[0;0;0m you are using wurtzite with effective mass. please 
+   check that the wurtzite strain axes give the correct axis permutation for the 
+   considered system.
+-> KPBase1D2D: using the following axes of quantization:
+   quantized 1 (x) -> <1, 0, 0>
+   quantized 2 (y) -> <0, 0, 1>
+   transversal     -> <0, -1, 0>
+-> KPBase1D2D: the resulting rotation matrix is given by (RMatrix 3 x 3)
+            1          0          0 
+            0          0          1 
+            0         -1          0 
+   
+-> kp 6x6 wurtzite matrix for material GaN uses following parameters:
+   hole effective mass A1   = -7.21
+   hole effective mass A2   = -0.44
+   hole effective mass A3   = 6.68
+   hole effective mass A4   = -3.46
+   hole effective mass A5   = -3.4
+   hole effective mass A6   = -4.9
+   hole spin orbit     A7   = 0.00937         (enabled)
+   spin orbit split delta 1 = 0.01
+   spin orbit split delta 2 = 0.006
+   spin orbit split delta 3 = 0.006
+   valence band edge        = -0.102333
+   vb shift (delta offset)  = 0.016
+   operator ordering        = automatically setting A- to 0
+       => A5+ -3.4, A5- => 0, A6+ => -4.9, A6m => 0
+   nonellipticity           = 0
+   strain potential D1      = -3.6
+   strain potential D2      = 1.7
+   strain potential D3      = 5.2
+   strain potential D4      = -2.7
+   strain potential D5      = -2.8
+   strain potential D6      = -4.3
+   
+-> rotating kp matrix using the given rotation matrix:
+   (RMatrix 3 x 3)
+            1          0          0 
+            0          0          1 
+            0         -1          0 
+   
+   
+-> kp 6x6 wurtzite matrix for material InGaN0.2 uses following parameters:
+   hole effective mass A1   = -7.41
+   hole effective mass A2   = -0.488
+   hole effective mass A3   = 6.858
+   hole effective mass A4   = -3.814
+   hole effective mass A5   = -3.742
+   hole effective mass A6   = -5.112
+   hole spin orbit     A7   = 0.007496        (enabled)
+   spin orbit split delta 1 = 0.0128
+   spin orbit split delta 2 = 0.00514
+   spin orbit split delta 3 = 0.00514
+   valence band edge        = -0
+   vb shift (delta offset)  = 0.01794
+   operator ordering        = automatically setting A- to 0
+       => A5+ -3.742, A5- => 0, A6+ => -5.112, A6m => 0
+   nonellipticity           = 0
+   strain potential D1      = -3.6
+   strain potential D2      = 1.7
+   strain potential D3      = 5.2
+   strain potential D4      = -2.7
+   strain potential D5      = -2.8
+   strain potential D6      = -4.3
+   
+-> rotating kp matrix using the given rotation matrix:
+   (RMatrix 3 x 3)
+            1          0          0 
+            0          0          1 
+            0         -1          0 
+   
+   
+-> kp 6x6 wurtzite matrix for material AlGaN0.13 uses following parameters:
+   hole effective mass A1   = -6.7745
+   hole effective mass A2   = -0.4153
+   hole effective mass A3   = 6.277
+   hole effective mass A4   = -3.1818
+   hole effective mass A5   = -3.1491
+   hole effective mass A6   = -4.4762
+   hole spin orbit     A7   = 0.0081519       (enabled)
+   spin orbit split delta 1 = -0.02081
+   spin orbit split delta 2 = 0.00678
+   spin orbit split delta 3 = 0.00678
+   valence band edge        = -0.125653
+   vb shift (delta offset)  = 0.00300497
+   operator ordering        = automatically setting A- to 0
+       => A5+ -3.1491, A5- => 0, A6+ => -4.4762, A6m => 0
+   nonellipticity           = 0
+   strain potential D1      = -3.509
+   strain potential D2      = 2.116
+   strain potential D3      = 5.746
+   strain potential D4      = -2.869
+   strain potential D5      = -2.865
+   strain potential D6      = -4.092
+   
+-> rotating kp matrix using the given rotation matrix:
+   (RMatrix 3 x 3)
+            1          0          0 
+            0          0          1 
+            0         -1          0 
+   
+   
+-> KPBase: bandedges succsessfully calculated
+-> EffectiveMass: solving for electrons, including strain using following params:
+   GaN: meff = 0.2, ac0 = -10.9, ac1 = -5.5, ac2 = -10.9
+   InGaN0.2: meff = 0.174, ac0 = -9.76, ac1 = -4.92, ac2 = -9.76
+   AlGaN0.13: meff = 0.213, ac0 = -10.9, ac1 = -4.382, ac2 = -10.9
+-> TCLbandedges: lowest cb edge = 3.02048, highest vb edge = 0.0649541
+-> TCLbandedges: unbound cb edge = 3.02048, unbound vb edge = 0.0649541
+-> BinaryDataIO: writing element data to file ./bandedges.bin
+-> BinaryDataIO: writing data to output stream
+-> tdkp timing statistics
+     overall:                        0.725224 s
+     building of FE grid:            0.020645 s
+     matrix graph building:          0.009652 s
+     matrix assembly:                0.364803 s
+     linear equation solving:        0.017429 s
+     result postprocessing:           4.8e-05 s
+    peak memory usage: virtual = 278 MB,  resident = 16 MB
+   
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+ 						t h a n k   y o u
+ 						  for using tdkp
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -

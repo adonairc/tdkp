@@ -1,0 +1,30 @@
+{
+  file = cb_disp.dat,
+  tag  = "cb bandstructure kapon wire kp 4x4",
+  col  = 0:1:2:3:4:5:6:7,
+  rel  = 0.01,
+  abs  = 1.0e-2 
+}
+{
+  file = vb_disp.dat,
+  tag  = "vb bandstructure kapon wire kp 4x4",
+  col  = 0:1:2:3:4:5:6:7,
+  rel  = 0.01,
+  abs  = 1.0e-2 
+}
+{
+  file = optics_n0.012_p0.012.dat,
+  tag  = "gain kapon wire kp 4x4",
+  col  = 0:1:2:3,
+  rel  = 0.01,
+  abs  = 0.00001
+}
+{
+  file = optics_n0.012_p0.012.dat,
+  tag  = "luminescence kapon wire kp 4x4",
+  col  = 0:4:5:6:7,
+  rel  = 0.01,
+  abs  = 1.0e5
+}
+
+

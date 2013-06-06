@@ -1,0 +1,105 @@
+{
+  file = cb_disp_kp4x4.dat,
+  tag  = "tow bulk GaAs cb bandstructure 4x4",
+  col  = 0:1,
+  rel  = 1.0e-2,
+  abs  = 1.0e-2
+}
+{
+  file = cb_disp_kp6x6.dat,
+  tag  = "tow bulk GaAs cb bandstructure 6x6",
+  col  = 0:1,
+  rel  = 1.0e-2,
+  abs  = 1.0e-2
+}
+{
+  file = cb_disp_kp8x8.dat,
+  tag  = "tow bulk GaAs cb bandstructure 8x8",
+  col  = 0:1:2,
+  rel  = 1.0e-2,
+  abs  = 1.0e-2
+}
+{
+  file = vb_disp_kp4x4.dat,
+  tag  = "tow bulk GaAs vb bandstructure 4x4",
+  col  = 0:1:2:3:4,
+  rel  = 1.0e-2,
+  abs  = 1.0e-2
+}
+{
+  file = vb_disp_kp6x6.dat,
+  tag  = "tow bulk GaAs vb bandstructure 6x6",
+  col  = 0:1:2:3:4:5:6,
+  rel  = 1.0e-2,
+  abs  = 1.0e-2
+}
+{
+  file = vb_disp_kp8x8.dat,
+  tag  = "tow bulk GaAs vb bandstructure 8x8",
+  col  = 0:1:2:3:4:5:6,
+  rel  = 1.0e-2,
+  abs  = 1.0e-2
+}
+{
+  file = transitions_kp4x4.dat,
+  tag  = "tow bulk GaAs transitions 4x4",
+  col  = 0:1:2:3:4:5:6,
+  rel  = 1.0e-2,
+  abs  = 1.0e-29
+}
+{
+  file = transitions_kp6x6.dat,
+  tag  = "tow bulk GaAs transitions 6x6",
+  col  = 0:1:3:5:6:8,
+  rel  = 1.0e-2,
+  abs  = 1.0e-29
+}
+{
+  file = transitions_kp8x8.dat,
+  tag  = "tow bulk GaAs transitions 8x8",
+  col  = 0:1:5:6:9,
+  rel  = 1.0e-2,
+  abs  = 1.0e-29
+}
+{
+  file = optics_kp4x4.dat,
+  tag  = "tow bulk GaAs gain 4x4",
+  col  = 0:1:2:3,
+  rel  = 1.0e-2,
+  abs  = 1.0e-4
+}
+{
+  file = optics_kp6x6.dat,
+  tag  = "tow bulk GaAs gain 6x6",
+  col  = 0:1:2:3,
+  rel  = 1.0e-2,
+  abs  = 1.0e-4
+}
+{
+  file = optics_kp8x8.dat,
+  tag  = "tow bulk GaAs gain 8x8",
+  col  = 0:1:2:3,
+  rel  = 1.0e-2,
+  abs  = 1.0e-4
+}
+{
+  file = optics_kp4x4.dat,
+  tag  = "tow bulk GaAs luminescence 4x4",
+  col  = 0:4:5:6:7,
+  rel  = 1.0e-2,
+  abs  = 1.0e2
+}
+{
+  file = optics_kp6x6.dat,
+  tag  = "tow bulk GaAs luminescence 6x6",
+  col  = 0:4:5:6:7,
+  rel  = 1.0e-2,
+  abs  = 5.0e2
+}
+{
+  file = optics_kp8x8.dat,
+  tag  = "tow bulk GaAs luminescence 8x8",
+  col  = 0:4:5:6:7,
+  rel  = 1.0e-2,
+  abs  = 5.0e2
+}

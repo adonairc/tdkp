@@ -1,0 +1,21 @@
+# tdkpconfdef: material_zincblende.cnf
+
+#
+# material paramaters for GaAs used by stier et al.  
+# in phys rev b. vol 59, nr 8, p 5688 (1999)
+#
+
+electron_effective_mass = 0.0667
+
+conduction_band_edge    =  1.345
+valence_band_edge       =  0.0
+
+luttinger_parameter_1 = 7.10
+luttinger_parameter_2 = 2.02
+luttinger_parameter_3 = 2.91
+
+optical_matrix_element = 20.0
+bandgap                = 1.518
+
+spin_orbit_splitting    = 0.34
+

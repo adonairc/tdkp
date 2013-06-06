@@ -1,0 +1,7 @@
+{
+  file = element_strain.dat,
+  tag  = "2D zincblende quantum wire strains",
+  col  = 0:1:2:3:4:5:6:7,
+  rel  = 1.0e-10,
+  abs  = 1.0e-10 
+}

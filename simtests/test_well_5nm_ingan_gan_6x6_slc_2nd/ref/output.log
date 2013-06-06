@@ -1,0 +1,1734 @@
+->  ------------------------------------------------------
+    
+->  started at 07/28/10 15:48:28
+->  ------------------------------------------------------
+-> TCLplot: the following data will, if available, be plotted: bandedges_binary 
+   optical_ascii bands_ascii bands_med transitions_med probabilities_ascii 
+   optical_med
+-> DFISEGridReader: reading took 0.0193191 seconds
+-> InputParser:
+     dimension:          1
+     vertices:           385
+     elements:           384
+     regions:            3
+     polynomial degree:  2
+   
+-> InputParser: creating vertex nodes
+-> InputParser: creating elements
+-> InputParser: building boundary vertex, edges and faces list
+-> InputParser: structure has 0 edges and 0 faces.
+-> InputParser: collecting boundary objects
+-> InputParser: creating element boundaries
+-> InputParser: setting element boundaries to elements
+-> InputParser: creating additional nodes
+-> InputParser: setting region to elements
+-> InputParser: final grid has
+     nodes:            769
+     edges:            0
+     faces:            0
+-> InputParser: preparing geometry
+-> Geometry: preparing elements for calculation
+-> PropertyContainer: reading property container configuration from file 
+   /home/vepi/src/release/amd64/debug/tdkp/conf/material_wurtzite.cnf
+-> conduction_band_edge                  3.39291
+   elastic_constant_C11                  390
+   elastic_constant_C12                  145
+   elastic_constant_C13                  106
+   elastic_constant_C33                  398
+   elastic_constant_C44                  105
+   electron_effective_mass               0.2
+   electron_effective_mass_a_plane       0.2
+   electron_effective_mass_c_plane       0.2
+   electron_effective_mass_transverse    0.2
+   hole_effective_mass_A1                -7.21
+   hole_effective_mass_A2                -0.44
+   hole_effective_mass_A3                6.68
+   hole_effective_mass_A4                -3.46
+   hole_effective_mass_A5                -3.4
+   hole_effective_mass_A6                -4.9
+   hole_spin_orbit_A7                    0.00937
+   lattice_constant_a                    3.189
+   lattice_constant_c                    5.185
+   spin_orbit_split_delta_1              0.01
+   spin_orbit_split_delta_2              0.0056
+   spin_orbit_split_delta_3              0.0056
+   strain_potential_D1                   -3.7
+   strain_potential_D2                   4.5
+   strain_potential_D3                   8.2
+   strain_potential_D4                   -4.1
+   strain_potential_D5                   -4
+   strain_potential_D6                   -5.5
+   strain_potential_ac_aa                -10.9
+   strain_potential_ac_cc                -0.4
+   strain_potential_av_aa                0.4
+   strain_potential_av_cc                4.5
+   valence_band_edge                     -0.0446929
+   
+-> PropertyContainer: reading property container configuration from file 
+   /home/vepi/src/release/amd64/debug/tdkp/conf/material_wurtzite.cnf
+-> conduction_band_edge                  3.04346
+   elastic_constant_C11                  373.3
+   elastic_constant_C12                  142
+   elastic_constant_C13                  104.6
+   elastic_constant_C33                  380.6
+   elastic_constant_C44                  99.3
+   electron_effective_mass               0.187
+   electron_effective_mass_a_plane       0.187
+   electron_effective_mass_c_plane       0.187
+   electron_effective_mass_transverse    0.187
+   hole_effective_mass_A1                -7.31
+   hole_effective_mass_A2                -0.464
+   hole_effective_mass_A3                6.769
+   hole_effective_mass_A4                -3.637
+   hole_effective_mass_A5                -3.571
+   hole_effective_mass_A6                -5.006
+   hole_spin_orbit_A7                    0.008433
+   lattice_constant_a                    3.2246
+   lattice_constant_c                    5.2368
+   spin_orbit_split_delta_1              0.013
+   spin_orbit_split_delta_2              0.005207
+   spin_orbit_split_delta_3              0.005207
+   strain_potential_D1                   -3.7
+   strain_potential_D2                   4.5
+   strain_potential_D3                   8.2
+   strain_potential_D4                   -4.1
+   strain_potential_D5                   -4
+   strain_potential_D6                   -5.5
+   strain_potential_ac_aa                -10.12
+   strain_potential_ac_cc                -0.26
+   strain_potential_av_aa                0.4
+   strain_potential_av_cc                4.5
+   valence_band_edge                     -0
+   
+-> no PMLs have be defined therefore disabling PML calculation
+-> TCLgrid: using InGaN0.1 as quantized material 
+-> TCLgrid: quantized volume 5.0
+-> KPBase1D2D: the resulting rotation matrix is given by (RMatrix 3 x 3)
+            1          0          0 
+            0   0.707107  -0.707107 
+            0   0.707107   0.707107 
+   
+-> kp 6x6 wurtzite matrix for material GaN uses following parameters:
+   hole effective mass A1   = -7.21
+   hole effective mass A2   = -0.44
+   hole effective mass A3   = 6.68
+   hole effective mass A4   = -3.46
+   hole effective mass A5   = -3.4
+   hole effective mass A6   = -4.9
+   hole spin orbit     A7   = 0.00937         (enabled)
+   spin orbit split delta 1 = 0.01
+   spin orbit split delta 2 = 0.0056
+   spin orbit split delta 3 = 0.0056
+   valence band edge        = -0.0446929
+   vb shift (delta offset)  = 0.0156
+   operator ordering        = automatically setting A- to 0
+       => A5+ -3.4, A5- => 0, A6+ => -4.9, A6m => 0
+   nonellipticity           = 0
+   strain potential D1      = -3.7
+   strain potential D2      = 4.5
+   strain potential D3      = 8.2
+   strain potential D4      = -4.1
+   strain potential D5      = -4
+   strain potential D6      = -5.5
+   
+-> rotating kp matrix using the given rotation matrix:
+   (RMatrix 3 x 3)
+            1          0          0 
+            0   0.707107  -0.707107 
+            0   0.707107   0.707107 
+   
+   
+-> kp 6x6 wurtzite matrix for material InGaN0.1 uses following parameters:
+   hole effective mass A1   = -7.31
+   hole effective mass A2   = -0.464
+   hole effective mass A3   = 6.769
+   hole effective mass A4   = -3.637
+   hole effective mass A5   = -3.571
+   hole effective mass A6   = -5.006
+   hole spin orbit     A7   = 0.008433        (enabled)
+   spin orbit split delta 1 = 0.013
+   spin orbit split delta 2 = 0.005207
+   spin orbit split delta 3 = 0.005207
+   valence band edge        = -0
+   vb shift (delta offset)  = 0.018207
+   operator ordering        = automatically setting A- to 0
+       => A5+ -3.571, A5- => 0, A6+ => -5.006, A6m => 0
+   nonellipticity           = 0
+   strain potential D1      = -3.7
+   strain potential D2      = 4.5
+   strain potential D3      = 8.2
+   strain potential D4      = -4.1
+   strain potential D5      = -4
+   strain potential D6      = -5.5
+   
+-> rotating kp matrix using the given rotation matrix:
+   (RMatrix 3 x 3)
+            1          0          0 
+            0   0.707107  -0.707107 
+            0   0.707107   0.707107 
+   
+   
+-> KPBase: bandedges succsessfully calculated
+-> EffectiveMass: solving for electrons using following params:
+   GaN: meff = 0.2
+   InGaN0.1: meff = 0.187
+-> TCLbandedges: lowest cb edge = 3.04346, highest vb edge = 0
+-> TCLbandedges: unbound cb edge = 3.39291, unbound vb edge = -0.0446929
+-> BinaryDataIO: writing element data to file ./bandedges.bin
+-> BinaryDataIO: writing data to output stream
+-> Geometry: setting new boundary conditions
+-> Geometry: preparing elements for calculation
+-> LinearSolver::factory: UmfpackSolverComplex is used as linear equation solver
+-> ArpackSIPardisoSolver: is used as the eigensolver
+-> FEMSolverGEVP: rhs matrix is treated as having diagonal blocks with equal 
+   entries
+-> FEMSolverGEVP: linewise parallel building of nonsymmetric matrix structure 
+   with 2 active threads where the average processor takes care of 383 matrix lines.
+-> CSRMatrix: building matrix (N = 767) with 3063 nonzeros. fill in is 0.520662%, 
+   memory usage is 0M.
+-> CSRMatrix: finished creating matrix structure
+-> CSRMatrix: building matrix (N = 767) with 3063 nonzeros. fill in is 0.520662%, 
+   memory usage is 0M.
+-> CSRMatrix: finished creating matrix structure
+-> FEMSolverGEVP: caching matrix structure is not supported for given matrix type
+-> EffectiveMass: solving for electrons using following params:
+   GaN: meff = 0.2
+   InGaN0.1: meff = 0.187
+-> FEMSolverGEVP: linewise parallel assembly of matrix with 2 active threads 
+   where the average processor takes care of 383 matrix lines.
+-> FEMSolverGEVP: searching eigenvalues
+-> UmfpackSolverComplex: reordering csr to csc
+-> UmfpackSolverComplex: new matrix structure, symbolic factorization phase 
+   needed (reordering)
+-> UmfpackSolverComplex: numeric factorization phase
+-> z1 (znaupd_)       = 0.179635
+   z2 (adaptive_omp)  = 0.000270367
+   z3 (Bx -> d/ido 1) = 0.000261307
+   z4 (solve eq)      = 0.0577812
+   z5 (Bx -> d/ido 2) = 0.0138557
+   z6 (progr.meter)   = 0.00149584
+   total zi           = 0.253299
+   
+-> the eigensolver found 12 of 12 eigenvalues
+-> EigenProblem3D: added solution 0 with ev: (3.08946,2.8332e-16)
+-> EigenProblem3D: added solution 1 with ev: (3.22075,3.00822e-16)
+-> EigenProblem3D: added solution 2 with ev: (3.39375,-2.21042e-16)
+-> EigenProblem3D: added solution 3 with ev: (3.45987,3.49742e-15)
+-> EigenProblem3D: added solution 4 with ev: (3.49961,-9.74908e-16)
+-> EigenProblem3D: added solution 5 with ev: (3.61967,2.24604e-16)
+-> EigenProblem3D: added solution 6 with ev: (3.7068,-5.53793e-16)
+-> EigenProblem3D: added solution 7 with ev: (3.83052,-4.79428e-15)
+-> EigenProblem3D: added solution 8 with ev: (3.99203,-3.8671e-15)
+-> EigenProblem3D: added solution 9 with ev: (4.13097,2.97782e-15)
+-> EigenProblem3D: added solution 10 with ev: (4.31958,-3.60285e-15)
+-> EigenProblem3D: added solution 11 with ev: (4.52265,3.15182e-15)
+-> KPBase1D2D: solving kp quantum well equation in the radial approximation:
+   transversal direction: <0, 0.707107, 0.707107>
+   k-space-range:         from 0.0001 to 1.5 [1/nm]
+   number of subbands:    16
+   type of subbands:      holes
+   strain field:          not set
+   potential energy:      not set
+-> LinearSolver::factory: UmfpackSolverComplex is used as linear equation solver
+-> ArpackSIPardisoSolver: is used as the eigensolver
+-> FEMSolverGEVP: rhs matrix is treated as having diagonal blocks with equal 
+   entries
+-> FEMSolverGEVP: linewise parallel building of nonsymmetric matrix structure 
+   with 2 active threads where the average processor takes care of 2298 matrix 
+   lines.
+-> CSRMatrix: building matrix (N = 4602) with 67386 nonzeros. fill in is 
+   0.318183%, memory usage is 0M.
+-> CSRMatrix: finished creating matrix structure
+-> CSRMatrix: building matrix (N = 767) with 3063 nonzeros. fill in is 0.520662%, 
+   memory usage is 0M.
+-> CSRMatrix: finished creating matrix structure
+-> FEMSolverGEVP: caching matrix structure is not supported for given matrix type
+-> kp 6x6 wurtzite matrix for material GaN uses following parameters:
+   hole effective mass A1   = -7.21
+   hole effective mass A2   = -0.44
+   hole effective mass A3   = 6.68
+   hole effective mass A4   = -3.46
+   hole effective mass A5   = -3.4
+   hole effective mass A6   = -4.9
+   hole spin orbit     A7   = 0.00937         (enabled)
+   spin orbit split delta 1 = 0.01
+   spin orbit split delta 2 = 0.0056
+   spin orbit split delta 3 = 0.0056
+   valence band edge        = -0.0446929
+   vb shift (delta offset)  = 0.0156
+   operator ordering        = automatically setting A- to 0
+       => A5+ -3.4, A5- => 0, A6+ => -4.9, A6m => 0
+   nonellipticity           = 0
+   strain potential D1      = -3.7
+   strain potential D2      = 4.5
+   strain potential D3      = 8.2
+   strain potential D4      = -4.1
+   strain potential D5      = -4
+   strain potential D6      = -5.5
+   
+-> rotating kp matrix using the given rotation matrix:
+   (RMatrix 3 x 3)
+            1          0          0 
+            0   0.707107  -0.707107 
+            0   0.707107   0.707107 
+   
+   
+-> kp 6x6 wurtzite matrix for material InGaN0.1 uses following parameters:
+   hole effective mass A1   = -7.31
+   hole effective mass A2   = -0.464
+   hole effective mass A3   = 6.769
+   hole effective mass A4   = -3.637
+   hole effective mass A5   = -3.571
+   hole effective mass A6   = -5.006
+   hole spin orbit     A7   = 0.008433        (enabled)
+   spin orbit split delta 1 = 0.013
+   spin orbit split delta 2 = 0.005207
+   spin orbit split delta 3 = 0.005207
+   valence band edge        = -0
+   vb shift (delta offset)  = 0.018207
+   operator ordering        = automatically setting A- to 0
+       => A5+ -3.571, A5- => 0, A6+ => -5.006, A6m => 0
+   nonellipticity           = 0
+   strain potential D1      = -3.7
+   strain potential D2      = 4.5
+   strain potential D3      = 8.2
+   strain potential D4      = -4.1
+   strain potential D5      = -4
+   strain potential D6      = -5.5
+   
+-> rotating kp matrix using the given rotation matrix:
+   (RMatrix 3 x 3)
+            1          0          0 
+            0   0.707107  -0.707107 
+            0   0.707107   0.707107 
+   
+   
+-> KPBase1D2D: iteration 1 of 32 for k = 0.0001 [1/nm]. expecting kp states at 0 
+   [eV] (user defined) for the next cycle.
+-> FEMSolverGEVP: linewise parallel assembly of matrix with 2 active threads 
+   where the average processor takes care of 383 matrix lines.
+-> FEMSolverGEVP: searching eigenvalues
+-> UmfpackSolverComplex: reordering csr to csc
+-> UmfpackSolverComplex: new matrix structure, symbolic factorization phase 
+   needed (reordering)
+-> UmfpackSolverComplex: numeric factorization phase
+-> z1 (znaupd_)       = 0.222799
+   z2 (adaptive_omp)  = 0.000256538
+   z3 (Bx -> d/ido 1) = 0.000187397
+   z4 (solve eq)      = 0.801381
+   z5 (Bx -> d/ido 2) = 0.0217545
+   z6 (progr.meter)   = 0.00283694
+   total zi           = 1.04921
+   
+-> the eigensolver found 16 of 16 eigenvalues
+-> KPBase1D2D: added solution 0 with ev: (-0.00657545,3.5287e-15)
+-> KPBase1D2D: added solution 1 with ev: (-0.006576,-2.26082e-15)
+-> KPBase1D2D: added solution 2 with ev: (-0.0168346,7.84559e-18)
+-> KPBase1D2D: added solution 3 with ev: (-0.0168375,-9.87595e-15)
+-> KPBase1D2D: added solution 4 with ev: (-0.0233453,-4.71693e-15)
+-> KPBase1D2D: added solution 5 with ev: (-0.0233471,-4.38746e-15)
+-> KPBase1D2D: added solution 6 with ev: (-0.0303794,4.00247e-15)
+-> KPBase1D2D: added solution 7 with ev: (-0.030383,4.57889e-15)
+-> KPBase1D2D: added solution 8 with ev: (-0.0366801,-3.66489e-15)
+-> KPBase1D2D: added solution 9 with ev: (-0.0366825,7.43673e-16)
+-> KPBase1D2D: added solution 10 with ev: (-0.0423829,7.29868e-15)
+-> KPBase1D2D: added solution 11 with ev: (-0.042383,-3.41208e-15)
+-> KPBase1D2D: added solution 12 with ev: (-0.0506246,2.35375e-15)
+-> KPBase1D2D: added solution 13 with ev: (-0.0506256,-4.06256e-15)
+-> KPBase1D2D: added solution 14 with ev: (-0.0521742,3.00394e-15)
+-> KPBase1D2D: added solution 15 with ev: (-0.052175,-8.08088e-16)
+-> KPBase1D2D: iteration 2 of 32 for k = 0.0484839 [1/nm]. expecting kp states at 
+   -0.00657545 [eV] for the next cycle.
+-> FEMSolverGEVP: linewise parallel assembly of matrix with 2 active threads 
+   where the average processor takes care of 383 matrix lines.
+-> FEMSolverGEVP: searching eigenvalues
+-> UmfpackSolverComplex: reordering csr to csc
+-> UmfpackSolverComplex: numeric factorization phase
+-> z1 (znaupd_)       = 0.190789
+   z2 (adaptive_omp)  = 0.000265837
+   z3 (Bx -> d/ido 1) = 0.000217438
+   z4 (solve eq)      = 0.806036
+   z5 (Bx -> d/ido 2) = 0.0273235
+   z6 (progr.meter)   = 0.00279474
+   total zi           = 1.02743
+   
+-> the eigensolver found 16 of 16 eigenvalues
+-> KPBase1D2D: added solution 0 with ev: (-0.00663171,-4.97495e-20)
+-> KPBase1D2D: added solution 1 with ev: (-0.0069018,3.99341e-20)
+-> KPBase1D2D: added solution 2 with ev: (-0.0162148,-2.01523e-18)
+-> KPBase1D2D: added solution 3 with ev: (-0.0175772,5.76026e-19)
+-> KPBase1D2D: added solution 4 with ev: (-0.023016,4.41226e-18)
+-> KPBase1D2D: added solution 5 with ev: (-0.0239148,4.22526e-18)
+-> KPBase1D2D: added solution 6 with ev: (-0.029504,-1.75179e-18)
+-> KPBase1D2D: added solution 7 with ev: (-0.0312108,1.86168e-17)
+-> KPBase1D2D: added solution 8 with ev: (-0.0360529,-7.45068e-18)
+-> KPBase1D2D: added solution 9 with ev: (-0.0371725,-3.01623e-18)
+-> KPBase1D2D: added solution 10 with ev: (-0.0426368,-1.2302e-16)
+-> KPBase1D2D: added solution 11 with ev: (-0.0426674,4.39687e-17)
+-> KPBase1D2D: added solution 12 with ev: (-0.0505869,1.03747e-15)
+-> KPBase1D2D: added solution 13 with ev: (-0.051069,-6.39306e-17)
+-> KPBase1D2D: added solution 14 with ev: (-0.0521721,-6.80891e-16)
+-> KPBase1D2D: added solution 15 with ev: (-0.0525392,-1.64958e-16)
+-> KPBase1D2D: iteration 3 of 32 for k = 0.0968677 [1/nm]. expecting kp states at 
+   -0.00663171 [eV] for the next cycle.
+-> FEMSolverGEVP: linewise parallel assembly of matrix with 2 active threads 
+   where the average processor takes care of 383 matrix lines.
+-> FEMSolverGEVP: searching eigenvalues
+-> UmfpackSolverComplex: reordering csr to csc
+-> UmfpackSolverComplex: numeric factorization phase
+-> z1 (znaupd_)       = 0.248436
+   z2 (adaptive_omp)  = 0.000255346
+   z3 (Bx -> d/ido 1) = 0.000186443
+   z4 (solve eq)      = 0.799174
+   z5 (Bx -> d/ido 2) = 0.0207007
+   z6 (progr.meter)   = 0.00278258
+   total zi           = 1.07154
+   
+-> the eigensolver found 16 of 16 eigenvalues
+-> KPBase1D2D: added solution 0 with ev: (-0.00701832,-3.46128e-16)
+-> KPBase1D2D: added solution 1 with ev: (-0.00758577,1.4639e-15)
+-> KPBase1D2D: added solution 2 with ev: (-0.0157646,-1.70059e-14)
+-> KPBase1D2D: added solution 3 with ev: (-0.0183778,2.29642e-15)
+-> KPBase1D2D: added solution 4 with ev: (-0.022901,-3.62244e-17)
+-> KPBase1D2D: added solution 5 with ev: (-0.0247599,-2.73799e-15)
+-> KPBase1D2D: added solution 6 with ev: (-0.0286599,2.56845e-15)
+-> KPBase1D2D: added solution 7 with ev: (-0.031964,-6.11596e-16)
+-> KPBase1D2D: added solution 8 with ev: (-0.0354637,-5.60946e-15)
+-> KPBase1D2D: added solution 9 with ev: (-0.0375413,-2.1692e-15)
+-> KPBase1D2D: added solution 10 with ev: (-0.0432706,3.26832e-15)
+-> KPBase1D2D: added solution 11 with ev: (-0.043342,-3.81187e-15)
+-> KPBase1D2D: added solution 12 with ev: (-0.0509022,-1.82998e-14)
+-> KPBase1D2D: added solution 13 with ev: (-0.051826,-4.45745e-15)
+-> KPBase1D2D: added solution 14 with ev: (-0.0525187,6.69333e-15)
+-> KPBase1D2D: added solution 15 with ev: (-0.0532516,-5.05182e-16)
+-> KPBase1D2D: iteration 4 of 32 for k = 0.145252 [1/nm]. expecting kp states at 
+   -0.00701832 [eV] for the next cycle.
+-> FEMSolverGEVP: linewise parallel assembly of matrix with 2 active threads 
+   where the average processor takes care of 383 matrix lines.
+-> FEMSolverGEVP: searching eigenvalues
+-> UmfpackSolverComplex: reordering csr to csc
+-> UmfpackSolverComplex: numeric factorization phase
+-> z1 (znaupd_)       = 0.239236
+   z2 (adaptive_omp)  = 0.000284672
+   z3 (Bx -> d/ido 1) = 0.000216961
+   z4 (solve eq)      = 0.836898
+   z5 (Bx -> d/ido 2) = 0.0242176
+   z6 (progr.meter)   = 0.00289798
+   total zi           = 1.10375
+   
+-> the eigensolver found 16 of 16 eigenvalues
+-> KPBase1D2D: added solution 0 with ev: (-0.0076189,-1.79054e-19)
+-> KPBase1D2D: added solution 1 with ev: (-0.00854393,8.04014e-20)
+-> KPBase1D2D: added solution 2 with ev: (-0.0155347,-4.11946e-19)
+-> KPBase1D2D: added solution 3 with ev: (-0.0191669,-4.97287e-17)
+-> KPBase1D2D: added solution 4 with ev: (-0.0229952,2.82314e-16)
+-> KPBase1D2D: added solution 5 with ev: (-0.0259193,5.46651e-16)
+-> KPBase1D2D: added solution 6 with ev: (-0.0279431,-1.47267e-15)
+-> KPBase1D2D: added solution 7 with ev: (-0.0326649,1.02884e-15)
+-> KPBase1D2D: added solution 8 with ev: (-0.0350903,7.06451e-16)
+-> KPBase1D2D: added solution 9 with ev: (-0.0379413,-8.12921e-16)
+-> KPBase1D2D: added solution 10 with ev: (-0.0440219,4.54158e-16)
+-> KPBase1D2D: added solution 11 with ev: (-0.0441516,1.60938e-15)
+-> KPBase1D2D: added solution 12 with ev: (-0.0514375,3.01812e-15)
+-> KPBase1D2D: added solution 13 with ev: (-0.0526654,1.58261e-15)
+-> KPBase1D2D: added solution 14 with ev: (-0.0531895,-3.061e-16)
+-> KPBase1D2D: added solution 15 with ev: (-0.054231,-9.85239e-15)
+-> KPBase1D2D: iteration 5 of 32 for k = 0.193635 [1/nm]. expecting kp states at 
+   -0.0076189 [eV] for the next cycle.
+-> FEMSolverGEVP: linewise parallel assembly of matrix with 2 active threads 
+   where the average processor takes care of 383 matrix lines.
+-> FEMSolverGEVP: searching eigenvalues
+-> UmfpackSolverComplex: reordering csr to csc
+-> UmfpackSolverComplex: numeric factorization phase
+-> z1 (znaupd_)       = 0.234884
+   z2 (adaptive_omp)  = 0.00027442
+   z3 (Bx -> d/ido 1) = 0.000173807
+   z4 (solve eq)      = 0.792721
+   z5 (Bx -> d/ido 2) = 0.0203347
+   z6 (progr.meter)   = 0.00273561
+   total zi           = 1.05112
+   
+-> the eigensolver found 16 of 16 eigenvalues
+-> KPBase1D2D: added solution 0 with ev: (-0.00827883,4.25972e-19)
+-> KPBase1D2D: added solution 1 with ev: (-0.00965993,-1.39566e-18)
+-> KPBase1D2D: added solution 2 with ev: (-0.0155683,2.18605e-16)
+-> KPBase1D2D: added solution 3 with ev: (-0.0198749,2.52418e-15)
+-> KPBase1D2D: added solution 4 with ev: (-0.0232961,3.06181e-16)
+-> KPBase1D2D: added solution 5 with ev: (-0.0273066,4.04829e-16)
+-> KPBase1D2D: added solution 6 with ev: (-0.0275093,-3.28069e-15)
+-> KPBase1D2D: added solution 7 with ev: (-0.0333526,-9.65678e-16)
+-> KPBase1D2D: added solution 8 with ev: (-0.0350271,-1.80534e-14)
+-> KPBase1D2D: added solution 9 with ev: (-0.0384837,7.37323e-16)
+-> KPBase1D2D: added solution 10 with ev: (-0.0448012,1.01944e-15)
+-> KPBase1D2D: added solution 11 with ev: (-0.0449233,-4.69931e-16)
+-> KPBase1D2D: added solution 12 with ev: (-0.0520559,2.15433e-15)
+-> KPBase1D2D: added solution 13 with ev: (-0.0533878,-7.17222e-16)
+-> KPBase1D2D: added solution 14 with ev: (-0.0541973,1.35093e-15)
+-> KPBase1D2D: added solution 15 with ev: (-0.0553206,-9.43722e-16)
+-> KPBase1D2D: iteration 6 of 32 for k = 0.242019 [1/nm]. expecting kp states at 
+   -0.00827883 [eV] for the next cycle.
+-> FEMSolverGEVP: linewise parallel assembly of matrix with 2 active threads 
+   where the average processor takes care of 383 matrix lines.
+-> FEMSolverGEVP: searching eigenvalues
+-> UmfpackSolverComplex: reordering csr to csc
+-> UmfpackSolverComplex: numeric factorization phase
+-> z1 (znaupd_)       = 0.240266
+   z2 (adaptive_omp)  = 0.000267744
+   z3 (Bx -> d/ido 1) = 0.000165701
+   z4 (solve eq)      = 0.788524
+   z5 (Bx -> d/ido 2) = 0.0203998
+   z6 (progr.meter)   = 0.00282979
+   total zi           = 1.05245
+   
+-> the eigensolver found 16 of 16 eigenvalues
+-> KPBase1D2D: added solution 0 with ev: (-0.00886302,1.17154e-19)
+-> KPBase1D2D: added solution 1 with ev: (-0.010827,2.97613e-19)
+-> KPBase1D2D: added solution 2 with ev: (-0.0158725,5.58897e-18)
+-> KPBase1D2D: added solution 3 with ev: (-0.0204758,3.05976e-16)
+-> KPBase1D2D: added solution 4 with ev: (-0.0237767,-2.61828e-15)
+-> KPBase1D2D: added solution 5 with ev: (-0.0271398,1.24601e-16)
+-> KPBase1D2D: added solution 6 with ev: (-0.029089,1.86163e-15)
+-> KPBase1D2D: added solution 7 with ev: (-0.0340496,9.68686e-16)
+-> KPBase1D2D: added solution 8 with ev: (-0.0353056,2.73395e-15)
+-> KPBase1D2D: added solution 9 with ev: (-0.0392084,9.20567e-16)
+-> KPBase1D2D: added solution 10 with ev: (-0.0456144,-8.50229e-16)
+-> KPBase1D2D: added solution 11 with ev: (-0.0456375,5.62423e-16)
+-> KPBase1D2D: added solution 12 with ev: (-0.0526768,-2.54559e-15)
+-> KPBase1D2D: added solution 13 with ev: (-0.0540338,9.77672e-17)
+-> KPBase1D2D: added solution 14 with ev: (-0.0554091,3.83303e-16)
+-> KPBase1D2D: added solution 15 with ev: (-0.056438,1.84429e-15)
+-> KPBase1D2D: iteration 7 of 32 for k = 0.290403 [1/nm]. expecting kp states at 
+   -0.00886302 [eV] for the next cycle.
+-> FEMSolverGEVP: linewise parallel assembly of matrix with 2 active threads 
+   where the average processor takes care of 383 matrix lines.
+-> FEMSolverGEVP: searching eigenvalues
+-> UmfpackSolverComplex: reordering csr to csc
+-> UmfpackSolverComplex: numeric factorization phase
+-> z1 (znaupd_)       = 0.199798
+   z2 (adaptive_omp)  = 0.00024724
+   z3 (Bx -> d/ido 1) = 0.000200987
+   z4 (solve eq)      = 0.812494
+   z5 (Bx -> d/ido 2) = 0.0317247
+   z6 (progr.meter)   = 0.00275707
+   total zi           = 1.04722
+   
+-> the eigensolver found 16 of 16 eigenvalues
+-> KPBase1D2D: added solution 0 with ev: (-0.00931748,-1.16102e-19)
+-> KPBase1D2D: added solution 1 with ev: (-0.0119774,-1.26829e-18)
+-> KPBase1D2D: added solution 2 with ev: (-0.0163968,-7.14933e-19)
+-> KPBase1D2D: added solution 3 with ev: (-0.0210002,7.79673e-18)
+-> KPBase1D2D: added solution 4 with ev: (-0.0243777,3.18058e-16)
+-> KPBase1D2D: added solution 5 with ev: (-0.0271225,4.90093e-16)
+-> KPBase1D2D: added solution 6 with ev: (-0.0308163,6.8595e-16)
+-> KPBase1D2D: added solution 7 with ev: (-0.0347661,-3.24103e-17)
+-> KPBase1D2D: added solution 8 with ev: (-0.0359097,3.46554e-16)
+-> KPBase1D2D: added solution 9 with ev: (-0.0401085,-2.69339e-15)
+-> KPBase1D2D: added solution 10 with ev: (-0.0463091,-9.11024e-16)
+-> KPBase1D2D: added solution 11 with ev: (-0.0465067,7.44265e-16)
+-> KPBase1D2D: added solution 12 with ev: (-0.0532856,1.07596e-15)
+-> KPBase1D2D: added solution 13 with ev: (-0.0546678,-1.85424e-15)
+-> KPBase1D2D: added solution 14 with ev: (-0.0566216,-8.39204e-16)
+-> KPBase1D2D: added solution 15 with ev: (-0.0575357,-3.28661e-16)
+-> KPBase1D2D: iteration 8 of 32 for k = 0.338787 [1/nm]. expecting kp states at 
+   -0.00931748 [eV] for the next cycle.
+-> FEMSolverGEVP: linewise parallel assembly of matrix with 2 active threads 
+   where the average processor takes care of 383 matrix lines.
+-> FEMSolverGEVP: searching eigenvalues
+-> UmfpackSolverComplex: reordering csr to csc
+-> UmfpackSolverComplex: numeric factorization phase
+-> z1 (znaupd_)       = 0.230698
+   z2 (adaptive_omp)  = 0.000254393
+   z3 (Bx -> d/ido 1) = 0.000366449
+   z4 (solve eq)      = 0.794289
+   z5 (Bx -> d/ido 2) = 0.0241032
+   z6 (progr.meter)   = 0.00271106
+   total zi           = 1.05242
+   
+-> the eigensolver found 16 of 16 eigenvalues
+-> KPBase1D2D: added solution 0 with ev: (-0.00967234,5.20068e-20)
+-> KPBase1D2D: added solution 1 with ev: (-0.0130818,-7.46806e-19)
+-> KPBase1D2D: added solution 2 with ev: (-0.0170637,-8.92059e-19)
+-> KPBase1D2D: added solution 3 with ev: (-0.0214995,2.75051e-17)
+-> KPBase1D2D: added solution 4 with ev: (-0.0250424,1.04371e-15)
+-> KPBase1D2D: added solution 5 with ev: (-0.0273483,-1.84459e-16)
+-> KPBase1D2D: added solution 6 with ev: (-0.0324057,-9.33164e-16)
+-> KPBase1D2D: added solution 7 with ev: (-0.0355398,-1.11504e-15)
+-> KPBase1D2D: added solution 8 with ev: (-0.0367638,-9.94864e-16)
+-> KPBase1D2D: added solution 9 with ev: (-0.041147,-3.72369e-16)
+-> KPBase1D2D: added solution 10 with ev: (-0.0469938,-1.89389e-16)
+-> KPBase1D2D: added solution 11 with ev: (-0.0474642,4.29789e-16)
+-> KPBase1D2D: added solution 12 with ev: (-0.0539043,5.32689e-15)
+-> KPBase1D2D: added solution 13 with ev: (-0.0553084,-2.68705e-15)
+-> KPBase1D2D: added solution 14 with ev: (-0.0576854,-1.22227e-15)
+-> KPBase1D2D: added solution 15 with ev: (-0.0585706,-2.26077e-15)
+-> KPBase1D2D: iteration 9 of 32 for k = 0.387171 [1/nm]. expecting kp states at 
+   -0.00967234 [eV] for the next cycle.
+-> FEMSolverGEVP: linewise parallel assembly of matrix with 2 active threads 
+   where the average processor takes care of 383 matrix lines.
+-> FEMSolverGEVP: searching eigenvalues
+-> UmfpackSolverComplex: reordering csr to csc
+-> UmfpackSolverComplex: numeric factorization phase
+-> z1 (znaupd_)       = 0.20793
+   z2 (adaptive_omp)  = 0.000250578
+   z3 (Bx -> d/ido 1) = 0.000209093
+   z4 (solve eq)      = 0.794893
+   z5 (Bx -> d/ido 2) = 0.0256314
+   z6 (progr.meter)   = 0.00272703
+   total zi           = 1.03164
+   
+-> the eigensolver found 16 of 16 eigenvalues
+-> KPBase1D2D: added solution 0 with ev: (-0.00999047,-1.97524e-19)
+-> KPBase1D2D: added solution 1 with ev: (-0.0141352,3.81675e-16)
+-> KPBase1D2D: added solution 2 with ev: (-0.0178206,-1.5454e-15)
+-> KPBase1D2D: added solution 3 with ev: (-0.0220121,5.02758e-15)
+-> KPBase1D2D: added solution 4 with ev: (-0.0257451,4.71487e-15)
+-> KPBase1D2D: added solution 5 with ev: (-0.0277933,-1.77933e-15)
+-> KPBase1D2D: added solution 6 with ev: (-0.0337615,-1.72398e-16)
+-> KPBase1D2D: added solution 7 with ev: (-0.0364054,-1.73816e-15)
+-> KPBase1D2D: added solution 8 with ev: (-0.0377764,-6.32553e-16)
+-> KPBase1D2D: added solution 9 with ev: (-0.0422763,3.74799e-15)
+-> KPBase1D2D: added solution 10 with ev: (-0.0477091,4.19941e-15)
+-> KPBase1D2D: added solution 11 with ev: (-0.0484813,-2.30217e-17)
+-> KPBase1D2D: added solution 12 with ev: (-0.0545601,7.11646e-17)
+-> KPBase1D2D: added solution 13 with ev: (-0.0559667,6.296e-17)
+-> KPBase1D2D: added solution 14 with ev: (-0.0585665,-3.29542e-15)
+-> KPBase1D2D: added solution 15 with ev: (-0.0595564,3.32463e-16)
+-> KPBase1D2D: iteration 10 of 32 for k = 0.435555 [1/nm]. expecting kp states at 
+   -0.00999047 [eV] for the next cycle.
+-> FEMSolverGEVP: linewise parallel assembly of matrix with 2 active threads 
+   where the average processor takes care of 383 matrix lines.
+-> FEMSolverGEVP: searching eigenvalues
+-> UmfpackSolverComplex: reordering csr to csc
+-> UmfpackSolverComplex: numeric factorization phase
+-> z1 (znaupd_)       = 0.236343
+   z2 (adaptive_omp)  = 0.00026083
+   z3 (Bx -> d/ido 1) = 0.000175476
+   z4 (solve eq)      = 0.784788
+   z5 (Bx -> d/ido 2) = 0.0204172
+   z6 (progr.meter)   = 0.00270176
+   total zi           = 1.04469
+   
+-> the eigensolver found 16 of 16 eigenvalues
+-> KPBase1D2D: added solution 0 with ev: (-0.010327,3.85725e-19)
+-> KPBase1D2D: added solution 1 with ev: (-0.0151455,-4.29444e-16)
+-> KPBase1D2D: added solution 2 with ev: (-0.0186534,1.44684e-15)
+-> KPBase1D2D: added solution 3 with ev: (-0.022559,5.46886e-15)
+-> KPBase1D2D: added solution 4 with ev: (-0.0264891,-1.56276e-15)
+-> KPBase1D2D: added solution 5 with ev: (-0.0284254,2.53363e-16)
+-> KPBase1D2D: added solution 6 with ev: (-0.0349111,7.71133e-16)
+-> KPBase1D2D: added solution 7 with ev: (-0.0373536,-6.0513e-16)
+-> KPBase1D2D: added solution 8 with ev: (-0.03888,2.83317e-16)
+-> KPBase1D2D: added solution 9 with ev: (-0.0434591,9.86576e-16)
+-> KPBase1D2D: added solution 10 with ev: (-0.04847,5.65934e-15)
+-> KPBase1D2D: added solution 11 with ev: (-0.0495396,1.38231e-15)
+-> KPBase1D2D: added solution 12 with ev: (-0.0552735,-3.95883e-16)
+-> KPBase1D2D: added solution 13 with ev: (-0.0566541,-6.97491e-16)
+-> KPBase1D2D: added solution 14 with ev: (-0.0593267,1.16684e-15)
+-> KPBase1D2D: added solution 15 with ev: (-0.0605318,-1.07464e-15)
+-> KPBase1D2D: iteration 11 of 32 for k = 0.483939 [1/nm]. expecting kp states at 
+   -0.010327 [eV] for the next cycle.
+-> FEMSolverGEVP: linewise parallel assembly of matrix with 2 active threads 
+   where the average processor takes care of 383 matrix lines.
+-> FEMSolverGEVP: searching eigenvalues
+-> UmfpackSolverComplex: reordering csr to csc
+-> UmfpackSolverComplex: numeric factorization phase
+-> z1 (znaupd_)       = 0.240334
+   z2 (adaptive_omp)  = 0.000268698
+   z3 (Bx -> d/ido 1) = 0.000190258
+   z4 (solve eq)      = 0.787421
+   z5 (Bx -> d/ido 2) = 0.0197773
+   z6 (progr.meter)   = 0.00274205
+   total zi           = 1.05073
+   
+-> the eigensolver found 16 of 16 eigenvalues
+-> KPBase1D2D: added solution 0 with ev: (-0.010719,-7.90689e-16)
+-> KPBase1D2D: added solution 1 with ev: (-0.0161273,5.18318e-14)
+-> KPBase1D2D: added solution 2 with ev: (-0.0195694,-4.78013e-16)
+-> KPBase1D2D: added solution 3 with ev: (-0.0231511,6.31757e-14)
+-> KPBase1D2D: added solution 4 with ev: (-0.0272881,-2.9316e-14)
+-> KPBase1D2D: added solution 5 with ev: (-0.029215,4.37556e-15)
+-> KPBase1D2D: added solution 6 with ev: (-0.0359443,5.4942e-15)
+-> KPBase1D2D: added solution 7 with ev: (-0.0383596,-2.01944e-15)
+-> KPBase1D2D: added solution 8 with ev: (-0.0400315,-7.76544e-15)
+-> KPBase1D2D: added solution 9 with ev: (-0.0446761,-4.07583e-15)
+-> KPBase1D2D: added solution 10 with ev: (-0.049285,1.58295e-14)
+-> KPBase1D2D: added solution 11 with ev: (-0.0506255,1.91374e-15)
+-> KPBase1D2D: added solution 12 with ev: (-0.056058,-4.30436e-15)
+-> KPBase1D2D: added solution 13 with ev: (-0.0573829,2.93833e-15)
+-> KPBase1D2D: added solution 14 with ev: (-0.0600448,-2.2369e-15)
+-> KPBase1D2D: added solution 15 with ev: (-0.0615262,6.55111e-15)
+-> KPBase1D2D: iteration 12 of 32 for k = 0.532323 [1/nm]. expecting kp states at 
+   -0.010719 [eV] for the next cycle.
+-> FEMSolverGEVP: linewise parallel assembly of matrix with 2 active threads 
+   where the average processor takes care of 383 matrix lines.
+-> FEMSolverGEVP: searching eigenvalues
+-> UmfpackSolverComplex: reordering csr to csc
+-> UmfpackSolverComplex: numeric factorization phase
+-> z1 (znaupd_)       = 0.24433
+   z2 (adaptive_omp)  = 0.000290394
+   z3 (Bx -> d/ido 1) = 0.000183821
+   z4 (solve eq)      = 0.814249
+   z5 (Bx -> d/ido 2) = 0.0205696
+   z6 (progr.meter)   = 0.00301552
+   total zi           = 1.08264
+   
+-> the eigensolver found 16 of 16 eigenvalues
+-> KPBase1D2D: added solution 0 with ev: (-0.0111887,-2.77118e-15)
+-> KPBase1D2D: added solution 1 with ev: (-0.0171002,1.14698e-15)
+-> KPBase1D2D: added solution 2 with ev: (-0.0205786,-2.59356e-15)
+-> KPBase1D2D: added solution 3 with ev: (-0.0237957,4.15582e-15)
+-> KPBase1D2D: added solution 4 with ev: (-0.0281534,-7.6755e-15)
+-> KPBase1D2D: added solution 5 with ev: (-0.0301408,-3.93087e-15)
+-> KPBase1D2D: added solution 6 with ev: (-0.036939,-2.30385e-15)
+-> KPBase1D2D: added solution 7 with ev: (-0.0394144,3.96356e-15)
+-> KPBase1D2D: added solution 8 with ev: (-0.0412113,-7.84148e-15)
+-> KPBase1D2D: added solution 9 with ev: (-0.0459241,3.6773e-15)
+-> KPBase1D2D: added solution 10 with ev: (-0.0501588,2.70753e-15)
+-> KPBase1D2D: added solution 11 with ev: (-0.0517323,6.94753e-16)
+-> KPBase1D2D: added solution 12 with ev: (-0.0569223,-6.99313e-16)
+-> KPBase1D2D: added solution 13 with ev: (-0.0581648,2.34277e-15)
+-> KPBase1D2D: added solution 14 with ev: (-0.0607771,-1.6807e-15)
+-> KPBase1D2D: added solution 15 with ev: (-0.0625586,1.3486e-15)
+-> KPBase1D2D: iteration 13 of 32 for k = 0.580706 [1/nm]. expecting kp states at 
+   -0.0111887 [eV] for the next cycle.
+-> FEMSolverGEVP: linewise parallel assembly of matrix with 2 active threads 
+   where the average processor takes care of 383 matrix lines.
+-> FEMSolverGEVP: searching eigenvalues
+-> UmfpackSolverComplex: reordering csr to csc
+-> UmfpackSolverComplex: numeric factorization phase
+-> z1 (znaupd_)       = 0.248654
+   z2 (adaptive_omp)  = 0.000298738
+   z3 (Bx -> d/ido 1) = 0.000235081
+   z4 (solve eq)      = 0.835191
+   z5 (Bx -> d/ido 2) = 0.020642
+   z6 (progr.meter)   = 0.0028646
+   total zi           = 1.10789
+   
+-> the eigensolver found 16 of 16 eigenvalues
+-> KPBase1D2D: added solution 0 with ev: (-0.0117488,1.28275e-19)
+-> KPBase1D2D: added solution 1 with ev: (-0.0180852,8.73213e-17)
+-> KPBase1D2D: added solution 2 with ev: (-0.0216865,9.68651e-17)
+-> KPBase1D2D: added solution 3 with ev: (-0.0244993,-7.9606e-16)
+-> KPBase1D2D: added solution 4 with ev: (-0.0290898,-1.77442e-16)
+-> KPBase1D2D: added solution 5 with ev: (-0.0311899,-9.66285e-16)
+-> KPBase1D2D: added solution 6 with ev: (-0.0379422,3.25662e-15)
+-> KPBase1D2D: added solution 7 with ev: (-0.0405233,3.97416e-15)
+-> KPBase1D2D: added solution 8 with ev: (-0.0424173,2.74227e-15)
+-> KPBase1D2D: added solution 9 with ev: (-0.0472081,4.80388e-16)
+-> KPBase1D2D: added solution 10 with ev: (-0.0510937,-4.22368e-15)
+-> KPBase1D2D: added solution 11 with ev: (-0.0528582,-2.62263e-15)
+-> KPBase1D2D: added solution 12 with ev: (-0.0578711,1.04348e-18)
+-> KPBase1D2D: added solution 13 with ev: (-0.0590101,2.21612e-15)
+-> KPBase1D2D: added solution 14 with ev: (-0.0615583,1.07456e-15)
+-> KPBase1D2D: added solution 15 with ev: (-0.0636395,9.77881e-16)
+-> KPBase1D2D: iteration 14 of 32 for k = 0.62909 [1/nm]. expecting kp states at 
+   -0.0117488 [eV] for the next cycle.
+-> FEMSolverGEVP: linewise parallel assembly of matrix with 2 active threads 
+   where the average processor takes care of 383 matrix lines.
+-> FEMSolverGEVP: searching eigenvalues
+-> UmfpackSolverComplex: reordering csr to csc
+-> UmfpackSolverComplex: numeric factorization phase
+-> z1 (znaupd_)       = 0.252482
+   z2 (adaptive_omp)  = 0.00031352
+   z3 (Bx -> d/ido 1) = 0.000210285
+   z4 (solve eq)      = 0.854887
+   z5 (Bx -> d/ido 2) = 0.0254068
+   z6 (progr.meter)   = 0.00295305
+   total zi           = 1.13625
+   
+-> the eigensolver found 16 of 16 eigenvalues
+-> KPBase1D2D: added solution 0 with ev: (-0.0124058,1.6378e-19)
+-> KPBase1D2D: added solution 1 with ev: (-0.0191021,5.85319e-18)
+-> KPBase1D2D: added solution 2 with ev: (-0.0228942,-6.74722e-18)
+-> KPBase1D2D: added solution 3 with ev: (-0.0252679,-2.14451e-17)
+-> KPBase1D2D: added solution 4 with ev: (-0.0300987,-5.2096e-16)
+-> KPBase1D2D: added solution 5 with ev: (-0.0323552,-2.28596e-16)
+-> KPBase1D2D: added solution 6 with ev: (-0.0389794,1.25636e-15)
+-> KPBase1D2D: added solution 7 with ev: (-0.0416956,6.69768e-16)
+-> KPBase1D2D: added solution 8 with ev: (-0.0436555,-3.1639e-16)
+-> KPBase1D2D: added solution 9 with ev: (-0.0485364,1.55891e-15)
+-> KPBase1D2D: added solution 10 with ev: (-0.0520914,-4.84479e-16)
+-> KPBase1D2D: added solution 11 with ev: (-0.054004,8.8783e-17)
+-> KPBase1D2D: added solution 12 with ev: (-0.0589068,8.1948e-16)
+-> KPBase1D2D: added solution 13 with ev: (-0.0599268,-5.34839e-16)
+-> KPBase1D2D: added solution 14 with ev: (-0.0624103,1.58103e-15)
+-> KPBase1D2D: added solution 15 with ev: (-0.064774,-2.78934e-16)
+-> KPBase1D2D: iteration 15 of 32 for k = 0.677474 [1/nm]. expecting kp states at 
+   -0.0124058 [eV] for the next cycle.
+-> FEMSolverGEVP: linewise parallel assembly of matrix with 2 active threads 
+   where the average processor takes care of 383 matrix lines.
+-> FEMSolverGEVP: searching eigenvalues
+-> UmfpackSolverComplex: reordering csr to csc
+-> UmfpackSolverComplex: numeric factorization phase
+-> z1 (znaupd_)       = 0.227818
+   z2 (adaptive_omp)  = 0.00026536
+   z3 (Bx -> d/ido 1) = 0.000193834
+   z4 (solve eq)      = 0.830275
+   z5 (Bx -> d/ido 2) = 0.0244024
+   z6 (progr.meter)   = 0.00279045
+   total zi           = 1.08575
+   
+-> the eigensolver found 16 of 16 eigenvalues
+-> KPBase1D2D: added solution 0 with ev: (-0.0131631,1.42735e-19)
+-> KPBase1D2D: added solution 1 with ev: (-0.0201673,-4.27758e-18)
+-> KPBase1D2D: added solution 2 with ev: (-0.0242003,-6.11764e-17)
+-> KPBase1D2D: added solution 3 with ev: (-0.0261067,-4.10947e-16)
+-> KPBase1D2D: added solution 4 with ev: (-0.0311794,-1.38373e-15)
+-> KPBase1D2D: added solution 5 with ev: (-0.033632,-8.4828e-16)
+-> KPBase1D2D: added solution 6 with ev: (-0.0400645,5.70444e-15)
+-> KPBase1D2D: added solution 7 with ev: (-0.0429405,4.65007e-17)
+-> KPBase1D2D: added solution 8 with ev: (-0.0449337,-3.32686e-16)
+-> KPBase1D2D: added solution 9 with ev: (-0.0499174,-1.40792e-15)
+-> KPBase1D2D: added solution 10 with ev: (-0.0531537,4.45705e-16)
+-> KPBase1D2D: added solution 11 with ev: (-0.0551724,8.02864e-16)
+-> KPBase1D2D: added solution 12 with ev: (-0.0600287,-3.45838e-16)
+-> KPBase1D2D: added solution 13 with ev: (-0.0609203,4.25515e-16)
+-> KPBase1D2D: added solution 14 with ev: (-0.0633486,1.71625e-16)
+-> KPBase1D2D: added solution 15 with ev: (-0.0659637,3.0936e-15)
+-> KPBase1D2D: iteration 16 of 32 for k = 0.725858 [1/nm]. expecting kp states at 
+   -0.0131631 [eV] for the next cycle.
+-> FEMSolverGEVP: linewise parallel assembly of matrix with 2 active threads 
+   where the average processor takes care of 383 matrix lines.
+-> FEMSolverGEVP: searching eigenvalues
+-> UmfpackSolverComplex: reordering csr to csc
+-> UmfpackSolverComplex: numeric factorization phase
+-> z1 (znaupd_)       = 0.243578
+   z2 (adaptive_omp)  = 0.000262976
+   z3 (Bx -> d/ido 1) = 0.00021863
+   z4 (solve eq)      = 0.847431
+   z5 (Bx -> d/ido 2) = 0.0255244
+   z6 (progr.meter)   = 0.00300312
+   total zi           = 1.12002
+   
+-> the eigensolver found 16 of 16 eigenvalues
+-> KPBase1D2D: added solution 0 with ev: (-0.0140219,7.12116e-20)
+-> KPBase1D2D: added solution 1 with ev: (-0.021293,-3.51664e-18)
+-> KPBase1D2D: added solution 2 with ev: (-0.0256034,4.297e-16)
+-> KPBase1D2D: added solution 3 with ev: (-0.0270205,-1.32514e-15)
+-> KPBase1D2D: added solution 4 with ev: (-0.0323316,4.08362e-15)
+-> KPBase1D2D: added solution 5 with ev: (-0.0350173,5.03488e-15)
+-> KPBase1D2D: added solution 6 with ev: (-0.041206,-8.28579e-16)
+-> KPBase1D2D: added solution 7 with ev: (-0.0442653,-1.04595e-15)
+-> KPBase1D2D: added solution 8 with ev: (-0.0462587,1.19209e-15)
+-> KPBase1D2D: added solution 9 with ev: (-0.0513578,1.30815e-15)
+-> KPBase1D2D: added solution 10 with ev: (-0.0542826,-3.61384e-16)
+-> KPBase1D2D: added solution 11 with ev: (-0.0563671,1.50513e-15)
+-> KPBase1D2D: added solution 12 with ev: (-0.0612336,1.51409e-15)
+-> KPBase1D2D: added solution 13 with ev: (-0.0619941,1.37066e-15)
+-> KPBase1D2D: added solution 14 with ev: (-0.0643851,-2.20501e-15)
+-> KPBase1D2D: added solution 15 with ev: (-0.0672089,1.40093e-15)
+-> KPBase1D2D: iteration 17 of 32 for k = 0.774242 [1/nm]. expecting kp states at 
+   -0.0140219 [eV] for the next cycle.
+-> FEMSolverGEVP: linewise parallel assembly of matrix with 2 active threads 
+   where the average processor takes care of 383 matrix lines.
+-> FEMSolverGEVP: searching eigenvalues
+-> UmfpackSolverComplex: reordering csr to csc
+-> UmfpackSolverComplex: numeric factorization phase
+-> z1 (znaupd_)       = 0.237922
+   z2 (adaptive_omp)  = 0.000276327
+   z3 (Bx -> d/ido 1) = 0.00018549
+   z4 (solve eq)      = 0.80233
+   z5 (Bx -> d/ido 2) = 0.0208848
+   z6 (progr.meter)   = 0.00285602
+   total zi           = 1.06445
+   
+-> the eigensolver found 16 of 16 eigenvalues
+-> KPBase1D2D: added solution 0 with ev: (-0.0149821,8.19322e-19)
+-> KPBase1D2D: added solution 1 with ev: (-0.0224877,-4.64642e-16)
+-> KPBase1D2D: added solution 2 with ev: (-0.0271021,2.75709e-15)
+-> KPBase1D2D: added solution 3 with ev: (-0.0280128,4.82041e-15)
+-> KPBase1D2D: added solution 4 with ev: (-0.0335552,2.23867e-15)
+-> KPBase1D2D: added solution 5 with ev: (-0.0365083,-1.28129e-14)
+-> KPBase1D2D: added solution 6 with ev: (-0.0424093,1.51345e-15)
+-> KPBase1D2D: added solution 7 with ev: (-0.0456754,1.99132e-15)
+-> KPBase1D2D: added solution 8 with ev: (-0.0476359,-5.42103e-16)
+-> KPBase1D2D: added solution 9 with ev: (-0.0528624,9.87763e-15)
+-> KPBase1D2D: added solution 10 with ev: (-0.0554811,4.52009e-15)
+-> KPBase1D2D: added solution 11 with ev: (-0.0575928,-2.71867e-15)
+-> KPBase1D2D: added solution 12 with ev: (-0.0625152,-1.42457e-17)
+-> KPBase1D2D: added solution 13 with ev: (-0.0631501,-2.31248e-15)
+-> KPBase1D2D: added solution 14 with ev: (-0.0655302,4.09875e-15)
+-> KPBase1D2D: added solution 15 with ev: (-0.0685095,3.02443e-16)
+-> KPBase1D2D: iteration 18 of 32 for k = 0.822626 [1/nm]. expecting kp states at 
+   -0.0149821 [eV] for the next cycle.
+-> FEMSolverGEVP: linewise parallel assembly of matrix with 2 active threads 
+   where the average processor takes care of 383 matrix lines.
+-> FEMSolverGEVP: searching eigenvalues
+-> UmfpackSolverComplex: reordering csr to csc
+-> UmfpackSolverComplex: numeric factorization phase
+-> z1 (znaupd_)       = 0.248454
+   z2 (adaptive_omp)  = 0.000278473
+   z3 (Bx -> d/ido 1) = 0.000184298
+   z4 (solve eq)      = 0.885478
+   z5 (Bx -> d/ido 2) = 0.0223858
+   z6 (progr.meter)   = 0.00285935
+   total zi           = 1.15964
+   
+-> the eigensolver found 16 of 16 eigenvalues
+-> KPBase1D2D: added solution 0 with ev: (-0.0160431,6.19408e-19)
+-> KPBase1D2D: added solution 1 with ev: (-0.0237568,-7.4648e-16)
+-> KPBase1D2D: added solution 2 with ev: (-0.028696,9.79157e-16)
+-> KPBase1D2D: added solution 3 with ev: (-0.0290867,3.69918e-15)
+-> KPBase1D2D: added solution 4 with ev: (-0.0348507,-5.12474e-15)
+-> KPBase1D2D: added solution 5 with ev: (-0.0381027,-8.91494e-16)
+-> KPBase1D2D: added solution 6 with ev: (-0.0436784,-2.6558e-15)
+-> KPBase1D2D: added solution 7 with ev: (-0.0471746,8.01797e-16)
+-> KPBase1D2D: added solution 8 with ev: (-0.0490696,-4.90558e-16)
+-> KPBase1D2D: added solution 9 with ev: (-0.0544327,-1.46276e-15)
+-> KPBase1D2D: added solution 10 with ev: (-0.0567541,3.68769e-15)
+-> KPBase1D2D: added solution 11 with ev: (-0.0588547,-1.81669e-16)
+-> KPBase1D2D: added solution 12 with ev: (-0.0638637,-1.43308e-15)
+-> KPBase1D2D: added solution 13 with ev: (-0.0643909,-5.17833e-16)
+-> KPBase1D2D: added solution 14 with ev: (-0.0667928,7.09953e-16)
+-> KPBase1D2D: added solution 15 with ev: (-0.069865,-3.15458e-15)
+-> KPBase1D2D: iteration 19 of 32 for k = 0.87101 [1/nm]. expecting kp states at 
+   -0.0160431 [eV] for the next cycle.
+-> FEMSolverGEVP: linewise parallel assembly of matrix with 2 active threads 
+   where the average processor takes care of 383 matrix lines.
+-> FEMSolverGEVP: searching eigenvalues
+-> UmfpackSolverComplex: reordering csr to csc
+-> UmfpackSolverComplex: numeric factorization phase
+-> z1 (znaupd_)       = 0.242723
+   z2 (adaptive_omp)  = 0.000288248
+   z3 (Bx -> d/ido 1) = 0.000170708
+   z4 (solve eq)      = 0.805329
+   z5 (Bx -> d/ido 2) = 0.0209427
+   z6 (progr.meter)   = 0.00276017
+   total zi           = 1.07221
+   
+-> the eigensolver found 16 of 16 eigenvalues
+-> KPBase1D2D: added solution 0 with ev: (-0.017204,5.94604e-16)
+-> KPBase1D2D: added solution 1 with ev: (-0.025104,9.00539e-16)
+-> KPBase1D2D: added solution 2 with ev: (-0.0302441,-3.08563e-15)
+-> KPBase1D2D: added solution 3 with ev: (-0.0303852,1.57529e-14)
+-> KPBase1D2D: added solution 4 with ev: (-0.036219,-1.289e-15)
+-> KPBase1D2D: added solution 5 with ev: (-0.0397984,5.06897e-14)
+-> KPBase1D2D: added solution 6 with ev: (-0.0450162,2.856e-15)
+-> KPBase1D2D: added solution 7 with ev: (-0.0487657,-1.42053e-14)
+-> KPBase1D2D: added solution 8 with ev: (-0.0505629,-2.21107e-15)
+-> KPBase1D2D: added solution 9 with ev: (-0.0560666,1.56082e-14)
+-> KPBase1D2D: added solution 10 with ev: (-0.0581092,1.69586e-14)
+-> KPBase1D2D: added solution 11 with ev: (-0.0601583,-1.42218e-15)
+-> KPBase1D2D: added solution 12 with ev: (-0.065266,5.92486e-15)
+-> KPBase1D2D: added solution 13 with ev: (-0.0657213,-2.87921e-15)
+-> KPBase1D2D: added solution 14 with ev: (-0.0681801,5.53746e-15)
+-> KPBase1D2D: added solution 15 with ev: (-0.0712719,-1.50788e-16)
+-> KPBase1D2D: iteration 20 of 32 for k = 0.919394 [1/nm]. expecting kp states at 
+   -0.017204 [eV] for the next cycle.
+-> FEMSolverGEVP: linewise parallel assembly of matrix with 2 active threads 
+   where the average processor takes care of 383 matrix lines.
+-> FEMSolverGEVP: searching eigenvalues
+-> UmfpackSolverComplex: reordering csr to csc
+-> UmfpackSolverComplex: numeric factorization phase
+-> z1 (znaupd_)       = 0.257284
+   z2 (adaptive_omp)  = 0.000280142
+   z3 (Bx -> d/ido 1) = 0.00018549
+   z4 (solve eq)      = 0.820574
+   z5 (Bx -> d/ido 2) = 0.0200548
+   z6 (progr.meter)   = 0.00284958
+   total zi           = 1.10123
+   
+-> the eigensolver found 16 of 16 eigenvalues
+-> KPBase1D2D: added solution 0 with ev: (-0.0184636,-7.14235e-17)
+-> KPBase1D2D: added solution 1 with ev: (-0.0265312,3.02987e-16)
+-> KPBase1D2D: added solution 2 with ev: (-0.0314874,2.25687e-15)
+-> KPBase1D2D: added solution 3 with ev: (-0.0321692,-7.19041e-15)
+-> KPBase1D2D: added solution 4 with ev: (-0.0376612,1.21054e-17)
+-> KPBase1D2D: added solution 5 with ev: (-0.0415932,-4.01599e-14)
+-> KPBase1D2D: added solution 6 with ev: (-0.0464253,7.58264e-15)
+-> KPBase1D2D: added solution 7 with ev: (-0.0504504,6.30425e-16)
+-> KPBase1D2D: added solution 8 with ev: (-0.0521183,-1.88625e-15)
+-> KPBase1D2D: added solution 9 with ev: (-0.0577565,5.06985e-15)
+-> KPBase1D2D: added solution 10 with ev: (-0.0595586,-6.94078e-15)
+-> KPBase1D2D: added solution 11 with ev: (-0.0615092,-5.36898e-16)
+-> KPBase1D2D: added solution 12 with ev: (-0.0667095,3.34487e-15)
+-> KPBase1D2D: added solution 13 with ev: (-0.0671459,-2.52138e-16)
+-> KPBase1D2D: added solution 14 with ev: (-0.0696966,8.28509e-16)
+-> KPBase1D2D: added solution 15 with ev: (-0.072688,2.8562e-15)
+-> KPBase1D2D: iteration 21 of 32 for k = 0.967777 [1/nm]. expecting kp states at 
+   -0.0184636 [eV] for the next cycle.
+-> FEMSolverGEVP: linewise parallel assembly of matrix with 2 active threads 
+   where the average processor takes care of 383 matrix lines.
+-> FEMSolverGEVP: searching eigenvalues
+-> UmfpackSolverComplex: reordering csr to csc
+-> UmfpackSolverComplex: numeric factorization phase
+-> z1 (znaupd_)       = 0.235859
+   z2 (adaptive_omp)  = 0.000283957
+   z3 (Bx -> d/ido 1) = 0.000197172
+   z4 (solve eq)      = 0.800391
+   z5 (Bx -> d/ido 2) = 0.0199499
+   z6 (progr.meter)   = 0.00274491
+   total zi           = 1.05943
+   
+-> the eigensolver found 16 of 16 eigenvalues
+-> KPBase1D2D: added solution 0 with ev: (-0.0198208,1.2386e-17)
+-> KPBase1D2D: added solution 1 with ev: (-0.0280398,7.28316e-16)
+-> KPBase1D2D: added solution 2 with ev: (-0.0328174,1.22014e-15)
+-> KPBase1D2D: added solution 3 with ev: (-0.0340488,-2.3029e-15)
+-> KPBase1D2D: added solution 4 with ev: (-0.0391786,-1.25377e-15)
+-> KPBase1D2D: added solution 5 with ev: (-0.0434852,2.63485e-16)
+-> KPBase1D2D: added solution 6 with ev: (-0.047908,-1.35967e-15)
+-> KPBase1D2D: added solution 7 with ev: (-0.05223,-2.0603e-15)
+-> KPBase1D2D: added solution 8 with ev: (-0.0537378,5.09786e-15)
+-> KPBase1D2D: added solution 9 with ev: (-0.0594879,-6.66821e-15)
+-> KPBase1D2D: added solution 10 with ev: (-0.0611203,6.08777e-15)
+-> KPBase1D2D: added solution 11 with ev: (-0.0629125,1.33312e-15)
+-> KPBase1D2D: added solution 12 with ev: (-0.0681914,4.48171e-15)
+-> KPBase1D2D: added solution 13 with ev: (-0.0686626,-3.7492e-16)
+-> KPBase1D2D: added solution 14 with ev: (-0.0713438,-1.75188e-16)
+-> KPBase1D2D: added solution 15 with ev: (-0.074049,4.21926e-16)
+-> KPBase1D2D: iteration 22 of 32 for k = 1.01616 [1/nm]. expecting kp states at 
+   -0.0198208 [eV] for the next cycle.
+-> FEMSolverGEVP: linewise parallel assembly of matrix with 2 active threads 
+   where the average processor takes care of 383 matrix lines.
+-> FEMSolverGEVP: searching eigenvalues
+-> UmfpackSolverComplex: reordering csr to csc
+-> UmfpackSolverComplex: numeric factorization phase
+-> z1 (znaupd_)       = 0.224094
+   z2 (adaptive_omp)  = 0.000279903
+   z3 (Bx -> d/ido 1) = 0.000183582
+   z4 (solve eq)      = 0.829248
+   z5 (Bx -> d/ido 2) = 0.0274489
+   z6 (progr.meter)   = 0.0030489
+   total zi           = 1.0843
+   
+-> the eigensolver found 16 of 16 eigenvalues
+-> KPBase1D2D: added solution 0 with ev: (-0.0212743,7.3701e-19)
+-> KPBase1D2D: added solution 1 with ev: (-0.0296301,-1.65423e-17)
+-> KPBase1D2D: added solution 2 with ev: (-0.0342349,1.20082e-16)
+-> KPBase1D2D: added solution 3 with ev: (-0.0360243,1.51523e-15)
+-> KPBase1D2D: added solution 4 with ev: (-0.0407723,1.43949e-16)
+-> KPBase1D2D: added solution 5 with ev: (-0.0454725,-2.34445e-15)
+-> KPBase1D2D: added solution 6 with ev: (-0.0494667,1.55196e-15)
+-> KPBase1D2D: added solution 7 with ev: (-0.0541051,3.03436e-15)
+-> KPBase1D2D: added solution 8 with ev: (-0.0554233,-1.04606e-15)
+-> KPBase1D2D: added solution 9 with ev: (-0.0612414,-2.7437e-16)
+-> KPBase1D2D: added solution 10 with ev: (-0.0628171,-9.41039e-16)
+-> KPBase1D2D: added solution 11 with ev: (-0.0643729,2.98462e-16)
+-> KPBase1D2D: added solution 12 with ev: (-0.0697194,3.80281e-16)
+-> KPBase1D2D: added solution 13 with ev: (-0.0702608,-2.20148e-16)
+-> KPBase1D2D: added solution 14 with ev: (-0.07312,4.78169e-16)
+-> KPBase1D2D: added solution 15 with ev: (-0.0754514,2.976e-15)
+-> KPBase1D2D: iteration 23 of 32 for k = 1.06455 [1/nm]. expecting kp states at 
+   -0.0212743 [eV] for the next cycle.
+-> FEMSolverGEVP: linewise parallel assembly of matrix with 2 active threads 
+   where the average processor takes care of 383 matrix lines.
+-> FEMSolverGEVP: searching eigenvalues
+-> UmfpackSolverComplex: reordering csr to csc
+-> UmfpackSolverComplex: numeric factorization phase
+-> z1 (znaupd_)       = 0.253868
+   z2 (adaptive_omp)  = 0.00029397
+   z3 (Bx -> d/ido 1) = 0.000207663
+   z4 (solve eq)      = 0.819715
+   z5 (Bx -> d/ido 2) = 0.0237248
+   z6 (progr.meter)   = 0.00275421
+   total zi           = 1.10056
+   
+-> the eigensolver found 16 of 16 eigenvalues
+-> KPBase1D2D: added solution 0 with ev: (-0.022823,4.17339e-19)
+-> KPBase1D2D: added solution 1 with ev: (-0.0313026,5.53691e-18)
+-> KPBase1D2D: added solution 2 with ev: (-0.0357407,1.49134e-16)
+-> KPBase1D2D: added solution 3 with ev: (-0.0380957,-1.83713e-15)
+-> KPBase1D2D: added solution 4 with ev: (-0.0424433,3.43656e-16)
+-> KPBase1D2D: added solution 5 with ev: (-0.0475527,3.12202e-15)
+-> KPBase1D2D: added solution 6 with ev: (-0.051104,2.70794e-16)
+-> KPBase1D2D: added solution 7 with ev: (-0.0560761,3.20158e-15)
+-> KPBase1D2D: added solution 8 with ev: (-0.0571762,-5.68938e-16)
+-> KPBase1D2D: added solution 9 with ev: (-0.0630029,4.58135e-15)
+-> KPBase1D2D: added solution 10 with ev: (-0.0646656,9.99302e-16)
+-> KPBase1D2D: added solution 11 with ev: (-0.0658943,-6.87594e-17)
+-> KPBase1D2D: added solution 12 with ev: (-0.0713037,6.20844e-16)
+-> KPBase1D2D: added solution 13 with ev: (-0.0719305,-7.03259e-16)
+-> KPBase1D2D: added solution 14 with ev: (-0.0750211,-3.64577e-15)
+-> KPBase1D2D: added solution 15 with ev: (-0.0769208,7.30378e-16)
+-> KPBase1D2D: iteration 24 of 32 for k = 1.11293 [1/nm]. expecting kp states at 
+   -0.022823 [eV] for the next cycle.
+-> FEMSolverGEVP: linewise parallel assembly of matrix with 2 active threads 
+   where the average processor takes care of 383 matrix lines.
+-> FEMSolverGEVP: searching eigenvalues
+-> UmfpackSolverComplex: reordering csr to csc
+-> UmfpackSolverComplex: numeric factorization phase
+-> z1 (znaupd_)       = 0.249427
+   z2 (adaptive_omp)  = 0.000320911
+   z3 (Bx -> d/ido 1) = 0.000178337
+   z4 (solve eq)      = 0.809625
+   z5 (Bx -> d/ido 2) = 0.0213554
+   z6 (progr.meter)   = 0.00273538
+   total zi           = 1.08364
+   
+-> the eigensolver found 16 of 16 eigenvalues
+-> KPBase1D2D: added solution 0 with ev: (-0.0244659,2.49257e-16)
+-> KPBase1D2D: added solution 1 with ev: (-0.0330573,4.2876e-15)
+-> KPBase1D2D: added solution 2 with ev: (-0.0373352,-7.96826e-15)
+-> KPBase1D2D: added solution 3 with ev: (-0.0402635,6.7579e-16)
+-> KPBase1D2D: added solution 4 with ev: (-0.0441927,9.12246e-15)
+-> KPBase1D2D: added solution 5 with ev: (-0.0497228,-1.41986e-15)
+-> KPBase1D2D: added solution 6 with ev: (-0.0528229,-9.81966e-15)
+-> KPBase1D2D: added solution 7 with ev: (-0.058143,4.24484e-16)
+-> KPBase1D2D: added solution 8 with ev: (-0.0589977,3.11623e-15)
+-> KPBase1D2D: added solution 9 with ev: (-0.0647746,-3.88731e-15)
+-> KPBase1D2D: added solution 10 with ev: (-0.0666656,4.00579e-15)
+-> KPBase1D2D: added solution 11 with ev: (-0.0674801,-1.60728e-15)
+-> KPBase1D2D: added solution 12 with ev: (-0.0729517,1.7326e-15)
+-> KPBase1D2D: added solution 13 with ev: (-0.0736656,-2.19988e-15)
+-> KPBase1D2D: added solution 14 with ev: (-0.0770417,-3.9809e-16)
+-> KPBase1D2D: added solution 15 with ev: (-0.0784616,9.1639e-17)
+-> KPBase1D2D: iteration 25 of 32 for k = 1.16131 [1/nm]. expecting kp states at 
+   -0.0244659 [eV] for the next cycle.
+-> FEMSolverGEVP: linewise parallel assembly of matrix with 2 active threads 
+   where the average processor takes care of 383 matrix lines.
+-> FEMSolverGEVP: searching eigenvalues
+-> UmfpackSolverComplex: reordering csr to csc
+-> UmfpackSolverComplex: numeric factorization phase
+-> z1 (znaupd_)       = 0.241014
+   z2 (adaptive_omp)  = 0.000308514
+   z3 (Bx -> d/ido 1) = 0.000168324
+   z4 (solve eq)      = 0.814051
+   z5 (Bx -> d/ido 2) = 0.0219185
+   z6 (progr.meter)   = 0.00270462
+   total zi           = 1.08016
+   
+-> the eigensolver found 16 of 16 eigenvalues
+-> KPBase1D2D: added solution 0 with ev: (-0.0262019,-5.67234e-19)
+-> KPBase1D2D: added solution 1 with ev: (-0.0348942,-2.39401e-17)
+-> KPBase1D2D: added solution 2 with ev: (-0.0390184,5.8056e-16)
+-> KPBase1D2D: added solution 3 with ev: (-0.0425276,-1.3999e-15)
+-> KPBase1D2D: added solution 4 with ev: (-0.0460214,4.14473e-15)
+-> KPBase1D2D: added solution 5 with ev: (-0.0519785,-6.32827e-15)
+-> KPBase1D2D: added solution 6 with ev: (-0.0546282,-6.57596e-16)
+-> KPBase1D2D: added solution 7 with ev: (-0.0603056,2.55971e-15)
+-> KPBase1D2D: added solution 8 with ev: (-0.0608892,-5.73637e-16)
+-> KPBase1D2D: added solution 9 with ev: (-0.0665718,3.47953e-15)
+-> KPBase1D2D: added solution 10 with ev: (-0.0688039,3.85561e-15)
+-> KPBase1D2D: added solution 11 with ev: (-0.0691331,-3.22975e-15)
+-> KPBase1D2D: added solution 12 with ev: (-0.0746681,-3.46388e-15)
+-> KPBase1D2D: added solution 13 with ev: (-0.0754637,-6.80146e-16)
+-> KPBase1D2D: added solution 14 with ev: (-0.0791748,2.29606e-15)
+-> KPBase1D2D: added solution 15 with ev: (-0.0800774,-3.71828e-15)
+-> KPBase1D2D: iteration 26 of 32 for k = 1.2097 [1/nm]. expecting kp states at 
+   -0.0262019 [eV] for the next cycle.
+-> FEMSolverGEVP: linewise parallel assembly of matrix with 2 active threads 
+   where the average processor takes care of 383 matrix lines.
+-> FEMSolverGEVP: searching eigenvalues
+-> UmfpackSolverComplex: reordering csr to csc
+-> UmfpackSolverComplex: numeric factorization phase
+-> z1 (znaupd_)       = 0.28286
+   z2 (adaptive_omp)  = 0.000304461
+   z3 (Bx -> d/ido 1) = 0.000188351
+   z4 (solve eq)      = 0.871087
+   z5 (Bx -> d/ido 2) = 0.0242059
+   z6 (progr.meter)   = 0.00297403
+   total zi           = 1.18162
+   
+-> the eigensolver found 16 of 16 eigenvalues
+-> KPBase1D2D: added solution 0 with ev: (-0.0280303,3.52305e-19)
+-> KPBase1D2D: added solution 1 with ev: (-0.0368131,5.547e-16)
+-> KPBase1D2D: added solution 2 with ev: (-0.0407906,-4.60753e-16)
+-> KPBase1D2D: added solution 3 with ev: (-0.044888,2.84458e-16)
+-> KPBase1D2D: added solution 4 with ev: (-0.0479301,7.63565e-17)
+-> KPBase1D2D: added solution 5 with ev: (-0.0543121,3.22542e-16)
+-> KPBase1D2D: added solution 6 with ev: (-0.0565276,2.49957e-15)
+-> KPBase1D2D: added solution 7 with ev: (-0.0625632,2.52658e-15)
+-> KPBase1D2D: added solution 8 with ev: (-0.062852,-1.13886e-15)
+-> KPBase1D2D: added solution 9 with ev: (-0.0684106,2.79735e-15)
+-> KPBase1D2D: added solution 10 with ev: (-0.0708546,-1.73002e-16)
+-> KPBase1D2D: added solution 11 with ev: (-0.0710665,-1.06705e-15)
+-> KPBase1D2D: added solution 12 with ev: (-0.076456,3.72752e-16)
+-> KPBase1D2D: added solution 13 with ev: (-0.0773238,7.8692e-17)
+-> KPBase1D2D: added solution 14 with ev: (-0.081402,-1.73454e-15)
+-> KPBase1D2D: added solution 15 with ev: (-0.081783,-1.46048e-15)
+-> KPBase1D2D: iteration 27 of 32 for k = 1.25808 [1/nm]. expecting kp states at 
+   -0.0280303 [eV] for the next cycle.
+-> FEMSolverGEVP: linewise parallel assembly of matrix with 2 active threads 
+   where the average processor takes care of 383 matrix lines.
+-> FEMSolverGEVP: searching eigenvalues
+-> UmfpackSolverComplex: reordering csr to csc
+-> UmfpackSolverComplex: numeric factorization phase
+-> z1 (znaupd_)       = 0.2617
+   z2 (adaptive_omp)  = 0.000330925
+   z3 (Bx -> d/ido 1) = 0.000187874
+   z4 (solve eq)      = 0.920888
+   z5 (Bx -> d/ido 2) = 0.0211904
+   z6 (progr.meter)   = 0.00374746
+   total zi           = 1.20804
+   
+-> the eigensolver found 16 of 16 eigenvalues
+-> KPBase1D2D: added solution 0 with ev: (-0.0299501,5.49972e-20)
+-> KPBase1D2D: added solution 1 with ev: (-0.038814,2.1827e-15)
+-> KPBase1D2D: added solution 2 with ev: (-0.0426516,-4.82488e-15)
+-> KPBase1D2D: added solution 3 with ev: (-0.0473444,2.85855e-15)
+-> KPBase1D2D: added solution 4 with ev: (-0.0499199,-1.37293e-17)
+-> KPBase1D2D: added solution 5 with ev: (-0.0567096,-6.306e-15)
+-> KPBase1D2D: added solution 6 with ev: (-0.0585355,1.18482e-15)
+-> KPBase1D2D: added solution 7 with ev: (-0.0648747,4.15335e-16)
+-> KPBase1D2D: added solution 8 with ev: (-0.0649276,3.85585e-16)
+-> KPBase1D2D: added solution 9 with ev: (-0.0703032,-9.45966e-16)
+-> KPBase1D2D: added solution 10 with ev: (-0.072648,2.20925e-16)
+-> KPBase1D2D: added solution 11 with ev: (-0.0734411,3.61388e-15)
+-> KPBase1D2D: added solution 12 with ev: (-0.0783176,-1.33762e-15)
+-> KPBase1D2D: added solution 13 with ev: (-0.079246,5.14986e-16)
+-> KPBase1D2D: added solution 14 with ev: (-0.0834671,4.52631e-16)
+-> KPBase1D2D: added solution 15 with ev: (-0.0838315,-1.40028e-17)
+-> KPBase1D2D: iteration 28 of 32 for k = 1.30646 [1/nm]. expecting kp states at 
+   -0.0299501 [eV] for the next cycle.
+-> FEMSolverGEVP: linewise parallel assembly of matrix with 2 active threads 
+   where the average processor takes care of 383 matrix lines.
+-> FEMSolverGEVP: searching eigenvalues
+-> UmfpackSolverComplex: reordering csr to csc
+-> UmfpackSolverComplex: numeric factorization phase
+-> z1 (znaupd_)       = 0.259575
+   z2 (adaptive_omp)  = 0.000271559
+   z3 (Bx -> d/ido 1) = 0.000190735
+   z4 (solve eq)      = 0.869175
+   z5 (Bx -> d/ido 2) = 0.0219591
+   z6 (progr.meter)   = 0.00375915
+   total zi           = 1.15493
+   
+-> the eigensolver found 16 of 16 eigenvalues
+-> KPBase1D2D: added solution 0 with ev: (-0.0319605,1.51277e-18)
+-> KPBase1D2D: added solution 1 with ev: (-0.0408968,-1.71034e-18)
+-> KPBase1D2D: added solution 2 with ev: (-0.0446013,5.61929e-19)
+-> KPBase1D2D: added solution 3 with ev: (-0.049896,1.45703e-16)
+-> KPBase1D2D: added solution 4 with ev: (-0.0519917,-5.31559e-17)
+-> KPBase1D2D: added solution 5 with ev: (-0.0591444,6.38705e-16)
+-> KPBase1D2D: added solution 6 with ev: (-0.0606786,-3.01067e-16)
+-> KPBase1D2D: added solution 7 with ev: (-0.0669893,1.8236e-15)
+-> KPBase1D2D: added solution 8 with ev: (-0.0673667,-8.68516e-16)
+-> KPBase1D2D: added solution 9 with ev: (-0.0722582,-2.47891e-15)
+-> KPBase1D2D: added solution 10 with ev: (-0.0745137,-7.07033e-17)
+-> KPBase1D2D: added solution 11 with ev: (-0.0759219,-4.042e-17)
+-> KPBase1D2D: added solution 12 with ev: (-0.0802543,8.08774e-16)
+-> KPBase1D2D: added solution 13 with ev: (-0.0812307,4.43597e-17)
+-> KPBase1D2D: added solution 14 with ev: (-0.0853234,1.19876e-15)
+-> KPBase1D2D: added solution 15 with ev: (-0.0862671,2.84037e-15)
+-> KPBase1D2D: iteration 29 of 32 for k = 1.35485 [1/nm]. expecting kp states at 
+   -0.0319605 [eV] for the next cycle.
+-> FEMSolverGEVP: linewise parallel assembly of matrix with 2 active threads 
+   where the average processor takes care of 383 matrix lines.
+-> FEMSolverGEVP: searching eigenvalues
+-> UmfpackSolverComplex: reordering csr to csc
+-> UmfpackSolverComplex: numeric factorization phase
+-> z1 (znaupd_)       = 0.254067
+   z2 (adaptive_omp)  = 0.000291586
+   z3 (Bx -> d/ido 1) = 0.000194073
+   z4 (solve eq)      = 0.86983
+   z5 (Bx -> d/ido 2) = 0.0207491
+   z6 (progr.meter)   = 0.00404572
+   total zi           = 1.14918
+   
+-> the eigensolver found 16 of 16 eigenvalues
+-> KPBase1D2D: added solution 0 with ev: (-0.034061,-1.9526e-19)
+-> KPBase1D2D: added solution 1 with ev: (-0.0430613,-3.58859e-17)
+-> KPBase1D2D: added solution 2 with ev: (-0.0466395,1.34841e-15)
+-> KPBase1D2D: added solution 3 with ev: (-0.0525412,4.68456e-16)
+-> KPBase1D2D: added solution 4 with ev: (-0.0541475,1.08457e-15)
+-> KPBase1D2D: added solution 5 with ev: (-0.0615756,-4.80327e-16)
+-> KPBase1D2D: added solution 6 with ev: (-0.0629978,-2.25945e-15)
+-> KPBase1D2D: added solution 7 with ev: (-0.0691691,7.09018e-16)
+-> KPBase1D2D: added solution 8 with ev: (-0.0699065,-6.50975e-17)
+-> KPBase1D2D: added solution 9 with ev: (-0.0742815,8.856e-16)
+-> KPBase1D2D: added solution 10 with ev: (-0.0764529,-1.99582e-15)
+-> KPBase1D2D: added solution 11 with ev: (-0.0785041,-3.57223e-15)
+-> KPBase1D2D: added solution 12 with ev: (-0.0822671,-1.38245e-15)
+-> KPBase1D2D: added solution 13 with ev: (-0.0832788,1.02276e-15)
+-> KPBase1D2D: added solution 14 with ev: (-0.0872354,2.22296e-15)
+-> KPBase1D2D: added solution 15 with ev: (-0.0888225,-4.32193e-15)
+-> KPBase1D2D: iteration 30 of 32 for k = 1.40323 [1/nm]. expecting kp states at 
+   -0.034061 [eV] for the next cycle.
+-> FEMSolverGEVP: linewise parallel assembly of matrix with 2 active threads 
+   where the average processor takes care of 383 matrix lines.
+-> FEMSolverGEVP: searching eigenvalues
+-> UmfpackSolverComplex: reordering csr to csc
+-> UmfpackSolverComplex: numeric factorization phase
+-> z1 (znaupd_)       = 0.237505
+   z2 (adaptive_omp)  = 0.000270128
+   z3 (Bx -> d/ido 1) = 0.000190496
+   z4 (solve eq)      = 0.847847
+   z5 (Bx -> d/ido 2) = 0.0199614
+   z6 (progr.meter)   = 0.00282121
+   total zi           = 1.1086
+   
+-> the eigensolver found 16 of 16 eigenvalues
+-> KPBase1D2D: added solution 0 with ev: (-0.0362509,-3.85446e-19)
+-> KPBase1D2D: added solution 1 with ev: (-0.0453075,6.14685e-16)
+-> KPBase1D2D: added solution 2 with ev: (-0.0487661,5.76095e-16)
+-> KPBase1D2D: added solution 3 with ev: (-0.0552751,-3.35572e-16)
+-> KPBase1D2D: added solution 4 with ev: (-0.0563923,7.65169e-16)
+-> KPBase1D2D: added solution 5 with ev: (-0.0639749,6.09997e-15)
+-> KPBase1D2D: added solution 6 with ev: (-0.0655215,1.66642e-15)
+-> KPBase1D2D: added solution 7 with ev: (-0.0714222,-1.18274e-15)
+-> KPBase1D2D: added solution 8 with ev: (-0.0725377,-5.10903e-16)
+-> KPBase1D2D: added solution 9 with ev: (-0.076378,8.18472e-16)
+-> KPBase1D2D: added solution 10 with ev: (-0.0784665,1.15328e-15)
+-> KPBase1D2D: added solution 11 with ev: (-0.0811847,1.37321e-15)
+-> KPBase1D2D: added solution 12 with ev: (-0.0843569,2.16292e-15)
+-> KPBase1D2D: added solution 13 with ev: (-0.0853912,8.83426e-17)
+-> KPBase1D2D: added solution 14 with ev: (-0.0892195,8.71292e-18)
+-> KPBase1D2D: added solution 15 with ev: (-0.0912016,9.59046e-16)
+-> KPBase1D2D: iteration 31 of 32 for k = 1.45162 [1/nm]. expecting kp states at 
+   -0.0362509 [eV] for the next cycle.
+-> FEMSolverGEVP: linewise parallel assembly of matrix with 2 active threads 
+   where the average processor takes care of 383 matrix lines.
+-> FEMSolverGEVP: searching eigenvalues
+-> UmfpackSolverComplex: reordering csr to csc
+-> UmfpackSolverComplex: numeric factorization phase
+-> z1 (znaupd_)       = 0.234507
+   z2 (adaptive_omp)  = 0.000268459
+   z3 (Bx -> d/ido 1) = 0.000211954
+   z4 (solve eq)      = 0.804759
+   z5 (Bx -> d/ido 2) = 0.0210176
+   z6 (progr.meter)   = 0.0028336
+   total zi           = 1.0636
+   
+-> the eigensolver found 16 of 16 eigenvalues
+-> KPBase1D2D: added solution 0 with ev: (-0.0385295,-1.30631e-15)
+-> KPBase1D2D: added solution 1 with ev: (-0.0476354,1.21052e-14)
+-> KPBase1D2D: added solution 2 with ev: (-0.0509807,3.552e-14)
+-> KPBase1D2D: added solution 3 with ev: (-0.0580781,-5.43576e-15)
+-> KPBase1D2D: added solution 4 with ev: (-0.0587457,8.5175e-15)
+-> KPBase1D2D: added solution 5 with ev: (-0.0663592,-5.60217e-15)
+-> KPBase1D2D: added solution 6 with ev: (-0.0682327,4.9728e-15)
+-> KPBase1D2D: added solution 7 with ev: (-0.0737495,-2.07233e-15)
+-> KPBase1D2D: added solution 8 with ev: (-0.0752564,-4.78871e-15)
+-> KPBase1D2D: added solution 9 with ev: (-0.0785533,4.79822e-15)
+-> KPBase1D2D: added solution 10 with ev: (-0.0805552,1.4159e-16)
+-> KPBase1D2D: added solution 11 with ev: (-0.0839611,-8.72948e-15)
+-> KPBase1D2D: added solution 12 with ev: (-0.0865243,-8.17993e-16)
+-> KPBase1D2D: added solution 13 with ev: (-0.0875691,-2.56796e-16)
+-> KPBase1D2D: added solution 14 with ev: (-0.0912782,-5.00344e-16)
+-> KPBase1D2D: added solution 15 with ev: (-0.0934338,-6.58204e-16)
+-> KPBase1D2D: iteration 32 of 32 for k = 1.5 [1/nm]. expecting kp states at 
+   -0.0385295 [eV] for the next cycle.
+-> FEMSolverGEVP: linewise parallel assembly of matrix with 2 active threads 
+   where the average processor takes care of 383 matrix lines.
+-> FEMSolverGEVP: searching eigenvalues
+-> UmfpackSolverComplex: reordering csr to csc
+-> UmfpackSolverComplex: numeric factorization phase
+-> z1 (znaupd_)       = 0.215222
+   z2 (adaptive_omp)  = 0.000271559
+   z3 (Bx -> d/ido 1) = 0.000201702
+   z4 (solve eq)      = 0.871199
+   z5 (Bx -> d/ido 2) = 0.0301836
+   z6 (progr.meter)   = 0.00289655
+   total zi           = 1.11997
+   
+-> the eigensolver found 16 of 16 eigenvalues
+-> KPBase1D2D: added solution 0 with ev: (-0.0408964,-5.41967e-19)
+-> KPBase1D2D: added solution 1 with ev: (-0.0500449,-2.42973e-15)
+-> KPBase1D2D: added solution 2 with ev: (-0.0532832,2.08152e-16)
+-> KPBase1D2D: added solution 3 with ev: (-0.060843,1.05832e-15)
+-> KPBase1D2D: added solution 4 with ev: (-0.0613148,-3.08199e-15)
+-> KPBase1D2D: added solution 5 with ev: (-0.0687656,2.17416e-15)
+-> KPBase1D2D: added solution 6 with ev: (-0.0710944,-4.30604e-15)
+-> KPBase1D2D: added solution 7 with ev: (-0.0761517,1.27354e-15)
+-> KPBase1D2D: added solution 8 with ev: (-0.0780565,7.73634e-17)
+-> KPBase1D2D: added solution 9 with ev: (-0.0808146,2.05006e-15)
+-> KPBase1D2D: added solution 10 with ev: (-0.0827195,9.04873e-16)
+-> KPBase1D2D: added solution 11 with ev: (-0.0868304,-2.31614e-16)
+-> KPBase1D2D: added solution 12 with ev: (-0.0887706,1.06756e-15)
+-> KPBase1D2D: added solution 13 with ev: (-0.0898141,-8.74406e-16)
+-> KPBase1D2D: added solution 14 with ev: (-0.0934124,5.09122e-16)
+-> KPBase1D2D: added solution 15 with ev: (-0.0957377,-7.76573e-16)
+-> Geometry: setting new boundary conditions
+-> Geometry: preparing elements for calculation
+-> FEMSolverLE: linewise parallel building of symmetric matrix structure with 2 
+   active threads where the average processor takes care of 224 matrix lines.
+-> CSRMatrix: building matrix (N = 769) with 1921 nonzeros. fill in is 0.324844%, 
+   memory usage is 0M.
+-> CSRMatrix: finished creating matrix structure
+-> FEMSolverLE: writing matrix structure to cache
+-> DeCross: no bands are spin degenerate. nothing to do.
+-> TCLbands: cb: 2 bound / 12 valid subband, vb: 12 bound / 16 valid subband
+-> TCLbands: cb transverse effective mass = 0.187
+-> Geometry: setting new boundary conditions
+-> Geometry: preparing elements for calculation
+-> FEMSolverLE: linewise parallel building of nonsymmetric matrix structure with 
+   2 active threads where the average processor takes care of 2304 matrix lines.
+-> CSRMatrix: building matrix (N = 4614) with 18438 nonzeros. fill in is 
+   0.0866081%, memory usage is 0M.
+-> CSRMatrix: finished creating matrix structure
+-> FEMSolverLE: writing matrix structure to cache
+-> calculating momentum matrix elements:
+   num cb bands:		2
+   cb basis size:     1
+   num vb bands:      12
+   vb basis size:     6
+   momentum operator is independent of k
+   num k points:      32
+-> kp 8x8 wurtzite matrix for material  uses following parameters:
+   elec. eff. mass c-axis   = 0.2
+   elec. eff. mass a-plane  = 0.2
+   hole effective mass A1   = -7.21
+   hole effective mass A2   = -0.44
+   hole effective mass A3   = 6.68
+   hole effective mass A4   = -3.46
+   hole effective mass A5   = -3.4
+   hole effective mass A6   = -4.9
+   hole spin orbit     A7   = 0.00937         (enabled)
+   spin orbit split delta 1 = 0.01
+   spin orbit split delta 2 = 0.0056
+   spin orbit split delta 3 = 0.0056
+   conduction band edge     = 3.39291
+   valence band edge        = -0.0446929
+   vb shift (delta offset)  = 0.0156
+   optic. momnt. matrix P1  = 0.725442        (Ep = 13.8127 eV) (calculated from eff.mass)
+   optic. momnt. matrix P2  = 0.724391        (Ep = 13.7727 eV) (calculated from eff.mass)
+   operator ordering        = automatically setting A- to 0
+   strain potential D1      = -3.7
+   strain potential D2      = 4.5
+   strain potential D3      = 8.2
+   strain potential D4      = -4.1
+   strain potential D5      = -4
+   strain potential D6      = -5.5
+   strain potential ac_cc = -10.9
+   strain potential ac_aa   = -0.4
+   derived quantities:
+   renormalized mc_eff_xxyy = 1.00654         (good)
+   renormalized mc_eff_zz   = 1.01847         (good)
+   renormalized A1          = -3.19187
+   renormalized A2          = -0.44
+   renormalized A3          = 2.66187
+   renormalized A4          = -1.45675
+   renormalized A5          = -1.39675
+   renormalized A6          = -2.06287
+   operator ordering:     => A5+ -1.39675, A5- => 0, A6+ => -2.06287, A6m => 0
+   nonellipticity           = 0                (perfect elliptic)
+   
+-> kp 8x8 wurtzite matrix for material  uses following parameters:
+   elec. eff. mass c-axis   = 0.187
+   elec. eff. mass a-plane  = 0.187
+   hole effective mass A1   = -7.31
+   hole effective mass A2   = -0.464
+   hole effective mass A3   = 6.769
+   hole effective mass A4   = -3.637
+   hole effective mass A5   = -3.571
+   hole effective mass A6   = -5.006
+   hole spin orbit     A7   = 0.008433        (enabled)
+   spin orbit split delta 1 = 0.013
+   spin orbit split delta 2 = 0.005207
+   spin orbit split delta 3 = 0.005207
+   conduction band edge     = 3.04346
+   valence band edge        = -0
+   vb shift (delta offset)  = 0.018207
+   optic. momnt. matrix P1  = 0.712139        (Ep = 13.3108 eV) (calculated from eff.mass)
+   optic. momnt. matrix P2  = 0.710626        (Ep = 13.2543 eV) (calculated from eff.mass)
+   operator ordering        = automatically setting A- to 0
+   strain potential D1      = -3.7
+   strain potential D2      = 4.5
+   strain potential D3      = 8.2
+   strain potential D4      = -4.1
+   strain potential D5      = -4
+   strain potential D6      = -5.5
+   strain potential ac_cc = -10.12
+   strain potential ac_aa   = -0.26
+   derived quantities:
+   renormalized mc_eff_xxyy = 1.00747         (good)
+   renormalized mc_eff_zz   = 1.02668         (good)
+   renormalized A1          = -2.93642
+   renormalized A2          = -0.464
+   renormalized A3          = 2.39542
+   renormalized A4          = -1.4595
+   renormalized A5          = -1.3935
+   renormalized A6          = -1.91999
+   operator ordering:     => A5+ -1.3935, A5- => 0, A6+ => -1.91999, A6m => 0
+   nonellipticity           = 0                (perfect elliptic)
+   
+-> calculating matrix element p0 at kk = 0
+-> calculating matrix element p0 at kk = 1
+-> calculating matrix element p0 at kk = 2
+-> calculating matrix element p0 at kk = 3
+-> calculating matrix element p0 at kk = 4
+-> calculating matrix element p0 at kk = 5
+-> calculating matrix element p0 at kk = 6
+-> calculating matrix element p0 at kk = 7
+-> calculating matrix element p0 at kk = 8
+-> calculating matrix element p0 at kk = 9
+-> calculating matrix element p0 at kk = 10
+-> calculating matrix element p0 at kk = 11
+-> calculating matrix element p0 at kk = 12
+-> calculating matrix element p0 at kk = 13
+-> calculating matrix element p0 at kk = 14
+-> calculating matrix element p0 at kk = 15
+-> calculating matrix element p0 at kk = 16
+-> calculating matrix element p0 at kk = 17
+-> calculating matrix element p0 at kk = 18
+-> calculating matrix element p0 at kk = 19
+-> calculating matrix element p0 at kk = 20
+-> calculating matrix element p0 at kk = 21
+-> calculating matrix element p0 at kk = 22
+-> calculating matrix element p0 at kk = 23
+-> calculating matrix element p0 at kk = 24
+-> calculating matrix element p0 at kk = 25
+-> calculating matrix element p0 at kk = 26
+-> calculating matrix element p0 at kk = 27
+-> calculating matrix element p0 at kk = 28
+-> calculating matrix element p0 at kk = 29
+-> calculating matrix element p0 at kk = 30
+-> calculating matrix element p0 at kk = 31
+-> kp 8x8 wurtzite matrix for material  uses following parameters:
+   elec. eff. mass c-axis   = 0.2
+   elec. eff. mass a-plane  = 0.2
+   hole effective mass A1   = -7.21
+   hole effective mass A2   = -0.44
+   hole effective mass A3   = 6.68
+   hole effective mass A4   = -3.46
+   hole effective mass A5   = -3.4
+   hole effective mass A6   = -4.9
+   hole spin orbit     A7   = 0.00937         (enabled)
+   spin orbit split delta 1 = 0.01
+   spin orbit split delta 2 = 0.0056
+   spin orbit split delta 3 = 0.0056
+   conduction band edge     = 3.39291
+   valence band edge        = -0.0446929
+   vb shift (delta offset)  = 0.0156
+   optic. momnt. matrix P1  = 0.725442        (Ep = 13.8127 eV) (calculated from eff.mass)
+   optic. momnt. matrix P2  = 0.724391        (Ep = 13.7727 eV) (calculated from eff.mass)
+   operator ordering        = automatically setting A- to 0
+   strain potential D1      = -3.7
+   strain potential D2      = 4.5
+   strain potential D3      = 8.2
+   strain potential D4      = -4.1
+   strain potential D5      = -4
+   strain potential D6      = -5.5
+   strain potential ac_cc = -10.9
+   strain potential ac_aa   = -0.4
+   derived quantities:
+   renormalized mc_eff_xxyy = 1.00654         (good)
+   renormalized mc_eff_zz   = 1.01847         (good)
+   renormalized A1          = -3.19187
+   renormalized A2          = -0.44
+   renormalized A3          = 2.66187
+   renormalized A4          = -1.45675
+   renormalized A5          = -1.39675
+   renormalized A6          = -2.06287
+   operator ordering:     => A5+ -1.39675, A5- => 0, A6+ => -2.06287, A6m => 0
+   nonellipticity           = 0                (perfect elliptic)
+   
+-> kp 8x8 wurtzite matrix for material  uses following parameters:
+   elec. eff. mass c-axis   = 0.187
+   elec. eff. mass a-plane  = 0.187
+   hole effective mass A1   = -7.31
+   hole effective mass A2   = -0.464
+   hole effective mass A3   = 6.769
+   hole effective mass A4   = -3.637
+   hole effective mass A5   = -3.571
+   hole effective mass A6   = -5.006
+   hole spin orbit     A7   = 0.008433        (enabled)
+   spin orbit split delta 1 = 0.013
+   spin orbit split delta 2 = 0.005207
+   spin orbit split delta 3 = 0.005207
+   conduction band edge     = 3.04346
+   valence band edge        = -0
+   vb shift (delta offset)  = 0.018207
+   optic. momnt. matrix P1  = 0.712139        (Ep = 13.3108 eV) (calculated from eff.mass)
+   optic. momnt. matrix P2  = 0.710626        (Ep = 13.2543 eV) (calculated from eff.mass)
+   operator ordering        = automatically setting A- to 0
+   strain potential D1      = -3.7
+   strain potential D2      = 4.5
+   strain potential D3      = 8.2
+   strain potential D4      = -4.1
+   strain potential D5      = -4
+   strain potential D6      = -5.5
+   strain potential ac_cc = -10.12
+   strain potential ac_aa   = -0.26
+   derived quantities:
+   renormalized mc_eff_xxyy = 1.00747         (good)
+   renormalized mc_eff_zz   = 1.02668         (good)
+   renormalized A1          = -2.93642
+   renormalized A2          = -0.464
+   renormalized A3          = 2.39542
+   renormalized A4          = -1.4595
+   renormalized A5          = -1.3935
+   renormalized A6          = -1.91999
+   operator ordering:     => A5+ -1.3935, A5- => 0, A6+ => -1.91999, A6m => 0
+   nonellipticity           = 0                (perfect elliptic)
+   
+-> calculating matrix element p1 at kk = 0
+-> calculating matrix element p1 at kk = 1
+-> calculating matrix element p1 at kk = 2
+-> calculating matrix element p1 at kk = 3
+-> calculating matrix element p1 at kk = 4
+-> calculating matrix element p1 at kk = 5
+-> calculating matrix element p1 at kk = 6
+-> calculating matrix element p1 at kk = 7
+-> calculating matrix element p1 at kk = 8
+-> calculating matrix element p1 at kk = 9
+-> calculating matrix element p1 at kk = 10
+-> calculating matrix element p1 at kk = 11
+-> calculating matrix element p1 at kk = 12
+-> calculating matrix element p1 at kk = 13
+-> calculating matrix element p1 at kk = 14
+-> calculating matrix element p1 at kk = 15
+-> calculating matrix element p1 at kk = 16
+-> calculating matrix element p1 at kk = 17
+-> calculating matrix element p1 at kk = 18
+-> calculating matrix element p1 at kk = 19
+-> calculating matrix element p1 at kk = 20
+-> calculating matrix element p1 at kk = 21
+-> calculating matrix element p1 at kk = 22
+-> calculating matrix element p1 at kk = 23
+-> calculating matrix element p1 at kk = 24
+-> calculating matrix element p1 at kk = 25
+-> calculating matrix element p1 at kk = 26
+-> calculating matrix element p1 at kk = 27
+-> calculating matrix element p1 at kk = 28
+-> calculating matrix element p1 at kk = 29
+-> calculating matrix element p1 at kk = 30
+-> calculating matrix element p1 at kk = 31
+-> kp 8x8 wurtzite matrix for material  uses following parameters:
+   elec. eff. mass c-axis   = 0.2
+   elec. eff. mass a-plane  = 0.2
+   hole effective mass A1   = -7.21
+   hole effective mass A2   = -0.44
+   hole effective mass A3   = 6.68
+   hole effective mass A4   = -3.46
+   hole effective mass A5   = -3.4
+   hole effective mass A6   = -4.9
+   hole spin orbit     A7   = 0.00937         (enabled)
+   spin orbit split delta 1 = 0.01
+   spin orbit split delta 2 = 0.0056
+   spin orbit split delta 3 = 0.0056
+   conduction band edge     = 3.39291
+   valence band edge        = -0.0446929
+   vb shift (delta offset)  = 0.0156
+   optic. momnt. matrix P1  = 0.725442        (Ep = 13.8127 eV) (calculated from eff.mass)
+   optic. momnt. matrix P2  = 0.724391        (Ep = 13.7727 eV) (calculated from eff.mass)
+   operator ordering        = automatically setting A- to 0
+   strain potential D1      = -3.7
+   strain potential D2      = 4.5
+   strain potential D3      = 8.2
+   strain potential D4      = -4.1
+   strain potential D5      = -4
+   strain potential D6      = -5.5
+   strain potential ac_cc = -10.9
+   strain potential ac_aa   = -0.4
+   derived quantities:
+   renormalized mc_eff_xxyy = 1.00654         (good)
+   renormalized mc_eff_zz   = 1.01847         (good)
+   renormalized A1          = -3.19187
+   renormalized A2          = -0.44
+   renormalized A3          = 2.66187
+   renormalized A4          = -1.45675
+   renormalized A5          = -1.39675
+   renormalized A6          = -2.06287
+   operator ordering:     => A5+ -1.39675, A5- => 0, A6+ => -2.06287, A6m => 0
+   nonellipticity           = 0                (perfect elliptic)
+   
+-> kp 8x8 wurtzite matrix for material  uses following parameters:
+   elec. eff. mass c-axis   = 0.187
+   elec. eff. mass a-plane  = 0.187
+   hole effective mass A1   = -7.31
+   hole effective mass A2   = -0.464
+   hole effective mass A3   = 6.769
+   hole effective mass A4   = -3.637
+   hole effective mass A5   = -3.571
+   hole effective mass A6   = -5.006
+   hole spin orbit     A7   = 0.008433        (enabled)
+   spin orbit split delta 1 = 0.013
+   spin orbit split delta 2 = 0.005207
+   spin orbit split delta 3 = 0.005207
+   conduction band edge     = 3.04346
+   valence band edge        = -0
+   vb shift (delta offset)  = 0.018207
+   optic. momnt. matrix P1  = 0.712139        (Ep = 13.3108 eV) (calculated from eff.mass)
+   optic. momnt. matrix P2  = 0.710626        (Ep = 13.2543 eV) (calculated from eff.mass)
+   operator ordering        = automatically setting A- to 0
+   strain potential D1      = -3.7
+   strain potential D2      = 4.5
+   strain potential D3      = 8.2
+   strain potential D4      = -4.1
+   strain potential D5      = -4
+   strain potential D6      = -5.5
+   strain potential ac_cc = -10.12
+   strain potential ac_aa   = -0.26
+   derived quantities:
+   renormalized mc_eff_xxyy = 1.00747         (good)
+   renormalized mc_eff_zz   = 1.02668         (good)
+   renormalized A1          = -2.93642
+   renormalized A2          = -0.464
+   renormalized A3          = 2.39542
+   renormalized A4          = -1.4595
+   renormalized A5          = -1.3935
+   renormalized A6          = -1.91999
+   operator ordering:     => A5+ -1.3935, A5- => 0, A6+ => -1.91999, A6m => 0
+   nonellipticity           = 0                (perfect elliptic)
+   
+-> calculating matrix element p2 at kk = 0
+-> calculating matrix element p2 at kk = 1
+-> calculating matrix element p2 at kk = 2
+-> calculating matrix element p2 at kk = 3
+-> calculating matrix element p2 at kk = 4
+-> calculating matrix element p2 at kk = 5
+-> calculating matrix element p2 at kk = 6
+-> calculating matrix element p2 at kk = 7
+-> calculating matrix element p2 at kk = 8
+-> calculating matrix element p2 at kk = 9
+-> calculating matrix element p2 at kk = 10
+-> calculating matrix element p2 at kk = 11
+-> calculating matrix element p2 at kk = 12
+-> calculating matrix element p2 at kk = 13
+-> calculating matrix element p2 at kk = 14
+-> calculating matrix element p2 at kk = 15
+-> calculating matrix element p2 at kk = 16
+-> calculating matrix element p2 at kk = 17
+-> calculating matrix element p2 at kk = 18
+-> calculating matrix element p2 at kk = 19
+-> calculating matrix element p2 at kk = 20
+-> calculating matrix element p2 at kk = 21
+-> calculating matrix element p2 at kk = 22
+-> calculating matrix element p2 at kk = 23
+-> calculating matrix element p2 at kk = 24
+-> calculating matrix element p2 at kk = 25
+-> calculating matrix element p2 at kk = 26
+-> calculating matrix element p2 at kk = 27
+-> calculating matrix element p2 at kk = 28
+-> calculating matrix element p2 at kk = 29
+-> calculating matrix element p2 at kk = 30
+-> calculating matrix element p2 at kk = 31
+-> TCLmatrix_elements: -> wrote 24 transitions to file ./transitions.dat with the 
+   following transitions
+-> TCLfermi: reading densities from file densities.dat
+-> SLC: creating dense radial domain with 375 points within [0, 1.5]
+-> interpolating bands and matrix elements on new dense grid using second order 
+   splines
+-> SLC: creating dense radial domain with 600 points within [0, 1.5]
+-> interpolating bands and matrix elements on new dense grid using second order 
+   splines
+-> SLC: evaluating spontaneous emission and absorption for 2 cb bands and 12 vb 
+   bands for photons within omega range of 2.89604 -> 3.59604 [eV] and fermi levels 
+   of 3.09159 (cb) and 0.0862076 (vb) at a temperature of 300 Kelvin.
+-> TCLslc: spontaneous emission B coefficent = 2.79349e-11 (cm^3/s)
+-> TCLslc: peak values for gain:
+     px = 8.56966e-20 at 2.89604 eV
+     py = 8.87553e-19 at 2.89604 eV
+     pz = 2.15106e-19 at 2.89604 eV
+-> TCLslc: peak values for spont emission:
+     px = 3.86205e+06 at 3.12908 eV
+     py = 5.92515e+06 at 3.10805 eV
+     pz = 3.78384e+06 at 3.12207 eV
+     avg = 4.00597e+06 at 3.12295 eV
+-> SLC: evaluating spontaneous emission and absorption for 2 cb bands and 12 vb 
+   bands for photons within omega range of 2.89604 -> 3.59604 [eV] and fermi levels 
+   of 3.1427 (cb) and 0.0572619 (vb) at a temperature of 300 Kelvin.
+-> TCLslc: spontaneous emission B coefficent = 2.58755e-11 (cm^3/s)
+-> TCLslc: peak values for gain:
+     px = 1.48835e-20 at 2.89604 eV
+     py = 1.06114e-19 at 2.89604 eV
+     pz = 3.08764e-20 at 2.89604 eV
+-> TCLslc: peak values for spont emission:
+     px = 2.64422e+07 at 3.13258 eV
+     py = 3.46343e+07 at 3.11156 eV
+     pz = 2.42095e+07 at 3.1282 eV
+     avg = 2.67564e+07 at 3.12908 eV
+-> tdkp timing statistics
+     overall:                          43.106025 s
+     building of FE grid:               0.015164 s
+     matrix graph building:             0.044119 s
+     matrix assembly:                   0.437261 s
+     searching eigenvalues:             39.37324 s
+     matrix factorization:              1.722614 s
+     csr2csc:                            0.03889 s
+     result postprocessing:             0.233001 s
+     matrix element calculation:        0.457944 s
+    peak memory usage: virtual = 391 MB,  resident = 135 MB
+   

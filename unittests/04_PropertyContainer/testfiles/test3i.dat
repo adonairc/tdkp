@@ -1,0 +1,6 @@
+#
+# test defintion file for wurstsalat ...
+# valid, no errors, but should warn
+#
+wurstsalat  = 4.9
+bohnensalat = 1.5e0

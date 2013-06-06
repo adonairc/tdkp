@@ -1,0 +1,35 @@
+{
+  file = optics_n0.003_p0.003.dat,
+  tag  = "InGaN kp 6x6 wurtzite absorption 2nd order elements",
+  col  = 0:1:2:3,
+  rel  = 0.01,
+  abs  = 0.0001
+}
+{
+  file = optics_n0.003_p0.003.dat,
+  tag  = "InGaN kp 6x6 wurtzite luminescence 2nd order elements",
+  col  = 0:4:5:6:7,
+  rel  = 0.05,
+  abs  = 5.0e4
+}
+{
+  file = vb_disp.dat,
+  tag  = "InGaN kp 6x6 wurtzite vb dispersion 2nd order elements",
+  col  = 0:1:2:3:4:5,
+  rel  = 0.01,
+  abs  = 0.001
+}
+{
+  file = transitions.dat,
+  tag  = "InGaN kp 6x6 wurtzite cb vb momentum matrix elements",
+  col  = 0:1:2:3:4:5,
+  rel  = 0.01,
+  abs  = 1.0e-32
+}
+{
+  file = vb_probability_b00_k0_ascii.dat,
+  tag  = "InGaN kp 6x6 wurtzite vb probability density",
+  col  = 0:1,
+  rel  = 0.01,
+  abs  = 0.005
+}

@@ -1,0 +1,7 @@
+{
+  file = energies.dat,
+  tag  = "energies of effmass hole inas gaas cube quantum dot",
+  col  = 0,
+  rel  = 0.0001,
+  abs  = 0.001
+}

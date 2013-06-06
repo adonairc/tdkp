@@ -1,0 +1,78 @@
+.\" Process this file with
+.\" groff -man -Tascii foo.1
+.\"
+.TH ATZE_REMOTE_GEVP 1 "JUNE 2009" Linux "User Manuals"
+.SH NAME
+tdkp \- simulator for optoelectronic nanostructures
+.SH SYNOPSIS
+.B tdkp
+.I <tcl script>
+.SH DESCRIPTION
+The executable
+.B tdkp
+is the tcl interface to the simulation package tdkp.
+tdkp is an optoelectronic nanostructure simulator, developed at
+ETH Zurich, Switzlerland, which can be used to calculate intrinsic
+strain, polarization effects, energies and wavefunctions, dipole matrix
+elements, stimulated- and spontaneous emission, including many body
+effects, in optoelectronic nanostructures such as bulk, quantum well,
+quantum wire and quantum dot structures. Models for wurtzite III-nitrides
+and zinc-blende crystal are available.
+
+tdkp is based on continuum theory, solves resulting partial differential
+equations using finite elements. The band structure is calculated using
+the k.p multi-band envelope function theory. Due to the elliptic
+formulation of the k.p enevelope equations (using Burt-Foreman operator
+ordering and a careful parameter choice), the results obtained are
+entirely spurious solution free.
+
+This is scientific software, requiring usually a scientific background
+for a proper simulation setup and usage.
+
+The standard installation of tdkp comes with a collection of tcl
+scripts for the easy setup and automation of standard simulations.
+The tcl scripts are located in /usr/share/tdkp/input. All functionality
+is provided by one script: /usr/share/tdkp/input/tow.tcl. All possible
+command line options of that script can be accessed via
+
+tdkp /usr/share/tdkp/input/tow.tcl -help.
+
+The user is encourage to copy the entire /usr/share/tdkp directory to
+his local home directory and let TDKP_CONF_PATH point to it. He may then
+modify everything according to his needs.
+.SH FILES
+.I /usr/share/tdkp/
+.RS
+The system wide tdkp configuration and input directory
+.RE
+.I /usr/share/tdkp/doc
+.RS
+The documentation directory, containing the tdkp manual and
+the doxygen documentation. The doxygen documentation (stored in directory
+html) is very helpful for users writing tcl-scripts as it provides the
+documentation of all possible objects and functions of the C++ classes
+which can be called from the tcl interface. In principle, all relevant
+internal C++ classes are exported to tcl.
+.RE
+.I /usr/share/tdkp/conf
+.RS
+The configuration directory, including files governing the internal
+behaviour of the program.
+.RE
+.I /usr/share/tdkp/input
+.RS
+The directory containing the collection of tcl scripts.
+.RE
+.I /usr/share/tdkp/examples
+.RS
+Examples of tdkp calculations
+.RE
+.SH ENVIRONMENT
+.IP OMP_NUM_THREADS
+Number of OpenMP threads used.
+.IP TDKP_CONF_PATH
+Path to the users local tdkp directory
+.SH AUTHOR
+Ratko G. Veprek <ratko.veprek@gmail.com>
+.SH "SEE ALSO"
+.BR tdkp (1)

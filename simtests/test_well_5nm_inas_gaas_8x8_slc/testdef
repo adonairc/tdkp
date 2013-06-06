@@ -1,0 +1,35 @@
+{
+  file = cb_bands_ascii.dat,
+  tag  = "kp 8x8 5nm well cb bandstructure",
+  col  = 0:1:3:5,
+  rel  = 0.0001,
+  abs  = 0.001
+}
+{
+  file = vb_bands_ascii.dat,
+  tag  = "kp 8x8 5nm well vb bandstructure",
+  col  = 0:1:3:5,
+  rel  = 0.0001,
+  abs  = 0.001
+}
+{
+  file = transitions.dat,
+  tag  = "kp 8x8 5nm well transition matrix elements between bound states",
+  col  = 0:1:2:3:4:5:6:7:8:9:10:11:12:13:14:15:16:17:18,
+  rel  = 0.0001,
+  abs  = 0.001
+}
+{
+  file = luminescence.dat,
+  tag  = "kp 8x8 5nm well gain for px, py and pz",
+  col  = 0:1:2:3,
+  rel  = 0.0001,
+  abs  = 0.001
+}
+{
+  file = luminescence.dat,
+  tag  = "kp 8x8 5nm well spont. emission for px, py and pz",
+  col  = 0:4:5:6,
+  rel  = 0.0001,
+  abs  = 0.001
+}

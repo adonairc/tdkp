@@ -1,0 +1,30 @@
+# tdkpconfdef: material_zincblende.cnf
+
+#
+# simple zincblende material definition ....
+#
+
+electron_effective_mass = 0.067
+
+hole_effective_mass     = 0.34
+
+conduction_band_edge    =  1.024
+valence_band_edge       = -0.4
+
+luttinger_parameter_1 = 6.85
+luttinger_parameter_2 = 2.1
+luttinger_parameter_3 = 2.9
+
+optical_matrix_element = 10.0
+bandgap                = 1.424
+
+spin_orbit_splitting    = 0.114
+
+# strain potentials
+# hydrostatic conduction band
+strain_potential_ac  =  -9.3
+# hydrostatic valence band
+strain_potential_av  = 0.7
+# shear strain potentials
+strain_potential_b   = -2.0
+strain_potential_d   = -5.4

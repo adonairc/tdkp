@@ -1,0 +1,28 @@
+{
+  file = clc_optics_n0.005_p0.005.dat,
+  tag  = "clc bulk GaAs absorption",
+  col  = 0:2,
+  rel  = 1.0e-2,
+  abs  = 1.0e-5
+}
+{
+  file = clc_optics_n0.005_p0.005.dat,
+  tag  = "clc bulk GaAs luminescence",
+  col  = 5,
+  rel  = 1.0e-2,
+  abs  = 1.0e1
+}
+{
+  file = screening0.dat,
+  tag  = "clc bulk GaAs screening",
+  col  = 0:1,
+  rel  = 1.0e-2,
+  abs  = 1.0e-2
+}
+{
+  file = exchange_energy_1.dat,
+  tag  = "clc bulk GaAs exchange energy",
+  col  = 0:1,
+  rel  = 1.0e-2,
+  abs  = 1.0e-3
+}

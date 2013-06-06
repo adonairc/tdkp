@@ -1,0 +1,99 @@
+# SYSTEM-SPECIFIC PART OF TDKP MAKEFILE
+# iis-ia64 version
+
+# -----------------------------------------------------------------------------------
+# external include directories and libraries
+# -----------------------------------------------------------------------------------
+LIB_PATH       = /home/steiger/src/release/ia64/lib
+
+# GCC include is used in make_depend.sh
+GCC_DIR        = /home/steiger/src/release/ia64/gcc/
+GCC_INC        = -I../gcc/lib/gcc/x86_64-unknown-linux-gnu/4.3.0/include 
+GCC_LIB_PATH   = /home/steiger/src/release/ia64/gcc/lib
+
+BOOST_INC      = -I../boost/ 
+BOOST_LIB      = # no lib necessary, only template stuff is used
+
+DFISE_INC      = -I../df-ise/c++/
+DFISE_LIB      = -L$(LIB_PATH) -lDF-ISE++ -lDF-ISE
+
+LINALG_INC     = 
+LINALG_LIB     = -L$(LIB_PATH) -lmkl_gnu_thread -liomp5 -lmkl_lapack -lmkl -lmkl_core
+
+FLENS_INC      = -I../flens/ -I../gsl/include/gsl/
+FLENS_LIB      = # no lib necessary, only template stuff is used
+
+UMFPACK_INC    = -I../umfpack/UMFPACK/Include/ -I../umfpack/UFconfig/ -I../umfpack/AMD/Include/
+UMFPACK_LIB    = -L$(LIB_PATH) -lumfpack
+UMFPACK_DEF    = -DLINSOLV_INCLUDE_UMFPACK
+
+PARDISO_INC    = 
+PARDISO_LIB    = 
+PARDISO_DEF    = -DLINSOLV_INCLUDE_PARDISO
+
+SUPERLU_INC    = 
+SUPERLU_LIB    = 
+SUPERLU_DEF    = -DLINSOLV_INCLUDE_SUPERLU
+
+AZTEC00_INC    = 
+AZTEC00_LIB    = 
+AZTEC00_DEF    = -DLINSOLV_INCLUDE_AZTECOO 
+
+VEPREK_PATH      = 
+ATZE_MPI_INC     = 
+ATZE_MPI_LIBS 	 = 
+ATZE_SERIAL_INC  =  
+ATZE_SERIAL_LIBS = 
+
+METIS_INC      = -I../metis/
+METIS_LIB      = -L$(LIB_PATH) -lmetis
+
+ILS_INC        = -I../ils2/src 
+ILS_LIB        = -L$(LIB_PATH) -lils 
+ILS_DEF        = -DLINSOLV_INCLUDE_ILS
+
+TCL_INC        = -I../tcl/include/
+TCL_LIB        = -L$(LIB_PATH) -ltcl8.4g
+
+ZLIB_INC       = 
+ZLIB_LIB       = /usr/lib64/libz.a
+
+ARPACK_INC     = 
+ARPACK_LIB     = -larpack 
+ARPACK_DEF     = -DEIGNSOLV_INCLUDE_ARPACK
+
+JAC_DAV_DEF    = -DEIGNSOLV_INCLUDE_JACOBI_DAVIDSON
+JDQZ_DEF       = -DEIGNSOLV_INCLUDE_JDQZ
+
+# -----------------------------------------------------------------------------------
+# exclude unwanted solvers in the next section
+# -----------------------------------------------------------------------------------
+
+# -DNOREMOTESOLVER to exclude RemoteGEVPSolver functionality
+# -DNOMETIS disables compilation of GraphReordering class
+# -DNOUNDERSCORE switches to fortran routine names w/o trailing underscores
+# -DNOACML disables ACML functionality
+
+EIGSOLVERS    = $(ARPACK_DEF) $(JAC_DAV_DEF) $(JDQZ_DEF)
+
+LINSOLVERS     = $(UMFPACK_DEF) $(ILS_DEF)
+# not defined: $(SUPERLU_DEF) $(AZTEC00_DEF) $(PARDISO_DEF) 
+
+DEFINES        = -DDEBUG -DNOACML -DIA64 $(LINSOLVERS) $(EIGSOLVERS)
+
+
+CXX_INC        = $(UMFPACK_INC) $(ILS_INC) $(METIS_INC) $(DFISE_INC) $(ZLIB_INC) $(BOOST_INC) $(FLENS_INC) $(LINALG_INC) -I.
+# not included: $(SUPERLU_INC) $(AZTEC00_INC) $(PARDISO_INC)
+
+CXX_LOCAL_LIBS = $(UMFPACK_LIB) $(ILS_LIB) $(METIS_LIB) $(DFISE_LIB) $(ZLIB_LIB) $(ARPACK_LIB) -ljdqz $(LINALG_LIB)
+# not linked: $(SUPERLU_LIB) $(AZTEC00_LIB) $(PARDISO_LIB)
+# -ltcl8.5
+
+CXX_LIBS 	   = -nodefaultlibs $(CXX_LOCAL_LIBS) -L$(GCC_LIB_PATH) -lgomp -lgfortran -lstdc++ -lm -lc -ldl 
+CXX            = $(GCC_DIR)/bin/g++
+F77            = $(GCC_DIR)/bin/gfortran
+SWIG           = /home/steiger/src/release/ia64/swig/bin/swig -Wall
+MPICC          = 
+
+CXX_FLAGS      = -Wall -fno-strict-aliasing -g -fopenmp -fPIC $(DEFINES)
+F77_FLAGS      = -fPIC

@@ -1,0 +1,24 @@
+# tdkpconfdef: material_zincblende.cnf
+# - dumped property data
+
+                            bandgap = 1.42257
+               conduction_band_edge = 1.42257
+               elastic_constant_C11 = 1221
+               elastic_constant_C12 = 566
+               elastic_constant_C44 = 600
+            electron_effective_mass = 0.067
+ electron_effective_mass_transverse = 0.067
+         electrostatic_permittivity = 12.9
+                hole_effective_mass = 0.34965
+     hole_effective_mass_transverse = 0.52
+                   lattice_constant = 5.65325
+              luttinger_parameter_1 = 6.98
+              luttinger_parameter_2 = 2.06
+              luttinger_parameter_3 = 2.93
+             optical_matrix_element = 25.5
+               spin_orbit_splitting = 0.341
+                strain_potential_ac = -7.17
+                strain_potential_av = 1.16
+                 strain_potential_b = -2
+                 strain_potential_d = -4.8
+                  valence_band_edge = 0

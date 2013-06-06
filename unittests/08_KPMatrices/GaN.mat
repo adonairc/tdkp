@@ -1,0 +1,54 @@
+# tdkpconfdef: material_wurtzite.cnf
+
+# dummy material paramters. they really are just a speculation!
+
+# i give them in angstroem, as they are used as ratios
+lattice_constant_a   = 5.0
+lattice_constant_c   = 5.0
+
+# GPA (is unitless anyway ...)
+elastic_constant_C11 = 296
+elastic_constant_C12 = 130
+elastic_constant_C13 = 120
+elastic_constant_C33 = 395
+elastic_constant_C44 = 24.1
+
+ 
+
+# ------------------------------------------
+# wurzite params, see vurgaftman and J.R. Meyer 2003 j.appl.phys
+# ------------------------------------------
+hole_effective_mass_A1 = -7.21
+hole_effective_mass_A2 = -0.44
+hole_effective_mass_A3 =  6.68
+hole_effective_mass_A4 = -3.46
+hole_effective_mass_A5 = -3.40
+hole_effective_mass_A6 = -4.90
+#hole_spin_orbit_A7     = 0.00930
+hole_spin_orbit_A7     = 0.005
+
+
+electron_effective_mass_c_plane = 0.20
+electron_effective_mass_a_plane = 0.20
+
+#optical_momentum_matrix_element_P1 = 0
+#optical_momentum_matrix_element_P2 = 0
+
+conduction_band_edge     = 3.510
+valence_band_edge        = 0.0
+# delta_cr = 
+spin_orbit_split_delta_1 = 0.010
+# delta 2 = delta 3 = delta_so / 3
+spin_orbit_split_delta_2 = 0.0056
+spin_orbit_split_delta_3 = 0.0056
+
+strain_potential_D1 = -3.7
+strain_potential_D2 =  4.5
+strain_potential_D3 =  8.2
+strain_potential_D4 = -4.1
+strain_potential_D5 = -4.0
+strain_potential_D6 = -5.5
+# a1 - (D1 + D3)
+strain_potential_ac_cc = -9.4
+# a1 - (D2 + D4)
+strain_potential_ac_aa = -11.7

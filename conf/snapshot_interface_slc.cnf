@@ -1,0 +1,16 @@
+###############################################
+# snapshot_interface_slc.cnf                  #
+#                                             #
+# field definitions for snapshot files        #
+# generated using Interface::snapshot         #
+# this snapshots are generated for testing    #
+# purposes.                                   #
+###############################################
+
+homogeneous_broadening;optional;0.0;1.0e20;0.0;1.0e20;
+refractive_index;optional;0;10;0;10;
+geometry_output_division_factor;optional;1.0e-20;1.0e20;1.0e-20;1.0e20;
+omega_num;optional;1;1000000;10;10000;
+cb_fermi;optional;-1.0e10;1.0e10;-10;10;
+vb_fermi;optional;-1.0e10;1.0e10;-10;10;
+temperature;optional;0.0;10000;0.0;400;

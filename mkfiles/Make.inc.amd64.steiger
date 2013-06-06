@@ -1,0 +1,98 @@
+# SYSTEM-SPECIFIC PART OF TDKP MAKEFILE
+# iis-amd64 version
+
+# -----------------------------------------------------------------------------------
+# external include directories and libraries
+# -----------------------------------------------------------------------------------
+LIB_PATH       = /home/steiger/src/release/amd64/lib
+
+# GCC include is used in make_depend.sh
+GCC_INC        = -I../gcc/lib/gcc/x86_64-unknown-linux-gnu/4.3.0/include 
+GCC_LIB_PATH   = /home/steiger/src/release/amd64/lib/gcc
+
+BOOST_INC      = -I../boost_1_33_1/ 
+BOOST_LIB      = # no lib necessary, only template stuff is used
+
+DFISE_INC      = -I../DF-ISE_debug/c++/
+DFISE_LIB      = -L$(LIB_PATH) -lDF-ISE++ -lDF-ISE
+
+LINALG_INC     = -I../ACML/gfortran/gfortran64/include/
+LINALG_LIB     = -L$(LIB_PATH) -lacml -lacml_mv
+
+FLENS_INC      = -I../flens_0608_acml/ -I../cblas/src/
+FLENS_LIB      = # no lib necessary, only template stuff is used
+
+UMFPACK_INC    = -I../umfpack/UMFPACK/Include/ -I../umfpack/UFconfig/ -I../umfpack/AMD/Include/
+UMFPACK_LIB    = -L$(LIB_PATH) -lumfpack
+UMFPACK_DEF    = -DLINSOLV_INCLUDE_UMFPACK
+
+PARDISO_INC    = 
+PARDISO_LIB    = -L/home/veprek/local/lib -lpardiso_GNU42_AMD64_INT64_P -L$(LIB_PATH) -lpardiso_GFORTRAN42_AMD64
+PARDISO_DEF    = -DLINSOLV_INCLUDE_PARDISO
+
+SUPERLU_INC    = -I/home/veprek/src/master/SuperLU_MT/SRC/
+SUPERLU_LIB    = -L/home/veprek/local/lib -lsuperlu_mt
+SUPERLU_DEF    = -DLINSOLV_INCLUDE_SUPERLU
+
+AZTEC00_INC    = 
+AZTEC00_LIB    = 
+AZTEC00_DEF    = -DLINSOLV_INCLUDE_AZTECOO 
+
+VEPREK_PATH      = /home/veprek/src/release/amd64/opt
+ATZE_MPI_INC     = -I$(VEPREK_PATH)/trilinos-8.0.4/mpi/include/ -I$(VEPREK_PATH)/mpich2/include
+ATZE_MPI_LIBS 	 = -L$(VEPREK_PATH)/trilinos-8.0.4/mpi/lib/ -lanasazi -lifpack -lamesos -laztecoo -lepetraext -lepetra -lteuchos\
+            	   -L$(VEPREK_PATH)/mpich2/lib
+ATZE_SERIAL_INC  = -I$(VEPREK_PATH)/trilinos-8.0.4/serial/include/ 
+ATZE_SERIAL_LIBS = -L$(VEPREK_PATH)/trilinos-8.0.4/serial/lib/  -lanasazi -lifpack -lamesos -laztecoo -lepetraext -lepetra -lteuchos
+
+METIS_INC      = -I../metis/
+METIS_LIB      = -L$(LIB_PATH) -lmetis
+
+ILS_INC        = -I../ils2/src 
+ILS_LIB        = -L$(LIB_PATH) -lils 
+ILS_DEF        = -DLINSOLV_INCLUDE_ILS
+
+TCL_INC        = -I../tcl/include/
+TCL_LIB        = -L$(LIB_PATH) -ltcl8.4g
+
+ZLIB_INC       = -I../zlib-1.2.3/
+ZLIB_LIB       = -L$(LIB_PATH) -lz
+
+ARPACK_INC     = 
+ARPACK_LIB     = -larpack 
+ARPACK_DEF     = -DEIGNSOLV_INCLUDE_ARPACK
+
+JAC_DAV_DEF    = -DEIGNSOLV_INCLUDE_JACOBI_DAVIDSON
+JDQZ_DEF       = -DEIGNSOLV_INCLUDE_JDQZ
+
+# -----------------------------------------------------------------------------------
+# exclude unwanted solvers in the next section
+# -----------------------------------------------------------------------------------
+
+# -DNOREMOTESOLVER to exclude RemoteGEVPSolver functionality
+# -DNOMETIS disables compilation of GraphReordering class
+# -DNOUNDERSCORE switches to fortran routine names w/o trailing underscores
+# -DNOACML disables ACML functionality
+
+EIGSOLVERS    = $(ARPACK_DEF) $(JAC_DAV_DEF) $(JDQZ_DEF)
+
+LINSOLVERS     = $(UMFPACK_DEF) $(ILS_DEF) $(PARDISO_DEF) 
+# not defined: $(SUPERLU_DEF) $(AZTEC00_DEF)
+
+DEFINES        = -DNDEBUG $(LINSOLVERS) $(EIGSOLVERS)
+
+
+CXX_INC        = $(UMFPACK_INC) $(ILS_INC) $(PARDISO_INC) $(METIS_INC) $(DFISE_INC) $(ZLIB_INC) $(BOOST_INC) $(FLENS_INC) $(LINALG_INC) -I.
+# not included: $(SUPERLU_INC) $(AZTEC00_INC)
+
+CXX_LOCAL_LIBS = $(UMFPACK_LIB) $(ILS_LIB) $(PARDISO_LIB) $(METIS_LIB) $(DFISE_LIB) $(ZLIB_LIB) $(ARPACK_LIB) -ljdqz $(LINALG_LIB)
+# not linked: $(SUPERLU_LIB) $(AZTEC00_LIB)
+
+CXX_LIBS 	   = -nodefaultlibs $(CXX_LOCAL_LIBS) -L$(GCC_LIB_PATH) -lgomp -lgfortran -lstdc++ -lm -lnuma -lc 
+CXX            = g++-4.3.0
+F77            = gfortran
+SWIG           = /home/steiger/src/release/amd64/swig/bin/swig -Wall
+MPICC          = mpicxx
+
+CXX_FLAGS      = -Wall -fno-strict-aliasing -O3 -msse3 -mtune=opteron -fopenmp -fPIC $(DEFINES)
+F77_FLAGS      = -fpic -O3 -mtune=opteron 

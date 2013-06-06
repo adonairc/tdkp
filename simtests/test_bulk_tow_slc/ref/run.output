@@ -1,0 +1,567 @@
+-> you started bands.tcl 
+-> copying output to file ./output_kp4x4.log
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+  tdkp - a multidimensional finite element kp solver 
+
+  (c) 2007-2008 ratko veprek, computational optoelectronics
+                integrated systems laboratory, eth zuerich
+
+  you are using tdkp revision 126, compiled 
+  on muottas.ee.ethz.ch at May 16 2008, 11:48:56
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+->  ------------------------------------------------------
+->  tow.tcl 
+->  started at 05/16/08 12:08:11
+->  ------------------------------------------------------
+-> reading property container configuration from file 
+   /home/veprek/src/release/amd64/debug/tdkpn/conf/material_zincblende.cnf
+-> kp4x4 matrix for material  uses following parameters:
+   lut1         = 6.98
+   lut2         = 2.06
+   lut3         = 2.93
+   vb_edge      = -0.8
+   anisotropy   = -4.93
+   energy shift = 0
+-> calculating momentum matrix elements:
+   num cb bands:		1
+   cb basis size:     1
+   num vb bands:      4
+   vb basis size:     4
+   momentum operator is independent of k
+   num k points:      32
+-> calculating matrix element p0 at kk = 0
+-> calculating matrix element p0 at kk = 1
+-> calculating matrix element p0 at kk = 2
+-> calculating matrix element p0 at kk = 3
+-> calculating matrix element p0 at kk = 4
+-> calculating matrix element p0 at kk = 5
+-> calculating matrix element p0 at kk = 6
+-> calculating matrix element p0 at kk = 7
+-> calculating matrix element p0 at kk = 8
+-> calculating matrix element p0 at kk = 9
+-> calculating matrix element p0 at kk = 10
+-> calculating matrix element p0 at kk = 11
+-> calculating matrix element p0 at kk = 12
+-> calculating matrix element p0 at kk = 13
+-> calculating matrix element p0 at kk = 14
+-> calculating matrix element p0 at kk = 15
+-> calculating matrix element p0 at kk = 16
+-> calculating matrix element p0 at kk = 17
+-> calculating matrix element p0 at kk = 18
+-> calculating matrix element p0 at kk = 19
+-> calculating matrix element p0 at kk = 20
+-> calculating matrix element p0 at kk = 21
+-> calculating matrix element p0 at kk = 22
+-> calculating matrix element p0 at kk = 23
+-> calculating matrix element p0 at kk = 24
+-> calculating matrix element p0 at kk = 25
+-> calculating matrix element p0 at kk = 26
+-> calculating matrix element p0 at kk = 27
+-> calculating matrix element p0 at kk = 28
+-> calculating matrix element p0 at kk = 29
+-> calculating matrix element p0 at kk = 30
+-> calculating matrix element p0 at kk = 31
+-> calculating matrix element p1 at kk = 0
+-> calculating matrix element p1 at kk = 1
+-> calculating matrix element p1 at kk = 2
+-> calculating matrix element p1 at kk = 3
+-> calculating matrix element p1 at kk = 4
+-> calculating matrix element p1 at kk = 5
+-> calculating matrix element p1 at kk = 6
+-> calculating matrix element p1 at kk = 7
+-> calculating matrix element p1 at kk = 8
+-> calculating matrix element p1 at kk = 9
+-> calculating matrix element p1 at kk = 10
+-> calculating matrix element p1 at kk = 11
+-> calculating matrix element p1 at kk = 12
+-> calculating matrix element p1 at kk = 13
+-> calculating matrix element p1 at kk = 14
+-> calculating matrix element p1 at kk = 15
+-> calculating matrix element p1 at kk = 16
+-> calculating matrix element p1 at kk = 17
+-> calculating matrix element p1 at kk = 18
+-> calculating matrix element p1 at kk = 19
+-> calculating matrix element p1 at kk = 20
+-> calculating matrix element p1 at kk = 21
+-> calculating matrix element p1 at kk = 22
+-> calculating matrix element p1 at kk = 23
+-> calculating matrix element p1 at kk = 24
+-> calculating matrix element p1 at kk = 25
+-> calculating matrix element p1 at kk = 26
+-> calculating matrix element p1 at kk = 27
+-> calculating matrix element p1 at kk = 28
+-> calculating matrix element p1 at kk = 29
+-> calculating matrix element p1 at kk = 30
+-> calculating matrix element p1 at kk = 31
+-> calculating matrix element p2 at kk = 0
+-> calculating matrix element p2 at kk = 1
+-> calculating matrix element p2 at kk = 2
+-> calculating matrix element p2 at kk = 3
+-> calculating matrix element p2 at kk = 4
+-> calculating matrix element p2 at kk = 5
+-> calculating matrix element p2 at kk = 6
+-> calculating matrix element p2 at kk = 7
+-> calculating matrix element p2 at kk = 8
+-> calculating matrix element p2 at kk = 9
+-> calculating matrix element p2 at kk = 10
+-> calculating matrix element p2 at kk = 11
+-> calculating matrix element p2 at kk = 12
+-> calculating matrix element p2 at kk = 13
+-> calculating matrix element p2 at kk = 14
+-> calculating matrix element p2 at kk = 15
+-> calculating matrix element p2 at kk = 16
+-> calculating matrix element p2 at kk = 17
+-> calculating matrix element p2 at kk = 18
+-> calculating matrix element p2 at kk = 19
+-> calculating matrix element p2 at kk = 20
+-> calculating matrix element p2 at kk = 21
+-> calculating matrix element p2 at kk = 22
+-> calculating matrix element p2 at kk = 23
+-> calculating matrix element p2 at kk = 24
+-> calculating matrix element p2 at kk = 25
+-> calculating matrix element p2 at kk = 26
+-> calculating matrix element p2 at kk = 27
+-> calculating matrix element p2 at kk = 28
+-> calculating matrix element p2 at kk = 29
+-> calculating matrix element p2 at kk = 30
+-> calculating matrix element p2 at kk = 31
+-> wrote 2 transitions to file ./transitions_kp4x4.dat with the following transitions
+     cb 0 -> vb 0, 1
+     cb 0 -> vb 2, 3
+-> reading densities from file densities.dat
+-> -------- fermi level solver --------
+   max density = 0.111273, start value = 0.622571, first point = 0.622571
+-> N(t) = 0.006, N(ef) = 0.002718, ef = 0.7226, dN/def = 0.03615, upd. =   0.3, 
+-> N(t) = 0.006, N(ef) = 0.003774, ef = 0.7498, dN/def = 0.04131, upd. =  0.36, 
+-> N(t) = 0.006, N(ef) = 0.004608, ef = 0.7692, dN/def = 0.04459, upd. = 0.432, 
+-> N(t) = 0.006, N(ef) = 0.005224, ef = 0.7827, dN/def = 0.04672, upd. = 0.5184, 
+-> N(t) = 0.006, N(ef) = 0.005632, ef = 0.7913, dN/def = 0.04802, upd. = 0.6221, 
+-> N(t) = 0.006, N(ef) = 0.005863, ef = 0.7961, dN/def = 0.04873, upd. = 0.7465, 
+-> N(t) = 0.006, N(ef) = 0.005965, ef = 0.7982, dN/def = 0.04904, upd. = 0.8958, 
+-> N(t) = 0.006, N(ef) = 0.005996, ef = 0.7988, dN/def = 0.04913, upd. =     1, 
+-> -------- fermi level solver --------
+   max density = 0.225259, start value = -0.8, first point = -0.8
+-> N(t) = 0.006, N(ef) = 0.03648, ef =  -0.9, dN/def = -0.4842, upd. =   0.3, 
+-> N(t) = 0.006, N(ef) = 0.02783, ef = -0.8811, dN/def = -0.4306, upd. =  0.36, 
+-> N(t) = 0.006, N(ef) = 0.0205, ef = -0.8629, dN/def = -0.3716, upd. = 0.432, 
+-> N(t) = 0.006, N(ef) = 0.01474, ef = -0.846, dN/def = -0.3109, upd. = 0.5184, 
+-> N(t) = 0.006, N(ef) = 0.01061, ef = -0.8314, dN/def = -0.2549, upd. = 0.6221, 
+-> N(t) = 0.006, N(ef) = 0.007991, ef = -0.8202, dN/def = -0.211, upd. = 0.7465, 
+-> N(t) = 0.006, N(ef) = 0.0066, ef = -0.8131, dN/def = -0.1842, upd. = 0.8958, 
+-> N(t) = 0.006, N(ef) = 0.006078, ef = -0.8102, dN/def = -0.1733, upd. =     1, 
+-> N(t) = 0.006, N(ef) = 0.006, ef = -0.8098, dN/def = -0.1717, upd. =     1, 
+-> SLC: creating dense radial domain with 375 points within [0, 1.5]
+-> interpolating bands and matrix elements on new dense grid
+-> SLC: creating dense radial domain with 600 points within [0, 1.5]
+-> interpolating bands and matrix elements on new dense grid
+-> SLC: evaluating spontaneous emission and absorption for 1 cb bands and 4 vb 
+   bands for photons within omega range of 1.22257 -> 1.92257 [eV] and fermi levels 
+   of 0.798884 (cb) and -0.809754 (vb) at a temperature of 300 Kelvin.
+-> spontaneous emission B coefficent = 1.70921e-10 (cm^3/s)
+-> peak values for gain:
+     px = 0.00144007 at 1.92257 eV
+     py = 0.00144007 at 1.92257 eV
+     pz = 0.000950742 at 1.92257 eV
+-> peak values for spont emission:
+     px = 4.12436e+07 at 1.5292 eV
+     py = 4.12436e+07 at 1.5292 eV
+     pz = 1.74914e+07 at 1.47576 eV
+     avg = 3.23249e+07 at 1.51519 eV
+-> you started bands.tcl 
+-> copying output to file ./output_kp6x6.log
+->  ------------------------------------------------------
+->  tow.tcl 
+->  started at 05/16/08 12:08:11
+->  ------------------------------------------------------
+-> reading property container configuration from file 
+   /home/veprek/src/release/amd64/debug/tdkpn/conf/material_zincblende.cnf
+-> kp 6x6 matrix for material  uses following parameters:
+   lut1         = 6.98
+   lut2         = 2.06
+   lut3         = 2.93
+   vb_edge      = -0.8
+   delta_so     = 0.341
+   L            = -15.22     (good)
+   M            = -2.86      (good)
+   N            = -17.58     (good)
+   N+           = -13.72
+   N-           = -3.86
+   energy shift = 0
+   strain dependency is available:
+   strain av    = 1.16
+   strain b     = -2
+   strain d     = -4.8
+-> calculating momentum matrix elements:
+   num cb bands:		1
+   cb basis size:     1
+   num vb bands:      6
+   vb basis size:     6
+   momentum operator is independent of k
+   num k points:      32
+-> calculating matrix element p0 at kk = 0
+-> calculating matrix element p0 at kk = 1
+-> calculating matrix element p0 at kk = 2
+-> calculating matrix element p0 at kk = 3
+-> calculating matrix element p0 at kk = 4
+-> calculating matrix element p0 at kk = 5
+-> calculating matrix element p0 at kk = 6
+-> calculating matrix element p0 at kk = 7
+-> calculating matrix element p0 at kk = 8
+-> calculating matrix element p0 at kk = 9
+-> calculating matrix element p0 at kk = 10
+-> calculating matrix element p0 at kk = 11
+-> calculating matrix element p0 at kk = 12
+-> calculating matrix element p0 at kk = 13
+-> calculating matrix element p0 at kk = 14
+-> calculating matrix element p0 at kk = 15
+-> calculating matrix element p0 at kk = 16
+-> calculating matrix element p0 at kk = 17
+-> calculating matrix element p0 at kk = 18
+-> calculating matrix element p0 at kk = 19
+-> calculating matrix element p0 at kk = 20
+-> calculating matrix element p0 at kk = 21
+-> calculating matrix element p0 at kk = 22
+-> calculating matrix element p0 at kk = 23
+-> calculating matrix element p0 at kk = 24
+-> calculating matrix element p0 at kk = 25
+-> calculating matrix element p0 at kk = 26
+-> calculating matrix element p0 at kk = 27
+-> calculating matrix element p0 at kk = 28
+-> calculating matrix element p0 at kk = 29
+-> calculating matrix element p0 at kk = 30
+-> calculating matrix element p0 at kk = 31
+-> calculating matrix element p1 at kk = 0
+-> calculating matrix element p1 at kk = 1
+-> calculating matrix element p1 at kk = 2
+-> calculating matrix element p1 at kk = 3
+-> calculating matrix element p1 at kk = 4
+-> calculating matrix element p1 at kk = 5
+-> calculating matrix element p1 at kk = 6
+-> calculating matrix element p1 at kk = 7
+-> calculating matrix element p1 at kk = 8
+-> calculating matrix element p1 at kk = 9
+-> calculating matrix element p1 at kk = 10
+-> calculating matrix element p1 at kk = 11
+-> calculating matrix element p1 at kk = 12
+-> calculating matrix element p1 at kk = 13
+-> calculating matrix element p1 at kk = 14
+-> calculating matrix element p1 at kk = 15
+-> calculating matrix element p1 at kk = 16
+-> calculating matrix element p1 at kk = 17
+-> calculating matrix element p1 at kk = 18
+-> calculating matrix element p1 at kk = 19
+-> calculating matrix element p1 at kk = 20
+-> calculating matrix element p1 at kk = 21
+-> calculating matrix element p1 at kk = 22
+-> calculating matrix element p1 at kk = 23
+-> calculating matrix element p1 at kk = 24
+-> calculating matrix element p1 at kk = 25
+-> calculating matrix element p1 at kk = 26
+-> calculating matrix element p1 at kk = 27
+-> calculating matrix element p1 at kk = 28
+-> calculating matrix element p1 at kk = 29
+-> calculating matrix element p1 at kk = 30
+-> calculating matrix element p1 at kk = 31
+-> calculating matrix element p2 at kk = 0
+-> calculating matrix element p2 at kk = 1
+-> calculating matrix element p2 at kk = 2
+-> calculating matrix element p2 at kk = 3
+-> calculating matrix element p2 at kk = 4
+-> calculating matrix element p2 at kk = 5
+-> calculating matrix element p2 at kk = 6
+-> calculating matrix element p2 at kk = 7
+-> calculating matrix element p2 at kk = 8
+-> calculating matrix element p2 at kk = 9
+-> calculating matrix element p2 at kk = 10
+-> calculating matrix element p2 at kk = 11
+-> calculating matrix element p2 at kk = 12
+-> calculating matrix element p2 at kk = 13
+-> calculating matrix element p2 at kk = 14
+-> calculating matrix element p2 at kk = 15
+-> calculating matrix element p2 at kk = 16
+-> calculating matrix element p2 at kk = 17
+-> calculating matrix element p2 at kk = 18
+-> calculating matrix element p2 at kk = 19
+-> calculating matrix element p2 at kk = 20
+-> calculating matrix element p2 at kk = 21
+-> calculating matrix element p2 at kk = 22
+-> calculating matrix element p2 at kk = 23
+-> calculating matrix element p2 at kk = 24
+-> calculating matrix element p2 at kk = 25
+-> calculating matrix element p2 at kk = 26
+-> calculating matrix element p2 at kk = 27
+-> calculating matrix element p2 at kk = 28
+-> calculating matrix element p2 at kk = 29
+-> calculating matrix element p2 at kk = 30
+-> calculating matrix element p2 at kk = 31
+-> wrote 3 transitions to file ./transitions_kp6x6.dat with the following transitions
+     cb 0 -> vb 0, 1
+     cb 0 -> vb 2, 3
+     cb 0 -> vb 4, 5
+-> reading densities from file densities.dat
+-> -------- fermi level solver --------
+   max density = 0.111273, start value = 0.622571, first point = 0.622571
+-> N(t) = 0.006, N(ef) = 0.002718, ef = 0.7226, dN/def = 0.03615, upd. =   0.3, 
+-> N(t) = 0.006, N(ef) = 0.003774, ef = 0.7498, dN/def = 0.04131, upd. =  0.36, 
+-> N(t) = 0.006, N(ef) = 0.004608, ef = 0.7692, dN/def = 0.04459, upd. = 0.432, 
+-> N(t) = 0.006, N(ef) = 0.005224, ef = 0.7827, dN/def = 0.04672, upd. = 0.5184, 
+-> N(t) = 0.006, N(ef) = 0.005632, ef = 0.7913, dN/def = 0.04802, upd. = 0.6221, 
+-> N(t) = 0.006, N(ef) = 0.005863, ef = 0.7961, dN/def = 0.04873, upd. = 0.7465, 
+-> N(t) = 0.006, N(ef) = 0.005965, ef = 0.7982, dN/def = 0.04904, upd. = 0.8958, 
+-> N(t) = 0.006, N(ef) = 0.005996, ef = 0.7988, dN/def = 0.04913, upd. =     1, 
+-> -------- fermi level solver --------
+   max density = 0.339246, start value = -1.141, first point = -1.141
+-> N(t) = 0.006, N(ef) = 0.2223, ef = -1.241, dN/def = -0.3794, upd. =   0.3, 
+-> N(t) = 0.006, N(ef) = 0.1525, ef = -1.091, dN/def = -0.4358, upd. =  0.36, 
+-> N(t) = 0.006, N(ef) = 0.0798, ef = -0.97, dN/def = -0.6804, upd. = 0.432, 
+-> N(t) = 0.006, N(ef) = 0.05015, ef = -0.9231, dN/def = -0.5758, upd. = 0.5184, 
+-> N(t) = 0.006, N(ef) = 0.02958, ef = -0.8834, dN/def = -0.4555, upd. = 0.6221, 
+-> N(t) = 0.006, N(ef) = 0.01673, ef = -0.8512, dN/def = -0.3394, upd. = 0.7465, 
+-> N(t) = 0.006, N(ef) = 0.009826, ef = -0.8276, dN/def = -0.245, upd. = 0.8958, 
+-> N(t) = 0.006, N(ef) = 0.006791, ef = -0.8136, dN/def = -0.1894, upd. =     1, 
+-> N(t) = 0.006, N(ef) = 0.006033, ef = -0.8094, dN/def = -0.1735, upd. =     1, 
+-> SLC: creating dense radial domain with 375 points within [0, 1.5]
+-> interpolating bands and matrix elements on new dense grid
+-> SLC: creating dense radial domain with 600 points within [0, 1.5]
+-> interpolating bands and matrix elements on new dense grid
+-> SLC: evaluating spontaneous emission and absorption for 1 cb bands and 6 vb 
+   bands for photons within omega range of 1.22257 -> 1.92257 [eV] and fermi levels 
+   of 0.798884 (cb) and -0.809234 (vb) at a temperature of 300 Kelvin.
+-> spontaneous emission B coefficent = 1.7212e-10 (cm^3/s)
+-> peak values for gain:
+     px = 0.00187006 at 1.92257 eV
+     py = 0.00187006 at 1.92257 eV
+     pz = 0.000569723 at 1.85161 eV
+-> peak values for spont emission:
+     px = 4.17897e+07 at 1.53008 eV
+     py = 4.17897e+07 at 1.53008 eV
+     pz = 1.68311e+07 at 1.47401 eV
+     avg = 3.23945e+07 at 1.51606 eV
+-> you started bands.tcl 
+-> copying output to file ./output_kp8x8.log
+->  ------------------------------------------------------
+->  tow.tcl 
+->  started at 05/16/08 12:08:12
+->  ------------------------------------------------------
+-> reading property container configuration from file 
+   /home/veprek/src/release/amd64/debug/tdkpn/conf/material_zincblende.cnf
+-> kp 8x8 matrix for material  uses following parameters:
+   lut1         = 6.98
+   lut2         = 2.06
+   lut3         = 2.93
+   mc_eff       = 0.067
+   bandgap      = 1.42257
+   cb_edge      = 0.622571 (= vb_edge + bandgap)
+   vb_edge      = -0.8
+   delta_so     = 0.341
+   opt.mat.el.  = 25.5
+   energy shift = 0
+   
+   strain dependency is available:
+   strain ac    = -7.17
+   strain av    = 1.16
+   strain b     = -2
+   strain d     = -4.8 derived quantities:
+   Ac           = -1.84458  (unstable, should be > 0)
+   L            = 2.70529   (unstable, should be < 0)
+   M            = -2.86      (good)
+   N            = 0.345286  (unstable, should be < 0)
+   N+           = 4.20529    ( = N - N-)
+   N-           = -3.86      ( = M - h^2/2m)
+   P            = 0.985673
+   hbar2_2m0    = 0.0381001
+   non-elliptic = 0.609493   (change your parameters!)
+   
+[0;0;1m** warning **[0;0;0m you have a problem - your parameters will probably produce spurious
+   modes. the results you will obtain will most probably be wrong and
+   unphysical. usually the reason is due to the unknown splitting of
+   the parameter N into N+ and N-, due to a too big optical matrix
+   or due to a too small bandgap. the critical values for bandgap and
+   matrix element are (where L,Nprime,Ac change sign):
+             matrix element     bandgap          
+   L      = 21.6515            1.67543           
+   Nprime = 25.0088            1.45051           
+   Ac     = 22.6952            0.747852          
+-> kp 8x8 matrix for material  uses following parameters:
+   lut1         = 6.98
+   lut2         = 2.06
+   lut3         = 2.93
+   mc_eff       = 0.067
+   bandgap      = 1.42257
+   cb_edge      = 0.622571 (= vb_edge + bandgap)
+   vb_edge      = -0.8
+   delta_so     = 0.341
+   opt.mat.el.  = 25.5
+   energy shift = 0
+   
+   strain dependency is available:
+   strain ac    = -7.17
+   strain av    = 1.16
+   strain b     = -2
+   strain d     = -4.8 derived quantities:
+   Ac           = -1.84458  (unstable, should be > 0)
+   L            = 2.70529   (unstable, should be < 0)
+   M            = -2.86      (good)
+   N            = 0.345286  (unstable, should be < 0)
+   N+           = 4.20529    ( = N - N-)
+   N-           = -3.86      ( = M - h^2/2m)
+   P            = 0.985673
+   hbar2_2m0    = 0.0381001
+   non-elliptic = 0.609493   (change your parameters!)
+   
+[0;0;1m** warning **[0;0;0m you have a problem - your parameters will probably produce spurious
+   modes. the results you will obtain will most probably be wrong and
+   unphysical. usually the reason is due to the unknown splitting of
+   the parameter N into N+ and N-, due to a too big optical matrix
+   or due to a too small bandgap. the critical values for bandgap and
+   matrix element are (where L,Nprime,Ac change sign):
+             matrix element     bandgap          
+   L      = 21.6515            1.67543           
+   Nprime = 25.0088            1.45051           
+   Ac     = 22.6952            0.747852          
+-> calculating momentum matrix elements:
+   num cb bands:		2
+   cb basis size:     8
+   num vb bands:      6
+   vb basis size:     8
+   momentum operator is independent of k
+   num k points:      32
+-> calculating matrix element p0 at kk = 0
+-> calculating matrix element p0 at kk = 1
+-> calculating matrix element p0 at kk = 2
+-> calculating matrix element p0 at kk = 3
+-> calculating matrix element p0 at kk = 4
+-> calculating matrix element p0 at kk = 5
+-> calculating matrix element p0 at kk = 6
+-> calculating matrix element p0 at kk = 7
+-> calculating matrix element p0 at kk = 8
+-> calculating matrix element p0 at kk = 9
+-> calculating matrix element p0 at kk = 10
+-> calculating matrix element p0 at kk = 11
+-> calculating matrix element p0 at kk = 12
+-> calculating matrix element p0 at kk = 13
+-> calculating matrix element p0 at kk = 14
+-> calculating matrix element p0 at kk = 15
+-> calculating matrix element p0 at kk = 16
+-> calculating matrix element p0 at kk = 17
+-> calculating matrix element p0 at kk = 18
+-> calculating matrix element p0 at kk = 19
+-> calculating matrix element p0 at kk = 20
+-> calculating matrix element p0 at kk = 21
+-> calculating matrix element p0 at kk = 22
+-> calculating matrix element p0 at kk = 23
+-> calculating matrix element p0 at kk = 24
+-> calculating matrix element p0 at kk = 25
+-> calculating matrix element p0 at kk = 26
+-> calculating matrix element p0 at kk = 27
+-> calculating matrix element p0 at kk = 28
+-> calculating matrix element p0 at kk = 29
+-> calculating matrix element p0 at kk = 30
+-> calculating matrix element p0 at kk = 31
+-> calculating matrix element p1 at kk = 0
+-> calculating matrix element p1 at kk = 1
+-> calculating matrix element p1 at kk = 2
+-> calculating matrix element p1 at kk = 3
+-> calculating matrix element p1 at kk = 4
+-> calculating matrix element p1 at kk = 5
+-> calculating matrix element p1 at kk = 6
+-> calculating matrix element p1 at kk = 7
+-> calculating matrix element p1 at kk = 8
+-> calculating matrix element p1 at kk = 9
+-> calculating matrix element p1 at kk = 10
+-> calculating matrix element p1 at kk = 11
+-> calculating matrix element p1 at kk = 12
+-> calculating matrix element p1 at kk = 13
+-> calculating matrix element p1 at kk = 14
+-> calculating matrix element p1 at kk = 15
+-> calculating matrix element p1 at kk = 16
+-> calculating matrix element p1 at kk = 17
+-> calculating matrix element p1 at kk = 18
+-> calculating matrix element p1 at kk = 19
+-> calculating matrix element p1 at kk = 20
+-> calculating matrix element p1 at kk = 21
+-> calculating matrix element p1 at kk = 22
+-> calculating matrix element p1 at kk = 23
+-> calculating matrix element p1 at kk = 24
+-> calculating matrix element p1 at kk = 25
+-> calculating matrix element p1 at kk = 26
+-> calculating matrix element p1 at kk = 27
+-> calculating matrix element p1 at kk = 28
+-> calculating matrix element p1 at kk = 29
+-> calculating matrix element p1 at kk = 30
+-> calculating matrix element p1 at kk = 31
+-> calculating matrix element p2 at kk = 0
+-> calculating matrix element p2 at kk = 1
+-> calculating matrix element p2 at kk = 2
+-> calculating matrix element p2 at kk = 3
+-> calculating matrix element p2 at kk = 4
+-> calculating matrix element p2 at kk = 5
+-> calculating matrix element p2 at kk = 6
+-> calculating matrix element p2 at kk = 7
+-> calculating matrix element p2 at kk = 8
+-> calculating matrix element p2 at kk = 9
+-> calculating matrix element p2 at kk = 10
+-> calculating matrix element p2 at kk = 11
+-> calculating matrix element p2 at kk = 12
+-> calculating matrix element p2 at kk = 13
+-> calculating matrix element p2 at kk = 14
+-> calculating matrix element p2 at kk = 15
+-> calculating matrix element p2 at kk = 16
+-> calculating matrix element p2 at kk = 17
+-> calculating matrix element p2 at kk = 18
+-> calculating matrix element p2 at kk = 19
+-> calculating matrix element p2 at kk = 20
+-> calculating matrix element p2 at kk = 21
+-> calculating matrix element p2 at kk = 22
+-> calculating matrix element p2 at kk = 23
+-> calculating matrix element p2 at kk = 24
+-> calculating matrix element p2 at kk = 25
+-> calculating matrix element p2 at kk = 26
+-> calculating matrix element p2 at kk = 27
+-> calculating matrix element p2 at kk = 28
+-> calculating matrix element p2 at kk = 29
+-> calculating matrix element p2 at kk = 30
+-> calculating matrix element p2 at kk = 31
+-> wrote 3 transitions to file ./transitions_kp8x8.dat with the following transitions
+     cb 0, 1 -> vb 0, 1
+     cb 0, 1 -> vb 2, 3
+     cb 0, 1 -> vb 4, 5
+-> reading densities from file densities.dat
+-> -------- fermi level solver --------
+   max density = 0.111273, start value = 0.622571, first point = 0.622571
+-> N(t) = 0.006, N(ef) = 0.003043, ef = 0.7226, dN/def = 0.04247, upd. =   0.3, 
+-> N(t) = 0.006, N(ef) = 0.003992, ef = 0.7435, dN/def = 0.04836, upd. =  0.36, 
+-> N(t) = 0.006, N(ef) = 0.004745, ef = 0.7584, dN/def = 0.05244, upd. = 0.432, 
+-> N(t) = 0.006, N(ef) = 0.005302, ef = 0.7687, dN/def = 0.05522, upd. = 0.5184, 
+-> N(t) = 0.006, N(ef) = 0.005669, ef = 0.7753, dN/def = 0.05697, upd. = 0.6221, 
+-> N(t) = 0.006, N(ef) = 0.005877, ef = 0.7789, dN/def = 0.05792, upd. = 0.7465, 
+-> N(t) = 0.006, N(ef) = 0.005969, ef = 0.7805, dN/def = 0.05835, upd. = 0.8958, 
+-> N(t) = 0.006, N(ef) = 0.005997, ef = 0.781, dN/def = 0.05847, upd. =     1, 
+-> -------- fermi level solver --------
+   max density = 0.339246, start value = -1.141, first point = -1.141
+-> N(t) = 0.006, N(ef) = 0.2282, ef = -1.241, dN/def = -0.3755, upd. =   0.3, 
+-> N(t) = 0.006, N(ef) = 0.1565, ef = -1.091, dN/def = -0.4551, upd. =  0.36, 
+-> N(t) = 0.006, N(ef) = 0.08271, ef = -0.972, dN/def = -0.7017, upd. = 0.432, 
+-> N(t) = 0.006, N(ef) = 0.05189, ef = -0.9247, dN/def = -0.5933, upd. = 0.5184, 
+-> N(t) = 0.006, N(ef) = 0.03054, ef = -0.8846, dN/def = -0.4678, upd. = 0.6221, 
+-> N(t) = 0.006, N(ef) = 0.01719, ef = -0.852, dN/def = -0.3473, upd. = 0.7465, 
+-> N(t) = 0.006, N(ef) = 0.01001, ef = -0.828, dN/def = -0.2493, upd. = 0.8958, 
+-> N(t) = 0.006, N(ef) = 0.00684, ef = -0.8136, dN/def = -0.1911, upd. =     1, 
+-> N(t) = 0.006, N(ef) = 0.006037, ef = -0.8092, dN/def = -0.1741, upd. =     1, 
+-> SLC: creating dense radial domain with 375 points within [0, 1.5]
+-> interpolating bands and matrix elements on new dense grid
+-> SLC: creating dense radial domain with 600 points within [0, 1.5]
+-> interpolating bands and matrix elements on new dense grid
+-> SLC: evaluating spontaneous emission and absorption for 2 cb bands and 6 vb 
+   bands for photons within omega range of 1.22257 -> 1.92257 [eV] and fermi levels 
+   of 0.781026 (cb) and -0.808943 (vb) at a temperature of 300 Kelvin.
+-> spontaneous emission B coefficent = 1.57176e-10 (cm^3/s)
+-> peak values for gain:
+     px = 0.00222941 at 1.92257 eV
+     py = 0.00222941 at 1.92257 eV
+     pz = 0.000414532 at 1.80517 eV
+-> peak values for spont emission:
+     px = 4.14601e+07 at 1.5222 eV
+     py = 4.14601e+07 at 1.5222 eV
+     pz = 1.59394e+07 at 1.47051 eV
+     avg = 3.19204e+07 at 1.51168 eV
